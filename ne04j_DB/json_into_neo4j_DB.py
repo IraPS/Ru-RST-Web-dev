@@ -1,7 +1,10 @@
 import json
 import re
 import os
+from pymystem3 import Mystem
 from py2neo import Graph
+
+m = Mystem()
 
 
 def create_real_nodes(data, text_id):
@@ -13,9 +16,16 @@ def create_real_nodes(data, text_id):
     for edu in edus:
         nodes_to_create[edu['@id']] = edu['$']
     neo4j_nodes_command = ''
+    punct = list('.,?!%:;[]()"@$&*«»–#,')
+    num = list('0123456789')
     for node in sorted(nodes_to_create.keys()):
-        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + nodes_to_create[node] +\
-                               "', Text_id: " + text_id + "})\n"
+        edu_text = nodes_to_create[node]
+        edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—]', '', edu_text)
+        edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n']+punct+num]
+        # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
+        edu_lemmas = ('|'.join(edu_lemmas))
+        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
+                               "', lemmas: '" + edu_lemmas + "', Text_id: " + text_id + "})\n"
 
     print(neo4j_nodes_command)
     graph.run(neo4j_nodes_command)
