@@ -23,9 +23,21 @@ def create_real_nodes(data, text_id):
         edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—]', '', edu_text)
         edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n']+punct+num]
         # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
-        edu_lemmas = ('|'.join(edu_lemmas))
+
+        # edu_lemmas = ('|'.join(edu_lemmas))
+        lemma_pos_dict = '"{'
+        for lemma in edu_lemmas:
+            # print(lemma)
+            lemma_pos_dict += "'" + lemma + "': "
+            try:
+                lemma_pos_dict += "'" + m.analyze(lemma)[0]['analysis'][0]['gr'].split(',')[0].split('=')[0] + "'"
+            except:
+                lemma_pos_dict += "'NONE'"
+            lemma_pos_dict += ', '
+        lemma_pos_dict += '}"'
+        # print(lemma_pos_dict)
         neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
-                               "', lemmas: '" + edu_lemmas + "', Text_id: " + text_id + "})\n"
+                               "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n"
 
     print(neo4j_nodes_command)
     graph.run(neo4j_nodes_command)
