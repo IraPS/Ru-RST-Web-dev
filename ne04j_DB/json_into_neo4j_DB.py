@@ -124,10 +124,9 @@ graph = Graph()  # creating a graph for a database
 
 graph.run('MATCH (n) DETACH DELETE n')  # making sure the DB is empty
 
-n = 1  # text_id value
 for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .rs3 format
     if file.endswith('.json'):
-        print(n)
+        n = file.split('.json')[0] # text_id value
         data_file = open('./corpus_of_jsons_test/' + file)
         text_json = json.load(data_file)
         text_json = text_json['rst']  # json root element
@@ -138,8 +137,6 @@ for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .r
         create_multi_or_span_rels(rels, n)
         create_ordinary_rels(rels, n)
         create_group_relations(group_rels, n)
-
-        n += 1
 
 
 
