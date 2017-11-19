@@ -1,4 +1,5 @@
 import re
+import os
 
 head = '''\n<head>
 <style>
@@ -66,36 +67,39 @@ font-size: 90%;
     </nav>\n
 '''
 
-# Открываем входной файл
-source = open('./source/3.html', 'r', encoding='utf-8').read()
-buttons = [re.split('</button>', x)[0] for x in re.split('<button', source)[1:]]
-for b in buttons:
-    source = source.replace(b, '')
+# Открываем входные файлы
 
-source = source.replace('</button>', '').replace('<button', '')
+for file in os.listdir('./trees_html_source/'):
+    if file.endswith('.html'):
+        source = open('./trees_html_source/' + file, 'r', encoding='utf-8').read()
+        buttons = [re.split('</button>', x)[0] for x in re.split('<button', source)[1:]]
+        for b in buttons:
+            source = source.replace(b, '')
 
-found = re.findall('<head>.*?<div class="canvas">	<p>Document: <b>', source, re.DOTALL)[0]
+        source = source.replace('</button>', '').replace('<button', '')
 
-source = re.sub(re.escape(found), '<div class="canvas">\n<p>Document: <b>', source, re.DOTALL)
+        found = re.findall('<head>.*?<div class="canvas">	<p>Document: <b>', source, re.DOTALL)[0]
 
-source = re.sub('<script src="./script/jquery.jsPlumb-1.7.5-min.js"></script>',
-                '<script src="../static/rstWeb/script/jquery.jsPlumb-1.7.5-min.js"></script>', source)
+        source = re.sub(re.escape(found), '<div class="canvas">\n<p>Document: <b>', source, re.DOTALL)
 
-source = re.sub('jsPlumb.makeSource.*?;jsPlumb.connect', 'jsPlumb.connect', source)
+        source = re.sub('<script src="./script/jquery.jsPlumb-1.7.5-min.js"></script>',
+                        '<script src="../static/rstWeb/script/jquery.jsPlumb-1.7.5-min.js"></script>', source)
 
-source = re.sub(re.escape('>" + select_my_rel(option_type,rel) + "<'), '><mark>" + rel.split(\'_\')[0] + "</mark><',
-                source)
+        source = re.sub('jsPlumb.makeSource.*?;jsPlumb.connect', 'jsPlumb.connect', source)
 
-source = re.sub("select class='rst_rel'", "form class='rst_rel'", source)
-source = re.sub("</mark></select>", "</mark></form>", source)
+        source = re.sub(re.escape('>" + select_my_rel(option_type,rel) + "<'), '><mark>" + rel.split(\'_\')[0] + "</mark><',
+                        source)
 
-source = re.sub('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">',
-                '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' + head, source)
+        source = re.sub("select class='rst_rel'", "form class='rst_rel'", source)
+        source = re.sub("</mark></select>", "</mark></form>", source)
 
-source = re.sub('<div id="anim_catch" class="anim_catch">&nbsp;</div>',
-                '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy; Ru-RST Group 2017</p>\n</footer>\n</div>',
-                source)
+        source = re.sub('<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">',
+                        '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' + head, source)
 
-# Открываем выходной файл
-result = open('./result/3.html', 'w', encoding='utf-8')
-result.write(source)
+        source = re.sub('<div id="anim_catch" class="anim_catch">&nbsp;</div>',
+                        '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy; Ru-RST Group 2017</p>\n</footer>\n</div>',
+                        source)
+
+        # Открываем выходной файл
+        result = open('./result/' + file, 'w', encoding='utf-8')
+        result.write(source)
