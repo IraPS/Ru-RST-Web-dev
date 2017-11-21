@@ -14,7 +14,7 @@ font-size: 90%;
 
 <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HTML</title>
+        <title>Текст </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -100,6 +100,9 @@ for file in os.listdir('./trees_html_source/'):
                         '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy; Ru-RST Group 2017</p>\n</footer>\n</div>',
                         source)
 
+        source = re.sub('<title>Текст ', '<title>Текст ' + file.split('\.')[0], source)
+
         # Открываем выходной файл
+
         result = open('./result/' + file, 'w', encoding='utf-8')
         result.write(source)

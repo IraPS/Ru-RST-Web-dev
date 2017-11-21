@@ -2,7 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ebd8909-1594-4ec1-9583-87869020dfa6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py" afterPath="$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/1.html" afterPath="$PROJECT_DIR$/make_trees_html/result/1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/10.html" afterPath="$PROJECT_DIR$/make_trees_html/result/10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/11.html" afterPath="$PROJECT_DIR$/make_trees_html/result/11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/12.html" afterPath="$PROJECT_DIR$/make_trees_html/result/12.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/13.html" afterPath="$PROJECT_DIR$/make_trees_html/result/13.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/14.html" afterPath="$PROJECT_DIR$/make_trees_html/result/14.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/15.html" afterPath="$PROJECT_DIR$/make_trees_html/result/15.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/16.html" afterPath="$PROJECT_DIR$/make_trees_html/result/16.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/17.html" afterPath="$PROJECT_DIR$/make_trees_html/result/17.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/18.html" afterPath="$PROJECT_DIR$/make_trees_html/result/18.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/19.html" afterPath="$PROJECT_DIR$/make_trees_html/result/19.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/2.html" afterPath="$PROJECT_DIR$/make_trees_html/result/2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/20.html" afterPath="$PROJECT_DIR$/make_trees_html/result/20.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/21.html" afterPath="$PROJECT_DIR$/make_trees_html/result/21.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/22.html" afterPath="$PROJECT_DIR$/make_trees_html/result/22.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/23.html" afterPath="$PROJECT_DIR$/make_trees_html/result/23.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/24.html" afterPath="$PROJECT_DIR$/make_trees_html/result/24.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/25.html" afterPath="$PROJECT_DIR$/make_trees_html/result/25.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/26.html" afterPath="$PROJECT_DIR$/make_trees_html/result/26.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/27.html" afterPath="$PROJECT_DIR$/make_trees_html/result/27.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/28.html" afterPath="$PROJECT_DIR$/make_trees_html/result/28.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/29.html" afterPath="$PROJECT_DIR$/make_trees_html/result/29.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/3.html" afterPath="$PROJECT_DIR$/make_trees_html/result/3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/30.html" afterPath="$PROJECT_DIR$/make_trees_html/result/30.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/31.html" afterPath="$PROJECT_DIR$/make_trees_html/result/31.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/32.html" afterPath="$PROJECT_DIR$/make_trees_html/result/32.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/33.html" afterPath="$PROJECT_DIR$/make_trees_html/result/33.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/34.html" afterPath="$PROJECT_DIR$/make_trees_html/result/34.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/35.html" afterPath="$PROJECT_DIR$/make_trees_html/result/35.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/36.html" afterPath="$PROJECT_DIR$/make_trees_html/result/36.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/37.html" afterPath="$PROJECT_DIR$/make_trees_html/result/37.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/38.html" afterPath="$PROJECT_DIR$/make_trees_html/result/38.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/39.html" afterPath="$PROJECT_DIR$/make_trees_html/result/39.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/4.html" afterPath="$PROJECT_DIR$/make_trees_html/result/4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/40.html" afterPath="$PROJECT_DIR$/make_trees_html/result/40.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/41.html" afterPath="$PROJECT_DIR$/make_trees_html/result/41.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/42.html" afterPath="$PROJECT_DIR$/make_trees_html/result/42.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/43.html" afterPath="$PROJECT_DIR$/make_trees_html/result/43.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/44.html" afterPath="$PROJECT_DIR$/make_trees_html/result/44.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/45.html" afterPath="$PROJECT_DIR$/make_trees_html/result/45.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/46.html" afterPath="$PROJECT_DIR$/make_trees_html/result/46.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/47.html" afterPath="$PROJECT_DIR$/make_trees_html/result/47.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/48.html" afterPath="$PROJECT_DIR$/make_trees_html/result/48.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/49.html" afterPath="$PROJECT_DIR$/make_trees_html/result/49.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/5.html" afterPath="$PROJECT_DIR$/make_trees_html/result/5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/50.html" afterPath="$PROJECT_DIR$/make_trees_html/result/50.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/51.html" afterPath="$PROJECT_DIR$/make_trees_html/result/51.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/52.html" afterPath="$PROJECT_DIR$/make_trees_html/result/52.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/53.html" afterPath="$PROJECT_DIR$/make_trees_html/result/53.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/54.html" afterPath="$PROJECT_DIR$/make_trees_html/result/54.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/55.html" afterPath="$PROJECT_DIR$/make_trees_html/result/55.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/56.html" afterPath="$PROJECT_DIR$/make_trees_html/result/56.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/57.html" afterPath="$PROJECT_DIR$/make_trees_html/result/57.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/58.html" afterPath="$PROJECT_DIR$/make_trees_html/result/58.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/59.html" afterPath="$PROJECT_DIR$/make_trees_html/result/59.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/6.html" afterPath="$PROJECT_DIR$/make_trees_html/result/6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/60.html" afterPath="$PROJECT_DIR$/make_trees_html/result/60.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/61.html" afterPath="$PROJECT_DIR$/make_trees_html/result/61.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/62.html" afterPath="$PROJECT_DIR$/make_trees_html/result/62.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/63.html" afterPath="$PROJECT_DIR$/make_trees_html/result/63.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/64.html" afterPath="$PROJECT_DIR$/make_trees_html/result/64.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/65.html" afterPath="$PROJECT_DIR$/make_trees_html/result/65.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/66.html" afterPath="$PROJECT_DIR$/make_trees_html/result/66.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/67.html" afterPath="$PROJECT_DIR$/make_trees_html/result/67.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/68.html" afterPath="$PROJECT_DIR$/make_trees_html/result/68.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/69.html" afterPath="$PROJECT_DIR$/make_trees_html/result/69.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/7.html" afterPath="$PROJECT_DIR$/make_trees_html/result/7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/70.html" afterPath="$PROJECT_DIR$/make_trees_html/result/70.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/71.html" afterPath="$PROJECT_DIR$/make_trees_html/result/71.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/72.html" afterPath="$PROJECT_DIR$/make_trees_html/result/72.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/73.html" afterPath="$PROJECT_DIR$/make_trees_html/result/73.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/74.html" afterPath="$PROJECT_DIR$/make_trees_html/result/74.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/75.html" afterPath="$PROJECT_DIR$/make_trees_html/result/75.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/76.html" afterPath="$PROJECT_DIR$/make_trees_html/result/76.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/77.html" afterPath="$PROJECT_DIR$/make_trees_html/result/77.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/78.html" afterPath="$PROJECT_DIR$/make_trees_html/result/78.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/79.html" afterPath="$PROJECT_DIR$/make_trees_html/result/79.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/8.html" afterPath="$PROJECT_DIR$/make_trees_html/result/8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/result/9.html" afterPath="$PROJECT_DIR$/make_trees_html/result/9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_trees_html/edit_html.py" afterPath="$PROJECT_DIR$/make_trees_html/edit_html.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ru-RST-corpus-dev.iws" />
@@ -27,11 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="json_into_neo4j_DB.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
+      <file leaf-file-name="edit_html.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/make_trees_html/edit_html.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6551724" vertical-offset="1665" max-vertical-offset="2160">
-              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.3448275" vertical-offset="945" max-vertical-offset="1680">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,8 +124,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/make_trees_html/edit_html.py" />
         <option value="$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py" />
+        <option value="$PROJECT_DIR$/make_trees_html/edit_html.py" />
       </list>
     </option>
   </component>
@@ -77,6 +156,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -92,10 +172,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Ru-RST-corpus-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ne04j_DB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -115,7 +191,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,6 +400,9 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1ebd8909-1594-4ec1-9583-87869020dfa6" name="Default" comment="" />
@@ -356,27 +434,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -402,11 +480,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2160">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -414,9 +498,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2265">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -424,9 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2085">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -441,24 +529,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5194805" vertical-offset="0" max-vertical-offset="462">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73361826" vertical-offset="1435" max-vertical-offset="2160">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/make_trees_html/edit_html.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="1650">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6551724" vertical-offset="1665" max-vertical-offset="2160">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.3448275" vertical-offset="945" max-vertical-offset="1680">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
