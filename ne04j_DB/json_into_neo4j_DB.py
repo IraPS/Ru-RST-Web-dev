@@ -39,7 +39,7 @@ def create_real_nodes(data, text_id):
         neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
                                "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n"
 
-    print(neo4j_nodes_command)
+    # print(neo4j_nodes_command)
     graph.run(neo4j_nodes_command)
 
 
@@ -61,14 +61,14 @@ def create_multi_or_span_rels(relations, text_id):
                 if len(list(graph.run('MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id +
                         ', Text_id:' + text_id + '}) RETURN edu' + parent_id))) == 0:
                     graph.run('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-                    print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
+                    # print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
                 span_multi_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
                              'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
                              'CREATE (edu' + child_id + ')-' + '[r:' + relation + ']->(edu' + parent_id + ')\n'
                 span_multi_rels_command = re.sub('same-unit', 'sameunit', span_multi_rels_command)
                 span_multi_rels_command = re.sub('cause-effect', 'causeeffect', span_multi_rels_command)
                 span_multi_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', span_multi_rels_command)
-                print(span_multi_rels_command)
+                # print(span_multi_rels_command)
                 graph.run(span_multi_rels_command)
 
 
@@ -92,7 +92,7 @@ def create_ordinary_rels(relations, text_id):
         neo4j_rels_command = re.sub('same-unit', 'sameunit', neo4j_rels_command)
         neo4j_rels_command = re.sub('cause-effect', 'causeeffect', neo4j_rels_command)
         neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', neo4j_rels_command)
-        print(neo4j_rels_command)
+        # print(neo4j_rels_command)
         graph.run(neo4j_rels_command)
 
 
@@ -108,7 +108,7 @@ def create_group_relations(group_rels, text_id):
             if len(list(graph.run('MATCH (edu' + parent_id + ':EDU) WHERE edu' + parent_id +
                         '.id = ' + parent_id + ' RETURN edu' + parent_id))) == 0:
                     graph.run('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-                    print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
+                    # print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
             group_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
                                  'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
                                  'CREATE (edu' + child_id + ')-' +\
@@ -116,7 +116,7 @@ def create_group_relations(group_rels, text_id):
             group_rels_command = re.sub('same-unit', 'same_unit', group_rels_command)
             group_rels_command = re.sub('cause-effect', 'cause_effect', group_rels_command)
             group_rels_command = re.sub('interpretation-evaluation', 'interpretation_evaluation', group_rels_command)
-            print(group_rels_command)
+            # print(group_rels_command)
             graph.run(group_rels_command)
 
 
@@ -126,7 +126,8 @@ graph.run('MATCH (n) DETACH DELETE n')  # making sure the DB is empty
 
 for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .rs3 format
     if file.endswith('.json'):
-        n = file.split('.json')[0] # text_id value
+        n = file.split('.json')[0]  # text_id value
+        print(n)
         data_file = open('./corpus_of_jsons_test/' + file)
         text_json = json.load(data_file)
         text_json = text_json['rst']  # json root element
@@ -137,6 +138,8 @@ for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .r
         create_multi_or_span_rels(rels, n)
         create_ordinary_rels(rels, n)
         create_group_relations(group_rels, n)
+
+print(graph.run("MATCH (n) RETURN n").data())
 
 
 

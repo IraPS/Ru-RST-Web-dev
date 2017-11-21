@@ -100,7 +100,7 @@ for file in os.listdir('./trees_html_source/'):
                         '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy; Ru-RST Group 2017</p>\n</footer>\n</div>',
                         source)
 
-        source = re.sub('<title>Текст ', '<title>Текст ' + file.split('\.')[0], source)
+        source = re.sub('<title>Текст ', '<title>Текст ' + file.split('.')[0], source)
 
         # Открываем выходной файл
 
