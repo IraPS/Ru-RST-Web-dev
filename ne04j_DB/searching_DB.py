@@ -1,5 +1,6 @@
 from py2neo import Graph
-
+import itertools
+import operator
 
 graph = Graph()  # creating a graph for a database
 
@@ -9,16 +10,26 @@ graph = Graph()  # creating a graph for a database
 nodes = graph.find('EDU')
 real_edus = [node for node in nodes if 'text' in node]
 
-word = 'а'
-lemma = 'благодаря'
-pos = 'V'
 
-found_word = [edu for edu in real_edus if word in edu['text'].split()]
-print(found_word[:10], '\n\n')
+def search_edus(real_edus, parameter, value):
+    if parameter == 'word':
+        found = [edu for edu in real_edus if value in edu['text'].split()]
+    if parameter == 'lemma':
+        found = [edu for edu in real_edus if value in eval(edu['lemmas'])]
+    if parameter == 'pos':
+        found = [edu for edu in real_edus if value in eval(edu['lemmas']).values()]
+    found = found[:20]  # берем 20 просто для тестирования
+    found_by_text = list()
+    for key, items in itertools.groupby(found, operator.itemgetter('Text_id')):
+        found_by_text.append([key, list(items)])
+    for text in found_by_text:
+        text_id = list(text)[0]
+        edus = list(text)[1]
+        print(text_id)
+        print(edus, '\n\n')
 
-found_lemma = [edu for edu in real_edus if lemma in eval(edu['lemmas'])]  # eval нужен, чтобы сделать из строки словарь
-print(found_lemma[:10], '\n\n')
+search_edus(real_edus, 'pos', 'A')
 
-found_pos = [edu for edu in real_edus if pos in eval(edu['lemmas']).values()]
-print(found_pos[:10], '\n\n')
+
+
 
