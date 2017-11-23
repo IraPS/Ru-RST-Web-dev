@@ -3,8 +3,11 @@ import re
 import os
 from pymystem3 import Mystem
 from py2neo import Graph
+from pandas import DataFrame
 
 m = Mystem()
+
+output_with_commands = open('neo4j_commands.txt', 'w', encoding='utf-8')
 
 
 def create_real_nodes(data, text_id):
@@ -20,8 +23,8 @@ def create_real_nodes(data, text_id):
     num = list('0123456789')
     for node in sorted(nodes_to_create.keys()):
         edu_text = nodes_to_create[node]
-        edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—]', '', edu_text)
-        edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n']+punct+num]
+        edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>]', '', edu_text)
+        edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n', ' \n', '  ']+punct+num]
         # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
 
         # edu_lemmas = ('|'.join(edu_lemmas))
@@ -39,6 +42,7 @@ def create_real_nodes(data, text_id):
         neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
                                "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n"
 
+    output_with_commands.write(neo4j_nodes_command)
     # print(neo4j_nodes_command)
     graph.run(neo4j_nodes_command)
 
@@ -68,6 +72,8 @@ def create_multi_or_span_rels(relations, text_id):
                 span_multi_rels_command = re.sub('same-unit', 'sameunit', span_multi_rels_command)
                 span_multi_rels_command = re.sub('cause-effect', 'causeeffect', span_multi_rels_command)
                 span_multi_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', span_multi_rels_command)
+
+                output_with_commands.write(span_multi_rels_command)
                 # print(span_multi_rels_command)
                 graph.run(span_multi_rels_command)
 
@@ -92,6 +98,8 @@ def create_ordinary_rels(relations, text_id):
         neo4j_rels_command = re.sub('same-unit', 'sameunit', neo4j_rels_command)
         neo4j_rels_command = re.sub('cause-effect', 'causeeffect', neo4j_rels_command)
         neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', neo4j_rels_command)
+
+        output_with_commands.write(neo4j_rels_command)
         # print(neo4j_rels_command)
         graph.run(neo4j_rels_command)
 
@@ -116,6 +124,8 @@ def create_group_relations(group_rels, text_id):
             group_rels_command = re.sub('same-unit', 'same_unit', group_rels_command)
             group_rels_command = re.sub('cause-effect', 'cause_effect', group_rels_command)
             group_rels_command = re.sub('interpretation-evaluation', 'interpretation_evaluation', group_rels_command)
+
+            output_with_commands.write(group_rels_command)
             # print(group_rels_command)
             graph.run(group_rels_command)
 
@@ -139,7 +149,7 @@ for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .r
         create_ordinary_rels(rels, n)
         create_group_relations(group_rels, n)
 
-print(graph.run("MATCH (n) RETURN n").data())
+# print(DataFrame(graph.run("MATCH (n) RETURN n").data()))
 
 
 
