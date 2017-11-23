@@ -14,11 +14,11 @@ lemma = 'благодаря'
 pos = 'V'
 
 found_word = [edu for edu in real_edus if word in edu['text'].split()]
-print(found_word, '\n\n')
+print(found_word[:10], '\n\n')
 
 found_lemma = [edu for edu in real_edus if lemma in eval(edu['lemmas'])]  # eval нужен, чтобы сделать из строки словарь
-print(found_lemma, '\n\n')
+print(found_lemma[:10], '\n\n')
 
 found_pos = [edu for edu in real_edus if pos in eval(edu['lemmas']).values()]
-print(found_pos, '\n\n')
+print(found_pos[:10], '\n\n')
 
