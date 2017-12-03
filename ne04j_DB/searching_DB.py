@@ -7,29 +7,32 @@ graph = Graph()  # creating a graph for a database
 # кажддый "реальный" node имеет "Id", "Text_id", "text", "lemmas". Т.е. достаточно проверить, есть ли у node "text",
 # если есть, по нему можно искать. Если нет - то это фиктивный node, который появился в результате объединения ЭДЕ.
 
-nodes = graph.find('EDU')
-real_edus = [node for node in nodes if 'text' in node]
+# nodes = graph.find('EDU')
+# real_edus = [node for node in nodes if 'text' in node]
 
 
-def search_edus(real_edus, parameter, value):
+def search_edus(parameter, value):
+    found = None
     if parameter == 'word':
-        found = [edu for edu in real_edus if value in edu['text'].split()]
+        found = graph.run("MATCH (n) WHERE '" + value + "' in split(n.text, ' ')\n RETURN n.Id, split(n.text, ' ')")
+        found = [[n[0], n[1]] for n in found]
     if parameter == 'lemma':
-        found = [edu for edu in real_edus if value in eval(edu['lemmas'])]
+        found = graph.run('MATCH (n) WHERE n.lemmas CONTAINS "' + "'" + value + "'" + '"' +
+                          " RETURN n.Id, split(n.text, ' ')")
+        found = [[n[0], n[1]] for n in found]
     if parameter == 'pos':
-        found = [edu for edu in real_edus if value in eval(edu['lemmas']).values()]
-    found = found[:20]  # берем 20 просто для тестирования
-    found_by_text = list()
-    for key, items in itertools.groupby(found, operator.itemgetter('Text_id')):
-        found_by_text.append([key, list(items)])
-    for text in found_by_text:
-        text_id = list(text)[0]
-        edus = list(text)[1]
-        print(text_id)
-        print(edus, '\n\n')
+        found = graph.run('MATCH (n) WHERE n.lemmas CONTAINS "' + "'" + value + "'" + '"' +
+                          " RETURN n.Id, split(n.text, ' ')")
+        found = [[n[0], n[1]] for n in found]
+    # print([n for n in found if n[0] == 20], '\n\n')
+    if found:
+        found.sort(key=operator.itemgetter(0))
+        found_by_text = itertools.groupby(found, lambda x: x[0])
+        found = found_by_text
+    return found
 
-search_edus(real_edus, 'pos', 'A')
-
-
+search_result = search_edus('pos', 'S')
+for i, l in search_result:
+    print(i, [n[1] for n in list(l)])
 
 
