@@ -40,7 +40,7 @@ def create_real_nodes(data, text_id):
         lemma_pos_dict += '}"'
         # print(lemma_pos_dict)
         neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
-                               "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n"
+                               "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n\n"
 
     output_with_commands.write(neo4j_nodes_command)
     # print(neo4j_nodes_command)
@@ -73,7 +73,7 @@ def create_multi_or_span_rels(relations, text_id):
                 span_multi_rels_command = re.sub('cause-effect', 'causeeffect', span_multi_rels_command)
                 span_multi_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', span_multi_rels_command)
 
-                output_with_commands.write(span_multi_rels_command)
+                output_with_commands.write(span_multi_rels_command + '\n')
                 # print(span_multi_rels_command)
                 graph.run(span_multi_rels_command)
 
@@ -89,6 +89,7 @@ def create_ordinary_rels(relations, text_id):
             if rel['@relname'] not in rels_with_new_nodes:
                 rels_to_create.append((rel['@id'], rel['@parent'], rel['@relname']))
     for rel in rels_to_create:
+        print(rel)
         child_id = rel[0]
         parent_id = rel[1]
         relation = rel[2]
@@ -99,8 +100,8 @@ def create_ordinary_rels(relations, text_id):
         neo4j_rels_command = re.sub('cause-effect', 'causeeffect', neo4j_rels_command)
         neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', neo4j_rels_command)
 
-        output_with_commands.write(neo4j_rels_command)
-        # print(neo4j_rels_command)
+        output_with_commands.write(neo4j_rels_command + '\n')
+        #print(neo4j_rels_command, '\n')
         graph.run(neo4j_rels_command)
 
 
@@ -125,12 +126,13 @@ def create_group_relations(group_rels, text_id):
             group_rels_command = re.sub('cause-effect', 'cause_effect', group_rels_command)
             group_rels_command = re.sub('interpretation-evaluation', 'interpretation_evaluation', group_rels_command)
 
-            output_with_commands.write(group_rels_command)
+            output_with_commands.write(group_rels_command + '\n')
             # print(group_rels_command)
             graph.run(group_rels_command)
 
 
 graph = Graph()  # creating a graph for a database
+
 
 graph.run('MATCH (n) DETACH DELETE n')  # making sure the DB is empty
 
