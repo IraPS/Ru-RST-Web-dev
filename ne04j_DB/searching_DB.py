@@ -50,6 +50,34 @@ def parse_query(query):
     return slices
 
 
+messages = {'ro_s_in_edu_dont_match': 'Пожалуйста, выберите одинаковые риторические отношения внутри одной ЭДЕ.',
+            'no_input_for_word': 'Пожалуйста, введите значение в поле "слово".',
+            'no_input_for_lemma': 'Пожалуйста, введите значение в поле "лемма".',
+            'no_input_for_pos': 'Пожалуйста, выберите часть речи.',
+            'not_equal_parenth_amount': 'Пожалуйста, проверьте корректность запроса, количество открывающих и закрывающих скобок не совпадает.'}
+
+
+def check_query(parsed_query):
+    for edu in parsed_query:
+        chosen_ro_s = set([' '.join(d['ro']) for d in edu])
+        if len(chosen_ro_s) > 1:
+            return messages['ro_s_in_edu_dont_match']
+        searched_for_word = [d['searched_for'] for d in edu if d['type'] == 'word']
+        if '' in searched_for_word or ' ' in searched_for_word:
+            return messages['no_input_for_word']
+        searched_for_lemma = [d['searched_for'] for d in edu if d['type'] == 'lemma']
+        if '' in searched_for_lemma or ' ' in searched_for_lemma:
+            return messages['no_input_for_lemma']
+        searched_for_pos = [d['searched_for'] for d in edu if d['type'] == 'pos']
+        if '' in searched_for_pos or ' ' in searched_for_pos:
+            return messages['no_input_for_pos']
+        open_parenthesis = ''.join([d['open_parenth'] for d in edu])
+        close_parenthesis = ''.join([d['close_parenth'] for d in edu])
+        if len(open_parenthesis) != len(close_parenthesis):
+            return messages['not_equal_parenth_amount']
+    return True
+
+
 markers = {"a":"a", "bezuslovno":"безусловно", "buduchi":"будучи", "budeto":"будь это",
            "vitoge":"в итоге", "vosobennosti":"в особенности", "vramkah":"в рамках",
            "vrezultate":"в результате", "vsamomdele":"в самом деле", "vsvojyochered":"в свою очередь",
@@ -95,10 +123,14 @@ def request_with_one_cond_on_edu(query):
             if '_lem' in el['searched_for']:
                 request += ' n.lemmas CONTAINS \'{0}\''.format(marker_rus)
             else:
+                marker_lengh = str(len(marker_rus)+1)
                 if len(marker_rus.split()) > 1:
-                    request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                    # request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                    request += ' REDUCE(s = " ", w in split(n.text_norm, " ")[0..{0}]|s + " " + w) CONTAINS \'{1}\''.format(marker_lengh, marker_rus)
+
                 else:
-                    request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                    # request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                    request += ' \'{0}\' IN split(n.text_norm, " ")[0..{1}]'.format(marker_rus, marker_lengh)
         if el['type'] == 'word':
             request += " '{0}' IN split(n.text_norm, ' ')".format(el['searched_for'])
         if el['type'] == 'lemma' or el['type'] == 'pos':
@@ -142,12 +174,17 @@ def create_DB_requests(query):
                         type_chosen = True
                         marker_rus = markers[el['searched_for']]
                         if '_lem' in el['searched_for']:
-                            request += ' n.lemmas CONTAINS \'{0}\''.format(marker_rus)
+                            request += ' n.lemmas CONTAINS \'{0}\' {1}'.format(marker_rus, cond)
                         else:
+                            marker_lengh = str(len(marker_rus)+1)
                             if len(marker_rus.split()) > 1:
-                                request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                                # request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                                request += ' REDUCE(s = " ", w in split(n.text_norm, " ")[0..{0}]|s + " " + w) CONTAINS \'{1}\' {2}'.format(marker_lengh, marker_rus, cond)
+
                             else:
-                                request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                                # request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                                request += ' \'{0}\' IN split(n.text_norm, " ")[0..{1}] {2}'.format(marker_rus, marker_lengh, cond)
+
                     if el['type'] == 'word':
                         type_chosen = True
                         request += " '{0}' IN split(n.text_norm, ' '){1} {2}".format(el['searched_for'], el['close_parenth'], cond)
@@ -160,6 +197,20 @@ def create_DB_requests(query):
                         request += el['close_parenth']
                 else:
                     ro_chosen = True
+                    if el['type'] == 'marker':
+                        type_chosen = True
+                        marker_rus = markers[el['searched_for']]
+                        if '_lem' in el['searched_for']:
+                            request += ' n.lemmas CONTAINS \'{0}\' {1}'.format(marker_rus, cond)
+                        else:
+                            marker_lengh = str(len(marker_rus)+1)
+                            if len(marker_rus.split()) > 1:
+                                # request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                                request += ' REDUCE(s = " ", w in split(n.text_norm, " ")[0..{0}]|s + " " + w) CONTAINS \'{1}\' {2}'.format(marker_lengh, marker_rus, cond)
+
+                            else:
+                                # request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                                request += ' \'{0}\' IN split(n.text_norm, " ")[0..{1}] {2}'.format(marker_rus, marker_lengh, cond)
                     if el['type'] == 'word':
                         type_chosen = True
                         request += " '{0}' IN split(n.text_norm, ' '){1} {2}".format(el['searched_for'], el['close_parenth'], cond)
@@ -172,7 +223,7 @@ def create_DB_requests(query):
                         request += el['close_parenth']
             if ro_chosen and type_chosen:
                 request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
-                request += ')'
+                #request += ')'
                 request = re.sub("WHERE", "WHERE (", request)
                 request += ') AND type(r) IN {0}'.format(ro)
             #if not ro_chosen and not type_chosen:
@@ -324,19 +375,25 @@ def return_singleedu_search_res_html(all_found):
 
 
 def return_search_res_html(query):
-    DB_requests = create_DB_requests(query)
-    all_found = get_found(DB_requests)
-    print(len(all_found))
-    if len(all_found) > 1:
-        return return_multiedu_search_res_html(all_found)
+    checked = check_query(parse_query(query))
+    if checked is True:
+        try:
+            DB_requests = create_DB_requests(query)
+            all_found = get_found(DB_requests)
+            print(len(all_found))
+            if len(all_found) > 1:
+                return return_multiedu_search_res_html(all_found)
+            else:
+                return return_singleedu_search_res_html(all_found)
+        except:
+            return 'failed_query'
     else:
-        return return_singleedu_search_res_html(all_found)
+        return checked
 
 
 
 
-
-real_query = '{"data":[{"type":"word","searched_for":"когда","ro":["background"],"add_type":"next_edu_and","open_parenth":"","close_parenth":""},{"type":"lemma","searched_for":"а","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
+real_query = '{"data":[{"type":"marker","searched_for":"dazhe","ro":["any"],"add_type":"same_edu_or","open_parenth":"(","close_parenth":""},{"type":"lemma","searched_for":"только","ro":["any"],"add_type":"next_edu_and","open_parenth":"","close_parenth":")"},{"type":"pos","searched_for":"V","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
 print(return_search_res_html(real_query))
 
 """
