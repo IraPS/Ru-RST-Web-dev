@@ -3,7 +3,7 @@ import itertools
 import operator
 import re
 
-graph = Graph()  # creating a graph for a database
+graph = Graph()  # calling a graph for a database
 
 # кажддый "реальный" node имеет "Id", "Text_id", "text", "lemmas". Т.е. достаточно проверить, есть ли у node "text",
 # если есть, по нему можно искать. Если нет - то это фиктивный node, который появился в результате объединения ЭДЕ.
@@ -11,19 +11,19 @@ graph = Graph()  # creating a graph for a database
 # nodes = graph.find('EDU')
 # real_edus = [node for node in nodes if 'text' in node]
 
-
+'''
 def search_edus(parameter, value):
     found = None
     if parameter == 'word':
-        found = graph.run("MATCH (n) WHERE '" + value + "' in split(n.text, ' ')\n RETURN n.Text_id, n.Id, split(n.text, ' ')")
+        found = graph.run("MATCH (n) WHERE '" + value + "' in split(n.text_norm, ' ')\n RETURN n.Text_id, n.Id, split(n.text, ' ')")
         found = [[n[0], n[1], n[2]] for n in found]
     if parameter == 'lemma':
         found = graph.run('MATCH (n) WHERE n.lemmas CONTAINS "' + "'" + value + "'" + '"' +
-                          " RETURN n.Text_id, n.Id, split(n.text, ' ')")
+                          " RETURN n.Text_id, n.Id, split(n.text_norm, ' ')")
         found = [[n[0], n[1], n[2]] for n in found]
     if parameter == 'pos':
         found = graph.run('MATCH (n) WHERE n.lemmas CONTAINS "' + "'" + value + "'" + '"' +
-                          " RETURN n.Text_id, n.Id, split(n.text, ' ')")
+                          " RETURN n.Text_id, n.Id, split(n.text_norm, ' ')")
         found = [[n[0], n[1], n[2]] for n in found]
     # print([n for n in found if n[0] == 20], '\n\n')
     if found:
@@ -33,10 +33,7 @@ def search_edus(parameter, value):
     return found
 
 # search_result = search_edus('lemma', 'как')
-
-real_query = '{"data":[{"type":"word","searched_for":"и","ro":["any"],"add_type":"next_edu_and"},' \
-    '{"type":"word","searched_for":"и","ro":["any"],"add_type":"next_edu_and"},' \
-             '{"type":"word","searched_for":"и","ro":["any"],"add_type":"none"}]}'
+'''
 
 
 def parse_query(query):
@@ -53,57 +50,160 @@ def parse_query(query):
     return slices
 
 
+markers = {"a":"a", "bezuslovno":"безусловно", "buduchi":"будучи", "budeto":"будь это",
+           "vitoge":"в итоге", "vosobennosti":"в особенности", "vramkah":"в рамках",
+           "vrezultate":"в результате", "vsamomdele":"в самом деле", "vsvojyochered":"в свою очередь",
+           "vsvyazis":"в связи с", "vtechenie":"в течение", "vtovremya":"в то время", "vtozhevremya":"в то же время",
+           "vusloviyah":"в условиях", "vchastnosti":"в частности", "vposledstvii":"впоследствии",
+           "vkluchaya":"включая", "vmestotogo":"вместо того", "vmestoetogo":"вместо этого",
+           "vsezhe":"все же", "vsledstvie":"вследствие", "govoritsya":"говорится",
+           "govorit_lem":"говорить", "dazhe":"даже", "dejstvitelno":"действительно",
+           "dlya":"для", "dotakojstepeni":"до такой степени", "esli":"если",
+           "zaverit_lem":"заверить", "zaveryat_lem":"заверять", "zayavit_lem":"заявить",
+           "zayavlat_lem":"заявлять", "i":"и", "izza":"из-за", "ili":"или", "inache":"иначе",
+           "ktomuzhe":"к тому же", "kogda":"когда", "kotoryj_lem":"который", "krometogo":"кроме того",
+           "libo":"либо", "lishtogda":"лишь тогда", "nasamomdele":"на самом деле",
+           "natotmoment":"на тот момент", "naetomfone":"на этом фоне", "napisat_lem":"написать",
+           "naprimer":"например", "naprotiv":"напротив", "nesmotryana":"несмотря на", "no":"но",
+           "noi":"но и", "objavit_lem":"объявить", "odnako":"однако", "osobenno":"особенно",
+           "pisat_lem":"писать", "podannym":"по данным", "pomneniu":"по мнению", "poocenkam":"по оценкам",
+           "posvedeniam":"по сведениям", "poslovam":"по словам", "podtverdit_lem":"подтвердить",
+           "podtverzhdat_lem":"подтверждать", "podcherkivat_lem":"подчеркивать",
+           "podcherknut_lem":"подчеркнуть",
+           "pozdnee":"позднее", "pozzhe":"позже", "poka":"пока", "poskolku":"поскольку",
+           "posle":"после", "potomuchto":"потому что", "poetomu":"поэтому",
+           "prietom":"при этом", "priznavat_lem":"признавать", "priznano":"признано",
+           "priznat_lem":"признать", "radi":"ради", "rasskazat_lem":"рассказать",
+           "rasskazyvat_lem":"рассказывать", "sdrugojstorony":"с другой стороны",
+           "scelyu":"с целью", "skazat_lem":"сказать", "skoree":"скорее",
+           "sledovatelno":"следовательно", "sledomza":"следом за",
+           "soobshaetsya":"сообщается", "soobshat_lem":"сообщать", "soobshit_lem":"сообщить",
+           "taki":"так и", "takkak":"так как", "takchto":"так что", "takzhe":"также", "toest":"то есть",
+           "utverzhdat_lem":"утверждать", "utverzhdaetsya":"утверждается", "hotya":"хотя"}
+
+
+def request_with_one_cond_on_edu(query):
+    requests = list()
+    request = str()
+    request += 'MATCH (n)\nWHERE('
+    el = query[0]
+    ro = el['ro']
+    request += el['open_parenth']
+    if ro == ['any']:
+        if el['type'] == 'marker':
+            marker_rus = markers[el['searched_for']]
+            if '_lem' in el['searched_for']:
+                request += ' n.lemmas CONTAINS \'{0}\''.format(marker_rus)
+            else:
+                if len(marker_rus.split()) > 1:
+                    request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                else:
+                    request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+        if el['type'] == 'word':
+            request += " '{0}' IN split(n.text_norm, ' ')".format(el['searched_for'])
+        if el['type'] == 'lemma' or el['type'] == 'pos':
+            request += ' n.lemmas CONTAINS "\'{0}\'")'.format(el['searched_for'])
+        if el['type'] == '':
+            request = 'MATCH (n)'
+    else:
+        request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
+        if el['type'] == 'word':
+            request += " '{0}' IN split(n.text_norm, ' ')) AND type(r) IN {1}".format(el['searched_for'], ro)
+        if el['type'] == 'lemma' or el['type'] == 'pos':
+            request += ' n.lemmas CONTAINS "\'{0}\'") AND type(r) IN {1}'.format(el['searched_for'], ro)
+        if el['type'] == '':
+            request = 'MATCH (n)-[r]-()\nWHERE type(r) IN {0}'.format(ro)
+    request += el['close_parenth']
+    request += ")\nRETURN n.Text_id, n.Id, n.text"
+    #print(request, '\n')
+    #requests.append(request)
+    return request
+
+
 def create_DB_requests(query):
     requests = list()
     conditions = {'same_edu_and': 'AND', 'same_edu_or': 'OR', 'next_edu_and': '', 'none': ''}
     parsed_query = parse_query(query)
-    # print(parsed_query)
     for i in parsed_query:
-
         request = str()
-        request += 'MATCH (n)\nWHERE'
-
+        request += 'MATCH (n)\nWHERE('
         if len(i) > 1:
+            ro_chosen = False
+            type_chosen = False
             for el in i:
+                ro_chosen = False
+                type_chosen = False
+                request += el['open_parenth']
                 cond = conditions[el['add_type']]
-                if el['type'] == 'word':
-                    request += " '{0}' IN split(n.text, ' ') {1}".format(el['searched_for'], cond)
+                ro = el['ro']
+                if ro == ['any']:
+                    if el['type'] == 'marker':
+                        type_chosen = True
+                        marker_rus = markers[el['searched_for']]
+                        if '_lem' in el['searched_for']:
+                            request += ' n.lemmas CONTAINS \'{0}\''.format(marker_rus)
+                        else:
+                            if len(marker_rus.split()) > 1:
+                                request += ' lower(n.text) CONTAINS \'{0}\''.format(marker_rus)
+                            else:
+                                request += " '{0}' IN split(n.text_norm, ' ')".format(marker_rus)
+                    if el['type'] == 'word':
+                        type_chosen = True
+                        request += " '{0}' IN split(n.text_norm, ' '){1} {2}".format(el['searched_for'], el['close_parenth'], cond)
+                    if el['type'] == 'lemma' or el['type'] == 'pos':
+                        type_chosen = True
+                        request += ' n.lemmas CONTAINS "\'{0}\'"{1} {2}'.format(el['searched_for'], el['close_parenth'], cond)
+                    if el['type'] == '':
+                        type_chosen = False
+                        request = 'MATCH (n)'
+                        request += el['close_parenth']
                 else:
-                    request += ' n.lemmas CONTAINS "\'{0}\'" {1}'.format(el['searched_for'], cond)
-
+                    ro_chosen = True
+                    if el['type'] == 'word':
+                        type_chosen = True
+                        request += " '{0}' IN split(n.text_norm, ' '){1} {2}".format(el['searched_for'], el['close_parenth'], cond)
+                    if el['type'] == 'lemma' or el['type'] == 'pos':
+                        type_chosen = True
+                        request += ' n.lemmas CONTAINS "\'{0}\'"{1} {2}'.format(el['searched_for'], el['close_parenth'], cond)
+                    if el['type'] == '':
+                        type_chosen = False
+                        request = 'MATCH (n)-[r]-()'
+                        request += el['close_parenth']
+            if ro_chosen and type_chosen:
+                request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
+                request += ')'
+                request += ' AND type(r) IN {0}'.format(ro)
+            #if not ro_chosen and not type_chosen:
+                #request += el['close_parenth']
+            request += ")\nRETURN n.Text_id, n.Id, n.text"
+            #print(request, '\n')
+            requests.append(request)
+        else:
+            requests.append(request_with_one_cond_on_edu(i))
+        '''
         else:
             el = i[0]
-            if el['type'] == 'word':
-                request += " '{0}' IN split(n.text, ' ')".format(el['searched_for'])
+            ro = el['ro']
+            request += el['open_parenth']
+            if ro == ['any']:
+                if el['type'] == 'word':
+                    request += " '{0}' IN split(n.text_norm, ' ')".format(el['searched_for'])
+                if el['type'] == 'lemma' or el['type'] == 'pos':
+                    request += ' n.lemmas CONTAINS "\'{0}\'"'.format(el['searched_for'])
+                if el['type'] == '':
+                    request = 'MATCH (n)'
             else:
-                request += ' n.lemmas CONTAINS "\'{0}\'"'.format(el['searched_for'])
-
-        request += "\nRETURN n.Text_id, n.Id, n.text"
-
-        requests.append(request)
-
-    '''
-    i = 0
-    while i < len(requests):
-        found1 = graph.run(requests[i])
-        found1 = [[n[0], n[1], n[2]] for n in found1]
-    '''
-
+                request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
+                if el['type'] == 'word':
+                    request += " '{0}' IN split(n.text_norm, ' ') AND type(r) IN {1}".format(el['searched_for'], ro)
+                if el['type'] == 'lemma' or el['type'] == 'pos':
+                    request += ' n.lemmas CONTAINS "\'{0}\'" AND type(r) IN {1}'.format(el['searched_for'], ro)
+                if el['type'] == '':
+                    request = 'MATCH (n)-[r]-()\nWHERE type(r) IN {0}'.format(ro)
+            request += el['close_parenth']
+        '''
+    print(requests)
     return requests
-
-'''
-for i in create_DB_requests(real_query):
-    print(i)
-    # print(len(create_DB_requests(real_query)), 'edus to search.\n')
-    found = graph.run(i)
-    found = [[n[0], n[1], n[2]] for n in found]
-    found.sort(key=operator.itemgetter(0))
-    found_by_text = itertools.groupby(found, lambda x: x[0])
-    found = found_by_text
-    for i, l in found_by_text:
-        print(i, list(l))
-        print('\n')
-'''
 
 
 def get_found(DB_requests):
@@ -165,38 +265,32 @@ def find_seq(texts_ids, result):
         texts_results = {i: [n[i] for n in result]}
         for text in texts_results.keys():
             text_result[text] = []
-            res = ''
             queries = texts_results[text]
             first_q = queries[0]
-            #print(first_q)
             for i in range(len(first_q)):
                 res_edus = []
-                n = first_q[i][1]
+                k = first_q[i][1]
                 res_edus.append(first_q[i])
                 found_all = True
                 for j in range(1, len(queries)):
-                    goal = n+j
+                    goal = k+j
                     ids = [q[1] for q in queries[j]]
                     if goal not in ids:
                         found_all = False
                         break
                     else:
-                        res_edus.append([n for n in queries[1] if n[1] == goal][0])
+                        if len([n for n in queries[j] if n[1] == goal]) > 0:
+                            res_edus.append([n for n in queries[j] if n[1] == goal][0])
                 res_edus = [n[2] for n in res_edus]
                 if found_all:
-                    # res += '<p>Текст № {0}'.format(text) + '</p>\n'
                     text_result[text].append(str(' '. join(res_edus)))
-                    #res += str(' '. join(res_edus))
-                    #res += '\n'
-            #print(text_result[text])
-        #if res != '':
-            #print(res)
     return text_result
 
 
 def return_multiedu_search_res_html(all_found):
     result = process_multi_edus_search(all_found)[1]
     texts_ids = process_multi_edus_search(all_found)[0]
+    # print(result)
     text_result = find_seq(texts_ids, result)
     res = str()
     for text in text_result:
@@ -217,6 +311,7 @@ def return_singleedu_search_res_html(all_found):
     found_by_text = itertools.groupby(all_found, lambda x: x[0])
     for i, l in found_by_text:
         edus = [(n[1], n[2]) for n in list(l)]
+        print(edus)
         res += '<p>Текст № {0}'.format(i) + '</p>\n\n<ul>'
         for edu in edus:
             edu_id = edu[0]
@@ -229,37 +324,18 @@ def return_singleedu_search_res_html(all_found):
 def return_search_res_html(query):
     DB_requests = create_DB_requests(query)
     all_found = get_found(DB_requests)
+    print(len(all_found))
     if len(all_found) > 1:
         return return_multiedu_search_res_html(all_found)
     else:
         return return_singleedu_search_res_html(all_found)
 
+
+
+
+
+real_query = '{"data":[{"type":"word","searched_for":"и","ro":["any"],"add_type":"same_edu_and","open_parenth":"(","close_parenth":""},{"type":"word","searched_for":"а","ro":["any"],"add_type":"same_edu_or","open_parenth":"","close_parenth":")"},{"type":"word","searched_for":"когда","ro":["any"],"add_type":"next_edu_and","open_parenth":"","close_parenth":""},{"type":"word","searched_for":"что","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
 print(return_search_res_html(real_query))
-
-# print({3: [i[3] for i in result]})
-
-
-'''
-if num_of_edus > 1:
-    print(process_multi_edus_search(all_found))
-    #print([i[1] for i in process_multi_edus_search(all_found)])
-else:
-    all_found
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 """
 res = ''

@@ -23,6 +23,8 @@ def create_real_nodes(data, text_id):
     num = list('0123456789')
     for node in sorted(nodes_to_create.keys()):
         edu_text = nodes_to_create[node]
+        edu_text_norm = nodes_to_create[node].lower()
+        edu_text_norm = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>]', '', edu_text_norm)
         edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>]', '', edu_text)
         edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n', ' \n', '  ']+punct+num]
         # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
@@ -39,7 +41,8 @@ def create_real_nodes(data, text_id):
             lemma_pos_dict += ', '
         lemma_pos_dict += '}"'
         # print(lemma_pos_dict)
-        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text +\
+        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text  +\
+                               "', text_norm: '" + edu_text_norm +\
                                "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n\n"
 
     output_with_commands.write(neo4j_nodes_command)
