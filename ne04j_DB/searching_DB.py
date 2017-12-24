@@ -58,6 +58,8 @@ messages = {'ro_s_in_edu_dont_match': 'Пожалуйста, выберите о
 
 
 def check_query(parsed_query):
+    open_parenthesis = list()
+    close_parenthesis = list()
     for edu in parsed_query:
         chosen_ro_s = set([' '.join(d['ro']) for d in edu])
         if len(chosen_ro_s) > 1:
@@ -71,10 +73,14 @@ def check_query(parsed_query):
         searched_for_pos = [d['searched_for'] for d in edu if d['type'] == 'pos']
         if '' in searched_for_pos or ' ' in searched_for_pos:
             return messages['no_input_for_pos']
-        open_parenthesis = ''.join([d['open_parenth'] for d in edu])
-        close_parenthesis = ''.join([d['close_parenth'] for d in edu])
-        if len(open_parenthesis) != len(close_parenthesis):
-            return messages['not_equal_parenth_amount']
+        # open_parenthesis = ''.join([d['open_parenth'] for d in edu])
+        # close_parenthesis = ''.join([d['close_parenth'] for d in edu])
+        open_parenthesis += [d['open_parenth'] for d in edu]
+        close_parenthesis += [d['close_parenth'] for d in edu]
+    open_parenthesis = ''.join(open_parenthesis)
+    close_parenthesis = ''.join(close_parenthesis)
+    if len(open_parenthesis) != len(close_parenthesis):
+        return messages['not_equal_parenth_amount']
     return True
 
 
@@ -393,7 +399,7 @@ def return_search_res_html(query):
 
 
 
-real_query = '{"data":[{"type":"marker","searched_for":"dazhe","ro":["any"],"add_type":"same_edu_or","open_parenth":"(","close_parenth":""},{"type":"lemma","searched_for":"только","ro":["any"],"add_type":"next_edu_and","open_parenth":"","close_parenth":")"},{"type":"pos","searched_for":"V","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
+real_query = '{"data":[{"type":"marker","searched_for":"dazhe","ro":["any"],"add_type":"same_edu_or","open_parenth":"","close_parenth":""},{"type":"lemma","searched_for":"только","ro":["any"],"add_type":"next_edu_and","open_parenth":"(","close_parenth":""},{"type":"pos","searched_for":"V","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":")"}]}'
 print(return_search_res_html(real_query))
 
 """

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ebd8909-1594-4ec1-9583-87869020dfa6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/searching_DB.py" afterPath="$PROJECT_DIR$/ne04j_DB/searching_DB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ru-RST-corpus-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="searching_DB.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ne04j_DB/searching_DB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70074815" vertical-offset="2299" max-vertical-offset="6285">
-              <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="185" selection-end-column="131" />
+            <state vertical-scroll-proportion="0.33665836" vertical-offset="945" max-vertical-offset="6375">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -856,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ne04j_DB/searching_DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70074815" vertical-offset="2299" max-vertical-offset="6285">
-          <caret line="172" column="20" selection-start-line="172" selection-start-column="20" selection-end-line="185" selection-end-column="131" />
+        <state vertical-scroll-proportion="0.33665836" vertical-offset="945" max-vertical-offset="6375">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
