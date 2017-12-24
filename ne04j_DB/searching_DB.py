@@ -85,7 +85,7 @@ markers = {"a":"a", "bezuslovno":"безусловно", "buduchi":"будучи
 def request_with_one_cond_on_edu(query):
     requests = list()
     request = str()
-    request += 'MATCH (n)\nWHERE('
+    request += 'MATCH (n)\nWHERE'
     el = query[0]
     ro = el['ro']
     request += el['open_parenth']
@@ -102,10 +102,11 @@ def request_with_one_cond_on_edu(query):
         if el['type'] == 'word':
             request += " '{0}' IN split(n.text_norm, ' ')".format(el['searched_for'])
         if el['type'] == 'lemma' or el['type'] == 'pos':
-            request += ' n.lemmas CONTAINS "\'{0}\'")'.format(el['searched_for'])
+            request += ' n.lemmas CONTAINS "\'{0}\'"'.format(el['searched_for'])
         if el['type'] == '':
             request = 'MATCH (n)'
     else:
+        request = re.sub('WHERE', 'WHERE (', request)
         request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
         if el['type'] == 'word':
             request += " '{0}' IN split(n.text_norm, ' ')) AND type(r) IN {1}".format(el['searched_for'], ro)
@@ -114,7 +115,7 @@ def request_with_one_cond_on_edu(query):
         if el['type'] == '':
             request = 'MATCH (n)-[r]-()\nWHERE type(r) IN {0}'.format(ro)
     request += el['close_parenth']
-    request += ")\nRETURN n.Text_id, n.Id, n.text"
+    request += "\nRETURN n.Text_id, n.Id, n.text"
     #print(request, '\n')
     #requests.append(request)
     return request
@@ -126,7 +127,7 @@ def create_DB_requests(query):
     parsed_query = parse_query(query)
     for i in parsed_query:
         request = str()
-        request += 'MATCH (n)\nWHERE('
+        request += 'MATCH (n)\nWHERE'
         if len(i) > 1:
             ro_chosen = False
             type_chosen = False
@@ -172,10 +173,11 @@ def create_DB_requests(query):
             if ro_chosen and type_chosen:
                 request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
                 request += ')'
-                request += ' AND type(r) IN {0}'.format(ro)
+                request = re.sub("WHERE", "WHERE (", request)
+                request += ') AND type(r) IN {0}'.format(ro)
             #if not ro_chosen and not type_chosen:
                 #request += el['close_parenth']
-            request += ")\nRETURN n.Text_id, n.Id, n.text"
+            request += "\nRETURN n.Text_id, n.Id, n.text"
             #print(request, '\n')
             requests.append(request)
         else:
@@ -334,7 +336,7 @@ def return_search_res_html(query):
 
 
 
-real_query = '{"data":[{"type":"word","searched_for":"и","ro":["any"],"add_type":"same_edu_and","open_parenth":"(","close_parenth":""},{"type":"word","searched_for":"а","ro":["any"],"add_type":"same_edu_or","open_parenth":"","close_parenth":")"},{"type":"word","searched_for":"когда","ro":["any"],"add_type":"next_edu_and","open_parenth":"","close_parenth":""},{"type":"word","searched_for":"что","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
+real_query = '{"data":[{"type":"word","searched_for":"когда","ro":["background"],"add_type":"next_edu_and","open_parenth":"","close_parenth":""},{"type":"lemma","searched_for":"а","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
 print(return_search_res_html(real_query))
 
 """
