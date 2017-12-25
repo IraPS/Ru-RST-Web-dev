@@ -151,7 +151,7 @@ def request_with_one_cond_on_edu(query):
         if el['type'] == 'lemma' or el['type'] == 'pos':
             request += ' n.lemmas CONTAINS "\'{0}\'"'.format(el['searched_for'])
         if el['type'] == '':
-            request = 'MATCH (n)'
+            request = 'MATCH (n) WHERE exists(n.text)'
     else:
         request = re.sub('WHERE', 'WHERE (', request)
         request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
@@ -160,7 +160,8 @@ def request_with_one_cond_on_edu(query):
         if el['type'] == 'lemma' or el['type'] == 'pos':
             request += ' n.lemmas CONTAINS "\'{0}\'") AND type(r) IN {1}'.format(el['searched_for'], ro)
         if el['type'] == '':
-            request = 'MATCH (n)-[r]-()\nWHERE type(r) IN {0}'.format(ro)
+            print('YES')
+            request = 'MATCH (n)-[r]-() WHERE exists(n.text) AND type(r) IN {0}'.format(ro)
     request += el['close_parenth']
     request += "\nRETURN n.Text_id, n.Id, n.text"
     #print(request, '\n')
@@ -208,7 +209,7 @@ def create_DB_requests(query):
                         request += ' n.lemmas CONTAINS "\'{0}\'"{1} {2}'.format(el['searched_for'], el['close_parenth'], cond)
                     if el['type'] == '':
                         type_chosen = False
-                        request = 'MATCH (n)'
+                        request = 'MATCH (n) WHERE exists(n.text)'
                         request += el['close_parenth']
                 else:
                     ro_chosen = True
@@ -234,7 +235,7 @@ def create_DB_requests(query):
                         request += ' n.lemmas CONTAINS "\'{0}\'"{1} {2}'.format(el['searched_for'], el['close_parenth'], cond)
                     if el['type'] == '':
                         type_chosen = False
-                        request = 'MATCH (n)-[r]-()'
+                        request = 'MATCH (n)-[r]-() WHERE exists(n.text)'
                         request += el['close_parenth']
             if ro_chosen and type_chosen:
                 request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
@@ -408,7 +409,7 @@ def return_search_res_html(query):
 
 
 
-real_query = '{"data":[{"type":"marker","searched_for":"dazhe","ro":["any"],"add_type":"same_edu_or","open_parenth":"","close_parenth":""},{"type":"lemma","searched_for":"только","ro":["any"],"add_type":"next_edu_and","open_parenth":"(","close_parenth":""},{"type":"pos","searched_for":"V","ro":["any"],"add_type":"none","open_parenth":"","close_parenth":")"}]}'
+real_query = '{"data":[{"type":"","ro":["comparison"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
 print(return_search_res_html(real_query))
 
 """

@@ -19,13 +19,14 @@ def create_real_nodes(data, text_id):
     for edu in edus:
         nodes_to_create[edu['@id']] = edu['$']
     neo4j_nodes_command = ''
-    punct = list('.,?!%:;[]()"@$&*«»–#,')
+    punct = list('.,?!%:;[]()"@$&*«»–#,') + list("'")
     num = list('0123456789')
     for node in sorted(nodes_to_create.keys()):
         edu_text = nodes_to_create[node]
+        edu_text = re.sub("'", '"', edu_text)
         edu_text_norm = nodes_to_create[node].lower()
-        edu_text_norm = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>]', '', edu_text_norm)
-        edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>]', '', edu_text)
+        edu_text_norm = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>\']', '', edu_text_norm)
+        edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>\']', '', edu_text)
         edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n', ' \n', '  ']+punct+num]
         # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
 
@@ -41,9 +42,9 @@ def create_real_nodes(data, text_id):
             lemma_pos_dict += ', '
         lemma_pos_dict += '}"'
         # print(lemma_pos_dict)
-        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ", text: '" + edu_text  +\
-                               "', text_norm: '" + edu_text_norm +\
-                               "', lemmas: " + lemma_pos_dict + ", Text_id: " + text_id + "})\n\n"
+        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ', text: \'' + edu_text  +\
+                               '\', text_norm: "' + edu_text_norm +\
+                               '", lemmas: ' + lemma_pos_dict + ", Text_id: " + text_id + "})\n\n"
 
     output_with_commands.write(neo4j_nodes_command)
     # print(neo4j_nodes_command)
@@ -139,11 +140,11 @@ graph = Graph()  # creating a graph for a database
 
 graph.run('MATCH (n) DETACH DELETE n')  # making sure the DB is empty
 
-for file in os.listdir('./corpus_of_jsons_test/'):  # directory with texts in .rs3 format
+for file in os.listdir('./corpus_of_jsons/'):  # directory with texts in .rs3 format
     if file.endswith('.json'):
         n = file.split('.json')[0]  # text_id value
         print(n)
-        data_file = open('./corpus_of_jsons_test/' + file)
+        data_file = open('./corpus_of_jsons/' + file)
         text_json = json.load(data_file)
         text_json = text_json['rst']  # json root element
         rels = text_json['body']['segment']  # list of json 'segment' elements
