@@ -164,8 +164,8 @@ def request_with_one_cond_on_edu(query):
             request = 'MATCH (n)-[r]-() WHERE exists(n.text) AND type(r) IN {0}'.format(ro)
     request += el['close_parenth']
     request += "\nRETURN n.Text_id, n.Id, n.text"
-    #print(request, '\n')
-    #requests.append(request)
+    # print(request, '\n')
+    # requests.append(request)
     return request
 
 
@@ -239,13 +239,13 @@ def create_DB_requests(query):
                         request += el['close_parenth']
             if ro_chosen and type_chosen:
                 request = re.sub('MATCH \(n\)', 'MATCH (n)-[r]-()', request)
-                #request += ')'
+                # request += ')'
                 request = re.sub("WHERE", "WHERE (", request)
                 request += ') AND type(r) IN {0}'.format(ro)
-            #if not ro_chosen and not type_chosen:
-                #request += el['close_parenth']
+            # if not ro_chosen and not type_chosen:
+                # request += el['close_parenth']
             request += "\nRETURN n.Text_id, n.Id, n.text"
-            #print(request, '\n')
+            # print(request, '\n')
             requests.append(request)
         else:
             requests.append(request_with_one_cond_on_edu(i))
@@ -309,7 +309,6 @@ def process_multi_edus_search(all_found):
             request_edus[i] = text_edus
 
         all_text_edus.append(request_edus)
-
 
     all_text_edus_filtred = list()
 
@@ -405,8 +404,6 @@ def return_search_res_html(query):
             return 'failed_query'
     else:
         return checked
-
-
 
 
 real_query = '{"data":[{"type":"","ro":["comparison"],"add_type":"none","open_parenth":"","close_parenth":""}]}'
