@@ -28,12 +28,8 @@ def create_real_nodes(data, text_id):
         edu_text_norm = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>\']', '', edu_text_norm)
         edu_lemmas = re.sub('[,\.:;!\?\(\)\[\]"@\$&\*«»–#-\+%—\\n\\r<>\']', '', edu_text)
         edu_lemmas = [l for l in m.lemmatize(edu_lemmas) if l not in [' ', ' ', '\n', ' \n', '  ']+punct+num]
-        # edu_lemmas = [l for l in edu_lemmas if l.split(' ')[0] not in [' ', '\n']+punct+num]
-
-        # edu_lemmas = ('|'.join(edu_lemmas))
         lemma_pos_dict = '"{'
         for lemma in edu_lemmas:
-            # print(lemma)
             lemma_pos_dict += "'" + lemma + "': "
             try:
                 lemma_pos_dict += "'" + m.analyze(lemma)[0]['analysis'][0]['gr'].split(',')[0].split('=')[0] + "'"
@@ -41,13 +37,10 @@ def create_real_nodes(data, text_id):
                 lemma_pos_dict += "'NONE'"
             lemma_pos_dict += ', '
         lemma_pos_dict += '}"'
-        # print(lemma_pos_dict)
-        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ', text: \'' + edu_text  +\
+        neo4j_nodes_command += 'CREATE (edu' + node + ':EDU { Id: ' + node + ', text: \'' + edu_text +\
                                '\', text_norm: "' + edu_text_norm +\
                                '", lemmas: ' + lemma_pos_dict + ", Text_id: " + text_id + "})\n\n"
-
     output_with_commands.write(neo4j_nodes_command)
-    # print(neo4j_nodes_command)
     graph.run(neo4j_nodes_command)
 
 
@@ -62,20 +55,25 @@ def create_multi_or_span_rels(relations, text_id):
     for rel in relations:
         if '@parent' in rel:
             if rel['@relname'] in rels_with_new_nodes:
-                # print(rel)
                 parent_id = rel['@parent']
                 child_id = rel['@id']
                 relation = rel['@relname']
                 if len(list(graph.run('MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id +
-                        ', Text_id:' + text_id + '}) RETURN edu' + parent_id))) == 0:
+                            ', Text_id:' + text_id + '}) RETURN edu' + parent_id))) == 0:
                     graph.run('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-                    # print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-                span_multi_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
-                             'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
-                             'CREATE (edu' + child_id + ')-' + '[r:' + relation + ']->(edu' + parent_id + ')\n'
-                span_multi_rels_command = re.sub('same-unit', 'sameunit', span_multi_rels_command)
-                span_multi_rels_command = re.sub('cause-effect', 'causeeffect', span_multi_rels_command)
-                span_multi_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', span_multi_rels_command)
+                span_multi_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: '\
+                                          + text_id + '})\n' + 'MERGE (edu' + parent_id + ':EDU {Id: ' \
+                                          + parent_id + ', Text_id: ' + text_id + '})\n' + 'CREATE (edu' \
+                                          + child_id + ')-' + '[r:' + relation + ']->(edu' + parent_id + ')\n'
+                span_multi_rels_command = re.sub('same-unit',
+                                                 'sameunit',
+                                                 span_multi_rels_command)
+                span_multi_rels_command = re.sub('cause-effect',
+                                                 'causeeffect',
+                                                 span_multi_rels_command)
+                span_multi_rels_command = re.sub('interpretation-evaluation',
+                                                 'interpretationevaluation',
+                                                 span_multi_rels_command)
 
                 output_with_commands.write(span_multi_rels_command + '\n')
                 # print(span_multi_rels_command)
@@ -105,15 +103,14 @@ def create_ordinary_rels(relations, text_id):
         neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', neo4j_rels_command)
 
         output_with_commands.write(neo4j_rels_command + '\n')
-        #print(neo4j_rels_command, '\n')
         graph.run(neo4j_rels_command)
 
 
-def create_group_relations(group_rels, text_id):
+def create_group_relations(group_relations, text_id):
     """This function creates new nodes and relations for relations involving grouped EDUs.
     Its input should be a list of json objects of RST-relations involving grouped EDUs (['body']['group'] elements)."""
     text_id = str(text_id)
-    for rel in group_rels:
+    for rel in group_relations:
         if '@parent' in rel:
             parent_id = rel['@parent']
             child_id = rel['@id']
@@ -121,22 +118,20 @@ def create_group_relations(group_rels, text_id):
             if len(list(graph.run('MATCH (edu' + parent_id + ':EDU) WHERE edu' + parent_id +
                         '.id = ' + parent_id + ' RETURN edu' + parent_id))) == 0:
                     graph.run('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-                    # print('CREATE (edu' + parent_id + ':EDU {Id: ' + parent_id + ", Text_id: " + text_id + "})")
-            group_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
-                                 'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
-                                 'CREATE (edu' + child_id + ')-' +\
-                                 '[r:' + relation +']->(edu' + parent_id + ')\n'
-            group_rels_command = re.sub('same-unit', 'same_unit', group_rels_command)
-            group_rels_command = re.sub('cause-effect', 'cause_effect', group_rels_command)
-            group_rels_command = re.sub('interpretation-evaluation', 'interpretation_evaluation', group_rels_command)
+            group_relations_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
+                                      'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
+                                      'CREATE (edu' + child_id + ')-' +\
+                                      '[r:' + relation + ']->(edu' + parent_id + ')\n'
+            group_relations_command = re.sub('same-unit', 'same_unit', group_relations_command)
+            group_relations_command = re.sub('cause-effect', 'cause_effect', group_relations_command)
+            group_relations_command = re.sub('interpretation-evaluation', 'interpretation_evaluation',
+                                             group_relations_command)
 
-            output_with_commands.write(group_rels_command + '\n')
-            # print(group_rels_command)
-            graph.run(group_rels_command)
+            output_with_commands.write(group_relations_command + '\n')
+            graph.run(group_relations_command)
 
 
 graph = Graph()  # creating a graph for a database
-
 
 graph.run('MATCH (n) DETACH DELETE n')  # making sure the DB is empty
 
@@ -154,8 +149,3 @@ for file in os.listdir('./corpus_of_jsons/'):  # directory with texts in .rs3 fo
         create_multi_or_span_rels(rels, n)
         create_ordinary_rels(rels, n)
         create_group_relations(group_rels, n)
-
-# print(DataFrame(graph.run("MATCH (n) RETURN n").data()))
-
-
-

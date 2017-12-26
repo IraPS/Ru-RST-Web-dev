@@ -1,21 +1,18 @@
 import json
 import re
 import os
-from pymystem3 import Mystem
-from py2neo import Graph
-from pandas import DataFrame
 
 
 def create_real_nodes(data):
-    text = str()
+    json_to_text = str()
     nodes_to_create = dict()
     edus = data['body']['segment']
     for edu in edus:
         nodes_to_create[edu['@id']] = edu['$']
     for node in sorted(nodes_to_create.keys()):
         edu_text = nodes_to_create[node]
-        text += edu_text + ' '
-    return text
+        json_to_text += edu_text + ' '
+    return json_to_text
 
 for file in os.listdir('./corpus_of_jsons/'):  # directory with texts in .rs3 format
     if file.endswith('.json'):

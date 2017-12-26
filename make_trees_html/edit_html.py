@@ -29,14 +29,15 @@ font-size: 90%;
         <link rel="stylesheet" href="../static/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../static/css/main.css">
         <link rel="stylesheet" type="text/css" href="../static/bootstrap-select/dist/css/bootstrap-select.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select
+        /1.12.4/css/bootstrap-select.min.css">
 
         <script src="/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>rstWeb - Structure editor</title>
-	<link rel="stylesheet" href="../static/rstWeb/css/rst.css" type="text/css" charset="utf-8"/>
+    <title>rstWeb - Structure editor</title>
+    <link rel="stylesheet" href="../static/rstWeb/css/rst.css" type="text/css" charset="utf-8"/>
     <link rel="stylesheet" href="../static/rstWeb/css/font-awesome-4.2.0/css/font-awesome.min.css"/>
     <script src="../static/rstWeb/script/jquery-1.11.3.min.js"></script>
     <script src="../static/rstWeb/script/jquery-ui.min.js"></script>
@@ -48,7 +49,8 @@ font-size: 90%;
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=
+          "#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -87,8 +89,8 @@ for file in os.listdir('./trees_html_source/'):
 
         source = re.sub('jsPlumb.makeSource.*?;jsPlumb.connect', 'jsPlumb.connect', source)
 
-        source = re.sub(re.escape('>" + select_my_rel(option_type,rel) + "<'), '><mark>" + rel.split(\'_\')[0] + "</mark><',
-                        source)
+        source = re.sub(re.escape('>" + select_my_rel(option_type,rel) + "<'),
+                        '><mark>" + rel.split(\'_\')[0] + "</mark><', source)
 
         source = re.sub("select class='rst_rel'", "form class='rst_rel'", source)
         source = re.sub("</mark></select>", "</mark></form>", source)
@@ -97,7 +99,8 @@ for file in os.listdir('./trees_html_source/'):
                         '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' + head, source)
 
         source = re.sub('<div id="anim_catch" class="anim_catch">&nbsp;</div>',
-                        '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy; Ru-RST Group 2017</p>\n</footer>\n</div>',
+                        '<div id="anim_catch" class="anim_catch">&nbsp;</div>\n<p/>\n<footer>\n<p>&copy'
+                        '; Ru-RST Group 2017</p>\n</footer>\n</div>',
                         source)
 
         source = re.sub('<title>Текст ', '<title>Текст ' + file.split('.')[0], source)

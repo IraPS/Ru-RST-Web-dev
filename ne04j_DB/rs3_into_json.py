@@ -6,9 +6,9 @@ from xml.etree.ElementTree import fromstring
 import os
 
 
-def create_json(path, file):
-    text_name = file.split('.rs3')[0]
-    text = open(path + file, 'r', encoding='utf-8').read()
+def create_json(path, xml_file):
+    text_name = xml_file.split('.rs3')[0]
+    text = open(path + xml_file, 'r', encoding='utf-8').read()
     bf_str = BadgerFish(xml_fromstring=False)
     made_json = json.dumps(bf_str.data(fromstring(text)))
     o = open('./corpus_of_jsons/' + text_name + '.json', 'w')
