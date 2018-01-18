@@ -164,7 +164,7 @@ CREATE (edu4)-[r:span]->(edu79)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 1})
 MERGE (edu80:EDU {Id: 80, Text_id: 1})
-CREATE (edu6)-[r:sameunit]->(edu80)
+CREATE (edu6)-[r:same_unit]->(edu80)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 1})
 MERGE (edu84:EDU {Id: 84, Text_id: 1})
@@ -188,7 +188,7 @@ CREATE (edu17)-[r:span]->(edu87)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 1})
 MERGE (edu88:EDU {Id: 88, Text_id: 1})
-CREATE (edu19)-[r:sameunit]->(edu88)
+CREATE (edu19)-[r:same_unit]->(edu88)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 1})
 MERGE (edu90:EDU {Id: 90, Text_id: 1})
@@ -276,7 +276,7 @@ CREATE (edu46)-[r:span]->(edu110)
 
 MERGE (edu48:EDU {Id: 48, Text_id: 1})
 MERGE (edu111:EDU {Id: 111, Text_id: 1})
-CREATE (edu48)-[r:sameunit]->(edu111)
+CREATE (edu48)-[r:same_unit]->(edu111)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 1})
 MERGE (edu116:EDU {Id: 116, Text_id: 1})
@@ -356,7 +356,7 @@ CREATE (edu75)-[r:span]->(edu140)
 
 MERGE (edu76:EDU {Id: 76, Text_id: 1})
 MERGE (edu138:EDU {Id: 138, Text_id: 1})
-CREATE (edu76)-[r:sameunit]->(edu138)
+CREATE (edu76)-[r:same_unit]->(edu138)
 
 MERGE (edu78:EDU {Id: 78, Text_id: 1})
 MERGE (edu136:EDU {Id: 136, Text_id: 1})
@@ -372,7 +372,7 @@ CREATE (edu15)-[r:elaboration]->(edu14)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 1})
 MERGE (edu89:EDU {Id: 89, Text_id: 1})
-CREATE (edu16)-[r:causeeffect]->(edu89)
+CREATE (edu16)-[r:cause_effect]->(edu89)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 1})
 MERGE (edu17:EDU {Id: 17, Text_id: 1})
@@ -692,7 +692,7 @@ CREATE (edu5)-[r:elaboration]->(edu4)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 10})
 MERGE (edu7:EDU {Id: 7, Text_id: 10})
-CREATE (edu6)-[r:causeeffect]->(edu7)
+CREATE (edu6)-[r:cause_effect]->(edu7)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 10})
 MERGE (edu8:EDU {Id: 8, Text_id: 10})
@@ -956,7 +956,7 @@ CREATE (edu28)-[r:span]->(edu82)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 11})
 MERGE (edu84:EDU {Id: 84, Text_id: 11})
-CREATE (edu30)-[r:sameunit]->(edu84)
+CREATE (edu30)-[r:same_unit]->(edu84)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 11})
 MERGE (edu88:EDU {Id: 88, Text_id: 11})
@@ -1052,7 +1052,7 @@ CREATE (edu17)-[r:purpose]->(edu75)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 11})
 MERGE (edu76:EDU {Id: 76, Text_id: 11})
-CREATE (edu20)-[r:interpretationevaluation]->(edu76)
+CREATE (edu20)-[r:interpretation_evaluation]->(edu76)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 11})
 MERGE (edu24:EDU {Id: 24, Text_id: 11})
@@ -1540,7 +1540,7 @@ CREATE (edu51)-[r:span]->(edu148)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 12})
 MERGE (edu150:EDU {Id: 150, Text_id: 12})
-CREATE (edu53)-[r:sameunit]->(edu150)
+CREATE (edu53)-[r:same_unit]->(edu150)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 12})
 MERGE (edu153:EDU {Id: 153, Text_id: 12})
@@ -1660,7 +1660,7 @@ CREATE (edu26)-[r:condition]->(edu25)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 12})
 MERGE (edu95:EDU {Id: 95, Text_id: 12})
-CREATE (edu27)-[r:causeeffect]->(edu95)
+CREATE (edu27)-[r:cause_effect]->(edu95)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 12})
 MERGE (edu104:EDU {Id: 104, Text_id: 12})
@@ -1696,7 +1696,7 @@ CREATE (edu45)-[r:condition]->(edu125)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 12})
 MERGE (edu151:EDU {Id: 151, Text_id: 12})
-CREATE (edu50)-[r:causeeffect]->(edu151)
+CREATE (edu50)-[r:cause_effect]->(edu151)
 
 MERGE (edu52:EDU {Id: 52, Text_id: 12})
 MERGE (edu51:EDU {Id: 51, Text_id: 12})
@@ -1716,7 +1716,7 @@ CREATE (edu66)-[r:elaboration]->(edu65)
 
 MERGE (edu68:EDU {Id: 68, Text_id: 12})
 MERGE (edu67:EDU {Id: 67, Text_id: 12})
-CREATE (edu68)-[r:causeeffect]->(edu67)
+CREATE (edu68)-[r:cause_effect]->(edu67)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 12})
 MERGE (edu70:EDU {Id: 70, Text_id: 12})
@@ -1728,11 +1728,11 @@ CREATE (edu72)-[r:preparation]->(edu191)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 12})
 MERGE (edu74:EDU {Id: 74, Text_id: 12})
-CREATE (edu73)-[r:causeeffect]->(edu74)
+CREATE (edu73)-[r:cause_effect]->(edu74)
 
 MERGE (edu82:EDU {Id: 82, Text_id: 12})
 MERGE (edu184:EDU {Id: 184, Text_id: 12})
-CREATE (edu82)-[r:causeeffect]->(edu184)
+CREATE (edu82)-[r:cause_effect]->(edu184)
 
 MERGE (edu84:EDU {Id: 84, Text_id: 12})
 MERGE (edu85:EDU {Id: 85, Text_id: 12})
@@ -2222,7 +2222,7 @@ CREATE (edu2)-[r:span]->(edu90)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 13})
 MERGE (edu93:EDU {Id: 93, Text_id: 13})
-CREATE (edu3)-[r:sameunit]->(edu93)
+CREATE (edu3)-[r:same_unit]->(edu93)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 13})
 MERGE (edu91:EDU {Id: 91, Text_id: 13})
@@ -2482,7 +2482,7 @@ CREATE (edu23)-[r:purpose]->(edu22)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 13})
 MERGE (edu106:EDU {Id: 106, Text_id: 13})
-CREATE (edu24)-[r:interpretationevaluation]->(edu106)
+CREATE (edu24)-[r:interpretation_evaluation]->(edu106)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 13})
 MERGE (edu115:EDU {Id: 115, Text_id: 13})
@@ -2522,7 +2522,7 @@ CREATE (edu48)-[r:evidence]->(edu171)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 13})
 MERGE (edu156:EDU {Id: 156, Text_id: 13})
-CREATE (edu53)-[r:causeeffect]->(edu156)
+CREATE (edu53)-[r:cause_effect]->(edu156)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 13})
 MERGE (edu166:EDU {Id: 166, Text_id: 13})
@@ -3226,7 +3226,7 @@ CREATE (edu10)-[r:span]->(edu149)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 14})
 MERGE (edu150:EDU {Id: 150, Text_id: 14})
-CREATE (edu12)-[r:sameunit]->(edu150)
+CREATE (edu12)-[r:same_unit]->(edu150)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 14})
 MERGE (edu155:EDU {Id: 155, Text_id: 14})
@@ -3302,7 +3302,7 @@ CREATE (edu34)-[r:joint]->(edu174)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 14})
 MERGE (edu178:EDU {Id: 178, Text_id: 14})
-CREATE (edu35)-[r:sameunit]->(edu178)
+CREATE (edu35)-[r:same_unit]->(edu178)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 14})
 MERGE (edu177:EDU {Id: 177, Text_id: 14})
@@ -3314,7 +3314,7 @@ CREATE (edu37)-[r:joint]->(edu177)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 14})
 MERGE (edu178:EDU {Id: 178, Text_id: 14})
-CREATE (edu38)-[r:sameunit]->(edu178)
+CREATE (edu38)-[r:same_unit]->(edu178)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 14})
 MERGE (edu179:EDU {Id: 179, Text_id: 14})
@@ -4334,7 +4334,7 @@ CREATE (edu4)-[r:span]->(edu67)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 15})
 MERGE (edu68:EDU {Id: 68, Text_id: 15})
-CREATE (edu6)-[r:sameunit]->(edu68)
+CREATE (edu6)-[r:same_unit]->(edu68)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 15})
 MERGE (edu72:EDU {Id: 72, Text_id: 15})
@@ -4350,7 +4350,7 @@ CREATE (edu11)-[r:span]->(edu77)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 15})
 MERGE (edu76:EDU {Id: 76, Text_id: 15})
-CREATE (edu13)-[r:sameunit]->(edu76)
+CREATE (edu13)-[r:same_unit]->(edu76)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 15})
 MERGE (edu81:EDU {Id: 81, Text_id: 15})
@@ -4442,7 +4442,7 @@ CREATE (edu38)-[r:span]->(edu96)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 15})
 MERGE (edu97:EDU {Id: 97, Text_id: 15})
-CREATE (edu40)-[r:sameunit]->(edu97)
+CREATE (edu40)-[r:same_unit]->(edu97)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 15})
 MERGE (edu105:EDU {Id: 105, Text_id: 15})
@@ -4474,7 +4474,7 @@ CREATE (edu51)-[r:span]->(edu112)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 15})
 MERGE (edu113:EDU {Id: 113, Text_id: 15})
-CREATE (edu53)-[r:sameunit]->(edu113)
+CREATE (edu53)-[r:same_unit]->(edu113)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 15})
 MERGE (edu116:EDU {Id: 116, Text_id: 15})
@@ -4530,7 +4530,7 @@ CREATE (edu20)-[r:elaboration]->(edu19)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 15})
 MERGE (edu33:EDU {Id: 33, Text_id: 15})
-CREATE (edu34)-[r:causeeffect]->(edu33)
+CREATE (edu34)-[r:cause_effect]->(edu33)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 15})
 MERGE (edu35:EDU {Id: 35, Text_id: 15})
@@ -4570,7 +4570,7 @@ CREATE (edu63)-[r:elaboration]->(edu62)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 15})
 MERGE (edu126:EDU {Id: 126, Text_id: 15})
-CREATE (edu66)-[r:interpretationevaluation]->(edu126)
+CREATE (edu66)-[r:interpretation_evaluation]->(edu126)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 15})
 MERGE (edu68:EDU {Id: 68, Text_id: 15})
@@ -4904,7 +4904,7 @@ CREATE (edu16)-[r:span]->(edu60)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 16})
 MERGE (edu62:EDU {Id: 62, Text_id: 16})
-CREATE (edu18)-[r:sameunit]->(edu62)
+CREATE (edu18)-[r:same_unit]->(edu62)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 16})
 MERGE (edu65:EDU {Id: 65, Text_id: 16})
@@ -5444,7 +5444,7 @@ CREATE (edu23)-[r:span]->(edu124)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 17})
 MERGE (edu122:EDU {Id: 122, Text_id: 17})
-CREATE (edu25)-[r:sameunit]->(edu122)
+CREATE (edu25)-[r:same_unit]->(edu122)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 17})
 MERGE (edu120:EDU {Id: 120, Text_id: 17})
@@ -5476,7 +5476,7 @@ CREATE (edu35)-[r:span]->(edu145)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 17})
 MERGE (edu147:EDU {Id: 147, Text_id: 17})
-CREATE (edu37)-[r:sameunit]->(edu147)
+CREATE (edu37)-[r:same_unit]->(edu147)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 17})
 MERGE (edu144:EDU {Id: 144, Text_id: 17})
@@ -5492,7 +5492,7 @@ CREATE (edu42)-[r:joint]->(edu140)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 17})
 MERGE (edu137:EDU {Id: 137, Text_id: 17})
-CREATE (edu43)-[r:sameunit]->(edu137)
+CREATE (edu43)-[r:same_unit]->(edu137)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 17})
 MERGE (edu136:EDU {Id: 136, Text_id: 17})
@@ -5548,7 +5548,7 @@ CREATE (edu62)-[r:sequence]->(edu181)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 17})
 MERGE (edu178:EDU {Id: 178, Text_id: 17})
-CREATE (edu63)-[r:sameunit]->(edu178)
+CREATE (edu63)-[r:same_unit]->(edu178)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 17})
 MERGE (edu176:EDU {Id: 176, Text_id: 17})
@@ -5596,7 +5596,7 @@ CREATE (edu77)-[r:joint]->(edu201)
 
 MERGE (edu78:EDU {Id: 78, Text_id: 17})
 MERGE (edu193:EDU {Id: 193, Text_id: 17})
-CREATE (edu78)-[r:sameunit]->(edu193)
+CREATE (edu78)-[r:same_unit]->(edu193)
 
 MERGE (edu80:EDU {Id: 80, Text_id: 17})
 MERGE (edu192:EDU {Id: 192, Text_id: 17})
@@ -5660,7 +5660,7 @@ CREATE (edu4)-[r:elaboration]->(edu3)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 17})
 MERGE (edu5:EDU {Id: 5, Text_id: 17})
-CREATE (edu6)-[r:causeeffect]->(edu5)
+CREATE (edu6)-[r:cause_effect]->(edu5)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 17})
 MERGE (edu10:EDU {Id: 10, Text_id: 17})
@@ -5680,11 +5680,11 @@ CREATE (edu19)-[r:elaboration]->(edu18)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 17})
 MERGE (edu20:EDU {Id: 20, Text_id: 17})
-CREATE (edu21)-[r:causeeffect]->(edu20)
+CREATE (edu21)-[r:cause_effect]->(edu20)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 17})
 MERGE (edu23:EDU {Id: 23, Text_id: 17})
-CREATE (edu24)-[r:causeeffect]->(edu23)
+CREATE (edu24)-[r:cause_effect]->(edu23)
 
 MERGE (edu26:EDU {Id: 26, Text_id: 17})
 MERGE (edu120:EDU {Id: 120, Text_id: 17})
@@ -5728,7 +5728,7 @@ CREATE (edu50)-[r:elaboration]->(edu155)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 17})
 MERGE (edu52:EDU {Id: 52, Text_id: 17})
-CREATE (edu53)-[r:causeeffect]->(edu52)
+CREATE (edu53)-[r:cause_effect]->(edu52)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 17})
 MERGE (edu172:EDU {Id: 172, Text_id: 17})
@@ -6715,7 +6715,7 @@ CREATE (edu1)-[r:span]->(edu124)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 19})
 MERGE (edu125:EDU {Id: 125, Text_id: 19})
-CREATE (edu3)-[r:sameunit]->(edu125)
+CREATE (edu3)-[r:same_unit]->(edu125)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 19})
 MERGE (edu126:EDU {Id: 126, Text_id: 19})
@@ -6735,7 +6735,7 @@ CREATE (edu10)-[r:span]->(edu132)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 19})
 MERGE (edu138:EDU {Id: 138, Text_id: 19})
-CREATE (edu12)-[r:sameunit]->(edu138)
+CREATE (edu12)-[r:same_unit]->(edu138)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 19})
 MERGE (edu134:EDU {Id: 134, Text_id: 19})
@@ -6743,7 +6743,7 @@ CREATE (edu13)-[r:span]->(edu134)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 19})
 MERGE (edu135:EDU {Id: 135, Text_id: 19})
-CREATE (edu15)-[r:sameunit]->(edu135)
+CREATE (edu15)-[r:same_unit]->(edu135)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 19})
 MERGE (edu136:EDU {Id: 136, Text_id: 19})
@@ -6759,7 +6759,7 @@ CREATE (edu18)-[r:span]->(edu142)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 19})
 MERGE (edu143:EDU {Id: 143, Text_id: 19})
-CREATE (edu20)-[r:sameunit]->(edu143)
+CREATE (edu20)-[r:same_unit]->(edu143)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 19})
 MERGE (edu144:EDU {Id: 144, Text_id: 19})
@@ -6787,7 +6787,7 @@ CREATE (edu28)-[r:span]->(edu150)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 19})
 MERGE (edu155:EDU {Id: 155, Text_id: 19})
-CREATE (edu30)-[r:sameunit]->(edu155)
+CREATE (edu30)-[r:same_unit]->(edu155)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 19})
 MERGE (edu158:EDU {Id: 158, Text_id: 19})
@@ -6799,7 +6799,7 @@ CREATE (edu32)-[r:span]->(edu156)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 19})
 MERGE (edu157:EDU {Id: 157, Text_id: 19})
-CREATE (edu34)-[r:sameunit]->(edu157)
+CREATE (edu34)-[r:same_unit]->(edu157)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 19})
 MERGE (edu162:EDU {Id: 162, Text_id: 19})
@@ -6863,7 +6863,7 @@ CREATE (edu51)-[r:span]->(edu169)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 19})
 MERGE (edu170:EDU {Id: 170, Text_id: 19})
-CREATE (edu53)-[r:sameunit]->(edu170)
+CREATE (edu53)-[r:same_unit]->(edu170)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 19})
 MERGE (edu168:EDU {Id: 168, Text_id: 19})
@@ -6955,7 +6955,7 @@ CREATE (edu83)-[r:span]->(edu195)
 
 MERGE (edu85:EDU {Id: 85, Text_id: 19})
 MERGE (edu196:EDU {Id: 196, Text_id: 19})
-CREATE (edu85)-[r:sameunit]->(edu196)
+CREATE (edu85)-[r:same_unit]->(edu196)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 19})
 MERGE (edu198:EDU {Id: 198, Text_id: 19})
@@ -7059,7 +7059,7 @@ CREATE (edu121)-[r:span]->(edu222)
 
 MERGE (edu123:EDU {Id: 123, Text_id: 19})
 MERGE (edu223:EDU {Id: 223, Text_id: 19})
-CREATE (edu123)-[r:sameunit]->(edu223)
+CREATE (edu123)-[r:same_unit]->(edu223)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 19})
 MERGE (edu1:EDU {Id: 1, Text_id: 19})
@@ -7171,7 +7171,7 @@ CREATE (edu99)-[r:condition]->(edu98)
 
 MERGE (edu101:EDU {Id: 101, Text_id: 19})
 MERGE (edu208:EDU {Id: 208, Text_id: 19})
-CREATE (edu101)-[r:causeeffect]->(edu208)
+CREATE (edu101)-[r:cause_effect]->(edu208)
 
 MERGE (edu103:EDU {Id: 103, Text_id: 19})
 MERGE (edu102:EDU {Id: 102, Text_id: 19})
@@ -7183,7 +7183,7 @@ CREATE (edu105)-[r:elaboration]->(edu104)
 
 MERGE (edu111:EDU {Id: 111, Text_id: 19})
 MERGE (edu215:EDU {Id: 215, Text_id: 19})
-CREATE (edu111)-[r:interpretationevaluation]->(edu215)
+CREATE (edu111)-[r:interpretation_evaluation]->(edu215)
 
 MERGE (edu112:EDU {Id: 112, Text_id: 19})
 MERGE (edu113:EDU {Id: 113, Text_id: 19})
@@ -7649,7 +7649,7 @@ CREATE (edu2)-[r:span]->(edu30)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 2})
 MERGE (edu33:EDU {Id: 33, Text_id: 2})
-CREATE (edu5)-[r:sameunit]->(edu33)
+CREATE (edu5)-[r:same_unit]->(edu33)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 2})
 MERGE (edu36:EDU {Id: 36, Text_id: 2})
@@ -7693,7 +7693,7 @@ CREATE (edu16)-[r:joint]->(edu39)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 2})
 MERGE (edu48:EDU {Id: 48, Text_id: 2})
-CREATE (edu18)-[r:sameunit]->(edu48)
+CREATE (edu18)-[r:same_unit]->(edu48)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 2})
 MERGE (edu43:EDU {Id: 43, Text_id: 2})
@@ -8025,7 +8025,7 @@ CREATE (edu35)-[r:span]->(edu83)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 20})
 MERGE (edu84:EDU {Id: 84, Text_id: 20})
-CREATE (edu37)-[r:sameunit]->(edu84)
+CREATE (edu37)-[r:same_unit]->(edu84)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 20})
 MERGE (edu86:EDU {Id: 86, Text_id: 20})
@@ -8413,7 +8413,7 @@ CREATE (edu19)-[r:span]->(edu44)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 21})
 MERGE (edu45:EDU {Id: 45, Text_id: 21})
-CREATE (edu21)-[r:sameunit]->(edu45)
+CREATE (edu21)-[r:same_unit]->(edu45)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 21})
 MERGE (edu46:EDU {Id: 46, Text_id: 21})
@@ -8823,7 +8823,7 @@ CREATE (edu23)-[r:span]->(edu149)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 22})
 MERGE (edu150:EDU {Id: 150, Text_id: 22})
-CREATE (edu25)-[r:sameunit]->(edu150)
+CREATE (edu25)-[r:same_unit]->(edu150)
 
 MERGE (edu26:EDU {Id: 26, Text_id: 22})
 MERGE (edu185:EDU {Id: 185, Text_id: 22})
@@ -8967,7 +8967,7 @@ CREATE (edu71)-[r:span]->(edu219)
 
 MERGE (edu74:EDU {Id: 74, Text_id: 22})
 MERGE (edu221:EDU {Id: 221, Text_id: 22})
-CREATE (edu74)-[r:sameunit]->(edu221)
+CREATE (edu74)-[r:same_unit]->(edu221)
 
 MERGE (edu75:EDU {Id: 75, Text_id: 22})
 MERGE (edu229:EDU {Id: 229, Text_id: 22})
@@ -9035,7 +9035,7 @@ CREATE (edu99)-[r:span]->(edu233)
 
 MERGE (edu101:EDU {Id: 101, Text_id: 22})
 MERGE (edu169:EDU {Id: 169, Text_id: 22})
-CREATE (edu101)-[r:sameunit]->(edu169)
+CREATE (edu101)-[r:same_unit]->(edu169)
 
 MERGE (edu103:EDU {Id: 103, Text_id: 22})
 MERGE (edu166:EDU {Id: 166, Text_id: 22})
@@ -9047,7 +9047,7 @@ CREATE (edu104)-[r:contrast]->(edu166)
 
 MERGE (edu105:EDU {Id: 105, Text_id: 22})
 MERGE (edu164:EDU {Id: 164, Text_id: 22})
-CREATE (edu105)-[r:sameunit]->(edu164)
+CREATE (edu105)-[r:same_unit]->(edu164)
 
 MERGE (edu107:EDU {Id: 107, Text_id: 22})
 MERGE (edu163:EDU {Id: 163, Text_id: 22})
@@ -9099,7 +9099,7 @@ CREATE (edu121)-[r:span]->(edu172)
 
 MERGE (edu123:EDU {Id: 123, Text_id: 22})
 MERGE (edu174:EDU {Id: 174, Text_id: 22})
-CREATE (edu123)-[r:sameunit]->(edu174)
+CREATE (edu123)-[r:same_unit]->(edu174)
 
 MERGE (edu124:EDU {Id: 124, Text_id: 22})
 MERGE (edu183:EDU {Id: 183, Text_id: 22})
@@ -9123,7 +9123,7 @@ CREATE (edu129)-[r:span]->(edu176)
 
 MERGE (edu131:EDU {Id: 131, Text_id: 22})
 MERGE (edu178:EDU {Id: 178, Text_id: 22})
-CREATE (edu131)-[r:sameunit]->(edu178)
+CREATE (edu131)-[r:same_unit]->(edu178)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 22})
 MERGE (edu1:EDU {Id: 1, Text_id: 22})
@@ -9135,7 +9135,7 @@ CREATE (edu4)-[r:elaboration]->(edu3)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 22})
 MERGE (edu140:EDU {Id: 140, Text_id: 22})
-CREATE (edu8)-[r:interpretationevaluation]->(edu140)
+CREATE (edu8)-[r:interpretation_evaluation]->(edu140)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 22})
 MERGE (edu142:EDU {Id: 142, Text_id: 22})
@@ -9147,7 +9147,7 @@ CREATE (edu12)-[r:elaboration]->(edu11)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 22})
 MERGE (edu307:EDU {Id: 307, Text_id: 22})
-CREATE (edu22)-[r:interpretationevaluation]->(edu307)
+CREATE (edu22)-[r:interpretation_evaluation]->(edu307)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 22})
 MERGE (edu23:EDU {Id: 23, Text_id: 22})
@@ -9159,7 +9159,7 @@ CREATE (edu35)-[r:attribution]->(edu34)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 22})
 MERGE (edu37:EDU {Id: 37, Text_id: 22})
-CREATE (edu36)-[r:interpretationevaluation]->(edu37)
+CREATE (edu36)-[r:interpretation_evaluation]->(edu37)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 22})
 MERGE (edu38:EDU {Id: 38, Text_id: 22})
@@ -9179,11 +9179,11 @@ CREATE (edu54)-[r:elaboration]->(edu53)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 22})
 MERGE (edu56:EDU {Id: 56, Text_id: 22})
-CREATE (edu55)-[r:interpretationevaluation]->(edu56)
+CREATE (edu55)-[r:interpretation_evaluation]->(edu56)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 22})
 MERGE (edu58:EDU {Id: 58, Text_id: 22})
-CREATE (edu57)-[r:interpretationevaluation]->(edu58)
+CREATE (edu57)-[r:interpretation_evaluation]->(edu58)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 22})
 MERGE (edu61:EDU {Id: 61, Text_id: 22})
@@ -9231,7 +9231,7 @@ CREATE (edu89)-[r:elaboration]->(edu88)
 
 MERGE (edu90:EDU {Id: 90, Text_id: 22})
 MERGE (edu160:EDU {Id: 160, Text_id: 22})
-CREATE (edu90)-[r:causeeffect]->(edu160)
+CREATE (edu90)-[r:cause_effect]->(edu160)
 
 MERGE (edu95:EDU {Id: 95, Text_id: 22})
 MERGE (edu259:EDU {Id: 259, Text_id: 22})
@@ -9243,7 +9243,7 @@ CREATE (edu96)-[r:attribution]->(edu97)
 
 MERGE (edu100:EDU {Id: 100, Text_id: 22})
 MERGE (edu99:EDU {Id: 99, Text_id: 22})
-CREATE (edu100)-[r:causeeffect]->(edu99)
+CREATE (edu100)-[r:cause_effect]->(edu99)
 
 MERGE (edu102:EDU {Id: 102, Text_id: 22})
 MERGE (edu167:EDU {Id: 167, Text_id: 22})
@@ -9263,7 +9263,7 @@ CREATE (edu118)-[r:attribution]->(edu241)
 
 MERGE (edu120:EDU {Id: 120, Text_id: 22})
 MERGE (edu119:EDU {Id: 119, Text_id: 22})
-CREATE (edu120)-[r:causeeffect]->(edu119)
+CREATE (edu120)-[r:cause_effect]->(edu119)
 
 MERGE (edu122:EDU {Id: 122, Text_id: 22})
 MERGE (edu121:EDU {Id: 121, Text_id: 22})
@@ -10095,7 +10095,7 @@ CREATE (edu25)-[r:span]->(edu186)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 23})
 MERGE (edu188:EDU {Id: 188, Text_id: 23})
-CREATE (edu27)-[r:sameunit]->(edu188)
+CREATE (edu27)-[r:same_unit]->(edu188)
 
 MERGE (edu29:EDU {Id: 29, Text_id: 23})
 MERGE (edu124:EDU {Id: 124, Text_id: 23})
@@ -10139,7 +10139,7 @@ CREATE (edu42)-[r:span]->(edu132)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 23})
 MERGE (edu208:EDU {Id: 208, Text_id: 23})
-CREATE (edu45)-[r:sameunit]->(edu208)
+CREATE (edu45)-[r:same_unit]->(edu208)
 
 MERGE (edu48:EDU {Id: 48, Text_id: 23})
 MERGE (edu206:EDU {Id: 206, Text_id: 23})
@@ -10171,7 +10171,7 @@ CREATE (edu55)-[r:span]->(edu135)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 23})
 MERGE (edu139:EDU {Id: 139, Text_id: 23})
-CREATE (edu57)-[r:sameunit]->(edu139)
+CREATE (edu57)-[r:same_unit]->(edu139)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 23})
 MERGE (edu141:EDU {Id: 141, Text_id: 23})
@@ -10215,7 +10215,7 @@ CREATE (edu70)-[r:span]->(edu179)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 23})
 MERGE (edu159:EDU {Id: 159, Text_id: 23})
-CREATE (edu71)-[r:sameunit]->(edu159)
+CREATE (edu71)-[r:same_unit]->(edu159)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 23})
 MERGE (edu155:EDU {Id: 155, Text_id: 23})
@@ -10287,7 +10287,7 @@ CREATE (edu1)-[r:background]->(edu2)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 23})
 MERGE (edu4:EDU {Id: 4, Text_id: 23})
-CREATE (edu5)-[r:causeeffect]->(edu4)
+CREATE (edu5)-[r:cause_effect]->(edu4)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 23})
 MERGE (edu120:EDU {Id: 120, Text_id: 23})
@@ -10295,7 +10295,7 @@ CREATE (edu13)-[r:preparation]->(edu120)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 23})
 MERGE (edu17:EDU {Id: 17, Text_id: 23})
-CREATE (edu18)-[r:causeeffect]->(edu17)
+CREATE (edu18)-[r:cause_effect]->(edu17)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 23})
 MERGE (edu20:EDU {Id: 20, Text_id: 23})
@@ -10307,7 +10307,7 @@ CREATE (edu26)-[r:background]->(edu25)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 23})
 MERGE (edu189:EDU {Id: 189, Text_id: 23})
-CREATE (edu28)-[r:causeeffect]->(edu189)
+CREATE (edu28)-[r:cause_effect]->(edu189)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 23})
 MERGE (edu29:EDU {Id: 29, Text_id: 23})
@@ -10323,7 +10323,7 @@ CREATE (edu36)-[r:background]->(edu37)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 23})
 MERGE (edu39:EDU {Id: 39, Text_id: 23})
-CREATE (edu40)-[r:causeeffect]->(edu39)
+CREATE (edu40)-[r:cause_effect]->(edu39)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 23})
 MERGE (edu42:EDU {Id: 42, Text_id: 23})
@@ -10339,15 +10339,15 @@ CREATE (edu46)-[r:background]->(edu206)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 23})
 MERGE (edu48:EDU {Id: 48, Text_id: 23})
-CREATE (edu47)-[r:causeeffect]->(edu48)
+CREATE (edu47)-[r:cause_effect]->(edu48)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 23})
 MERGE (edu52:EDU {Id: 52, Text_id: 23})
-CREATE (edu53)-[r:interpretationevaluation]->(edu52)
+CREATE (edu53)-[r:interpretation_evaluation]->(edu52)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 23})
 MERGE (edu55:EDU {Id: 55, Text_id: 23})
-CREATE (edu56)-[r:causeeffect]->(edu55)
+CREATE (edu56)-[r:cause_effect]->(edu55)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 23})
 MERGE (edu58:EDU {Id: 58, Text_id: 23})
@@ -10375,7 +10375,7 @@ CREATE (edu84)-[r:elaboration]->(edu83)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 23})
 MERGE (edu225:EDU {Id: 225, Text_id: 23})
-CREATE (edu87)-[r:interpretationevaluation]->(edu225)
+CREATE (edu87)-[r:interpretation_evaluation]->(edu225)
 
 MERGE (edu89:EDU {Id: 89, Text_id: 23})
 MERGE (edu88:EDU {Id: 88, Text_id: 23})
@@ -10927,7 +10927,7 @@ CREATE (edu8)-[r:span]->(edu41)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 24})
 MERGE (edu42:EDU {Id: 42, Text_id: 24})
-CREATE (edu10)-[r:sameunit]->(edu42)
+CREATE (edu10)-[r:same_unit]->(edu42)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 24})
 MERGE (edu47:EDU {Id: 47, Text_id: 24})
@@ -11615,7 +11615,7 @@ CREATE (edu92)-[r:span]->(edu184)
 
 MERGE (edu94:EDU {Id: 94, Text_id: 25})
 MERGE (edu185:EDU {Id: 185, Text_id: 25})
-CREATE (edu94)-[r:sameunit]->(edu185)
+CREATE (edu94)-[r:same_unit]->(edu185)
 
 MERGE (edu96:EDU {Id: 96, Text_id: 25})
 MERGE (edu188:EDU {Id: 188, Text_id: 25})
@@ -11659,7 +11659,7 @@ CREATE (edu15)-[r:elaboration]->(edu14)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 25})
 MERGE (edu116:EDU {Id: 116, Text_id: 25})
-CREATE (edu19)-[r:causeeffect]->(edu116)
+CREATE (edu19)-[r:cause_effect]->(edu116)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 25})
 MERGE (edu20:EDU {Id: 20, Text_id: 25})
@@ -11723,7 +11723,7 @@ CREATE (edu58)-[r:attribution]->(edu154)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 25})
 MERGE (edu61:EDU {Id: 61, Text_id: 25})
-CREATE (edu62)-[r:causeeffect]->(edu61)
+CREATE (edu62)-[r:cause_effect]->(edu61)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 25})
 MERGE (edu64:EDU {Id: 64, Text_id: 25})
@@ -11759,7 +11759,7 @@ CREATE (edu85)-[r:elaboration]->(edu84)
 
 MERGE (edu88:EDU {Id: 88, Text_id: 25})
 MERGE (edu89:EDU {Id: 89, Text_id: 25})
-CREATE (edu88)-[r:interpretationevaluation]->(edu89)
+CREATE (edu88)-[r:interpretation_evaluation]->(edu89)
 
 MERGE (edu93:EDU {Id: 93, Text_id: 25})
 MERGE (edu92:EDU {Id: 92, Text_id: 25})
@@ -11767,7 +11767,7 @@ CREATE (edu93)-[r:elaboration]->(edu92)
 
 MERGE (edu95:EDU {Id: 95, Text_id: 25})
 MERGE (edu96:EDU {Id: 96, Text_id: 25})
-CREATE (edu95)-[r:causeeffect]->(edu96)
+CREATE (edu95)-[r:cause_effect]->(edu96)
 
 MERGE (edu100:EDU {Id: 100, Text_id: 25})
 MERGE (edu99:EDU {Id: 99, Text_id: 25})
@@ -12267,7 +12267,7 @@ CREATE (edu6)-[r:span]->(edu78)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 26})
 MERGE (edu79:EDU {Id: 79, Text_id: 26})
-CREATE (edu8)-[r:sameunit]->(edu79)
+CREATE (edu8)-[r:same_unit]->(edu79)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 26})
 MERGE (edu80:EDU {Id: 80, Text_id: 26})
@@ -12303,7 +12303,7 @@ CREATE (edu21)-[r:span]->(edu89)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 26})
 MERGE (edu92:EDU {Id: 92, Text_id: 26})
-CREATE (edu23)-[r:sameunit]->(edu92)
+CREATE (edu23)-[r:same_unit]->(edu92)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 26})
 MERGE (edu103:EDU {Id: 103, Text_id: 26})
@@ -12391,7 +12391,7 @@ CREATE (edu49)-[r:comparison]->(edu122)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 26})
 MERGE (edu123:EDU {Id: 123, Text_id: 26})
-CREATE (edu50)-[r:sameunit]->(edu123)
+CREATE (edu50)-[r:same_unit]->(edu123)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 26})
 MERGE (edu126:EDU {Id: 126, Text_id: 26})
@@ -12423,7 +12423,7 @@ CREATE (edu60)-[r:span]->(edu135)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 26})
 MERGE (edu145:EDU {Id: 145, Text_id: 26})
-CREATE (edu61)-[r:sameunit]->(edu145)
+CREATE (edu61)-[r:same_unit]->(edu145)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 26})
 MERGE (edu144:EDU {Id: 144, Text_id: 26})
@@ -12435,7 +12435,7 @@ CREATE (edu64)-[r:span]->(edu146)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 26})
 MERGE (edu147:EDU {Id: 147, Text_id: 26})
-CREATE (edu66)-[r:sameunit]->(edu147)
+CREATE (edu66)-[r:same_unit]->(edu147)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 26})
 MERGE (edu149:EDU {Id: 149, Text_id: 26})
@@ -12467,7 +12467,7 @@ CREATE (edu1)-[r:preparation]->(edu77)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 26})
 MERGE (edu3:EDU {Id: 3, Text_id: 26})
-CREATE (edu2)-[r:causeeffect]->(edu3)
+CREATE (edu2)-[r:cause_effect]->(edu3)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 26})
 MERGE (edu6:EDU {Id: 6, Text_id: 26})
@@ -12491,7 +12491,7 @@ CREATE (edu22)-[r:elaboration]->(edu21)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 26})
 MERGE (edu25:EDU {Id: 25, Text_id: 26})
-CREATE (edu24)-[r:causeeffect]->(edu25)
+CREATE (edu24)-[r:cause_effect]->(edu25)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 26})
 MERGE (edu111:EDU {Id: 111, Text_id: 26})
@@ -12519,7 +12519,7 @@ CREATE (edu59)-[r:condition]->(edu60)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 26})
 MERGE (edu63:EDU {Id: 63, Text_id: 26})
-CREATE (edu62)-[r:causeeffect]->(edu63)
+CREATE (edu62)-[r:cause_effect]->(edu63)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 26})
 MERGE (edu64:EDU {Id: 64, Text_id: 26})
@@ -12839,7 +12839,7 @@ CREATE (edu1)-[r:span]->(edu33)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 27})
 MERGE (edu32:EDU {Id: 32, Text_id: 27})
-CREATE (edu3)-[r:sameunit]->(edu32)
+CREATE (edu3)-[r:same_unit]->(edu32)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 27})
 MERGE (edu34:EDU {Id: 34, Text_id: 27})
@@ -12895,7 +12895,7 @@ CREATE (edu20)-[r:joint]->(edu63)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 27})
 MERGE (edu45:EDU {Id: 45, Text_id: 27})
-CREATE (edu21)-[r:sameunit]->(edu45)
+CREATE (edu21)-[r:same_unit]->(edu45)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 27})
 MERGE (edu43:EDU {Id: 43, Text_id: 27})
@@ -12911,7 +12911,7 @@ CREATE (edu27)-[r:span]->(edu50)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 27})
 MERGE (edu48:EDU {Id: 48, Text_id: 27})
-CREATE (edu28)-[r:sameunit]->(edu48)
+CREATE (edu28)-[r:same_unit]->(edu48)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 27})
 MERGE (edu46:EDU {Id: 46, Text_id: 27})
@@ -12935,7 +12935,7 @@ CREATE (edu11)-[r:elaboration]->(edu10)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 27})
 MERGE (edu15:EDU {Id: 15, Text_id: 27})
-CREATE (edu16)-[r:causeeffect]->(edu15)
+CREATE (edu16)-[r:cause_effect]->(edu15)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 27})
 MERGE (edu23:EDU {Id: 23, Text_id: 27})
@@ -12951,7 +12951,7 @@ CREATE (edu26)-[r:attribution]->(edu27)
 
 MERGE (edu29:EDU {Id: 29, Text_id: 27})
 MERGE (edu30:EDU {Id: 30, Text_id: 27})
-CREATE (edu29)-[r:causeeffect]->(edu30)
+CREATE (edu29)-[r:cause_effect]->(edu30)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 27})
 MERGE (edu35:EDU {Id: 35, Text_id: 27})
@@ -13455,11 +13455,11 @@ CREATE (edu56)-[r:comparison]->(edu162)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 28})
 MERGE (edu164:EDU {Id: 164, Text_id: 28})
-CREATE (edu57)-[r:sameunit]->(edu164)
+CREATE (edu57)-[r:same_unit]->(edu164)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 28})
 MERGE (edu164:EDU {Id: 164, Text_id: 28})
-CREATE (edu58)-[r:sameunit]->(edu164)
+CREATE (edu58)-[r:same_unit]->(edu164)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 28})
 MERGE (edu166:EDU {Id: 166, Text_id: 28})
@@ -13643,7 +13643,7 @@ CREATE (edu4)-[r:purpose]->(edu121)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 28})
 MERGE (edu7:EDU {Id: 7, Text_id: 28})
-CREATE (edu6)-[r:causeeffect]->(edu7)
+CREATE (edu6)-[r:cause_effect]->(edu7)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 28})
 MERGE (edu9:EDU {Id: 9, Text_id: 28})
@@ -13659,7 +13659,7 @@ CREATE (edu22)-[r:elaboration]->(edu21)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 28})
 MERGE (edu24:EDU {Id: 24, Text_id: 28})
-CREATE (edu23)-[r:interpretationevaluation]->(edu24)
+CREATE (edu23)-[r:interpretation_evaluation]->(edu24)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 28})
 MERGE (edu149:EDU {Id: 149, Text_id: 28})
@@ -13675,7 +13675,7 @@ CREATE (edu35)-[r:elaboration]->(edu36)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 28})
 MERGE (edu160:EDU {Id: 160, Text_id: 28})
-CREATE (edu51)-[r:interpretationevaluation]->(edu160)
+CREATE (edu51)-[r:interpretation_evaluation]->(edu160)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 28})
 MERGE (edu65:EDU {Id: 65, Text_id: 28})
@@ -13683,7 +13683,7 @@ CREATE (edu66)-[r:background]->(edu65)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 28})
 MERGE (edu68:EDU {Id: 68, Text_id: 28})
-CREATE (edu67)-[r:causeeffect]->(edu68)
+CREATE (edu67)-[r:cause_effect]->(edu68)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 28})
 MERGE (edu72:EDU {Id: 72, Text_id: 28})
@@ -13691,7 +13691,7 @@ CREATE (edu73)-[r:background]->(edu72)
 
 MERGE (edu78:EDU {Id: 78, Text_id: 28})
 MERGE (edu77:EDU {Id: 77, Text_id: 28})
-CREATE (edu78)-[r:causeeffect]->(edu77)
+CREATE (edu78)-[r:cause_effect]->(edu77)
 
 MERGE (edu80:EDU {Id: 80, Text_id: 28})
 MERGE (edu79:EDU {Id: 79, Text_id: 28})
@@ -13711,7 +13711,7 @@ CREATE (edu94)-[r:evidence]->(edu196)
 
 MERGE (edu95:EDU {Id: 95, Text_id: 28})
 MERGE (edu195:EDU {Id: 195, Text_id: 28})
-CREATE (edu95)-[r:causeeffect]->(edu195)
+CREATE (edu95)-[r:cause_effect]->(edu195)
 
 MERGE (edu100:EDU {Id: 100, Text_id: 28})
 MERGE (edu203:EDU {Id: 203, Text_id: 28})
@@ -13735,11 +13735,11 @@ CREATE (edu113)-[r:elaboration]->(edu112)
 
 MERGE (edu117:EDU {Id: 117, Text_id: 28})
 MERGE (edu116:EDU {Id: 116, Text_id: 28})
-CREATE (edu117)-[r:causeeffect]->(edu116)
+CREATE (edu117)-[r:cause_effect]->(edu116)
 
 MERGE (edu119:EDU {Id: 119, Text_id: 28})
 MERGE (edu120:EDU {Id: 120, Text_id: 28})
-CREATE (edu119)-[r:causeeffect]->(edu120)
+CREATE (edu119)-[r:cause_effect]->(edu120)
 
 MERGE (edu121:EDU {Id: 121, Text_id: 28})
 MERGE (edu122:EDU {Id: 122, Text_id: 28})
@@ -14085,7 +14085,7 @@ CREATE (edu1)-[r:span]->(edu32)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 29})
 MERGE (edu33:EDU {Id: 33, Text_id: 29})
-CREATE (edu3)-[r:sameunit]->(edu33)
+CREATE (edu3)-[r:same_unit]->(edu33)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 29})
 MERGE (edu34:EDU {Id: 34, Text_id: 29})
@@ -14517,7 +14517,7 @@ CREATE (edu8)-[r:span]->(edu104)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 3})
 MERGE (edu105:EDU {Id: 105, Text_id: 3})
-CREATE (edu10)-[r:sameunit]->(edu105)
+CREATE (edu10)-[r:same_unit]->(edu105)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 3})
 MERGE (edu109:EDU {Id: 109, Text_id: 3})
@@ -14633,7 +14633,7 @@ CREATE (edu50)-[r:span]->(edu149)
 
 MERGE (edu52:EDU {Id: 52, Text_id: 3})
 MERGE (edu150:EDU {Id: 150, Text_id: 3})
-CREATE (edu52)-[r:sameunit]->(edu150)
+CREATE (edu52)-[r:same_unit]->(edu150)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 3})
 MERGE (edu155:EDU {Id: 155, Text_id: 3})
@@ -14641,7 +14641,7 @@ CREATE (edu53)-[r:span]->(edu155)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 3})
 MERGE (edu156:EDU {Id: 156, Text_id: 3})
-CREATE (edu55)-[r:sameunit]->(edu156)
+CREATE (edu55)-[r:same_unit]->(edu156)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 3})
 MERGE (edu159:EDU {Id: 159, Text_id: 3})
@@ -14669,11 +14669,11 @@ CREATE (edu68)-[r:span]->(edu167)
 
 MERGE (edu70:EDU {Id: 70, Text_id: 3})
 MERGE (edu168:EDU {Id: 168, Text_id: 3})
-CREATE (edu70)-[r:sameunit]->(edu168)
+CREATE (edu70)-[r:same_unit]->(edu168)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 3})
 MERGE (edu175:EDU {Id: 175, Text_id: 3})
-CREATE (edu71)-[r:sameunit]->(edu175)
+CREATE (edu71)-[r:same_unit]->(edu175)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 3})
 MERGE (edu171:EDU {Id: 171, Text_id: 3})
@@ -14717,7 +14717,7 @@ CREATE (edu86)-[r:span]->(edu184)
 
 MERGE (edu88:EDU {Id: 88, Text_id: 3})
 MERGE (edu185:EDU {Id: 185, Text_id: 3})
-CREATE (edu88)-[r:sameunit]->(edu185)
+CREATE (edu88)-[r:same_unit]->(edu185)
 
 MERGE (edu89:EDU {Id: 89, Text_id: 3})
 MERGE (edu191:EDU {Id: 191, Text_id: 3})
@@ -15823,7 +15823,7 @@ CREATE (edu20)-[r:joint]->(edu163)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 31})
 MERGE (edu168:EDU {Id: 168, Text_id: 31})
-CREATE (edu22)-[r:sameunit]->(edu168)
+CREATE (edu22)-[r:same_unit]->(edu168)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 31})
 MERGE (edu170:EDU {Id: 170, Text_id: 31})
@@ -15943,7 +15943,7 @@ CREATE (edu63)-[r:span]->(edu211)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 31})
 MERGE (edu213:EDU {Id: 213, Text_id: 31})
-CREATE (edu65)-[r:sameunit]->(edu213)
+CREATE (edu65)-[r:same_unit]->(edu213)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 31})
 MERGE (edu248:EDU {Id: 248, Text_id: 31})
@@ -16079,7 +16079,7 @@ CREATE (edu113)-[r:span]->(edu290)
 
 MERGE (edu115:EDU {Id: 115, Text_id: 31})
 MERGE (edu292:EDU {Id: 292, Text_id: 31})
-CREATE (edu115)-[r:sameunit]->(edu292)
+CREATE (edu115)-[r:same_unit]->(edu292)
 
 MERGE (edu116:EDU {Id: 116, Text_id: 31})
 MERGE (edu295:EDU {Id: 295, Text_id: 31})
@@ -16139,7 +16139,7 @@ CREATE (edu132)-[r:span]->(edu315)
 
 MERGE (edu134:EDU {Id: 134, Text_id: 31})
 MERGE (edu317:EDU {Id: 317, Text_id: 31})
-CREATE (edu134)-[r:sameunit]->(edu317)
+CREATE (edu134)-[r:same_unit]->(edu317)
 
 MERGE (edu135:EDU {Id: 135, Text_id: 31})
 MERGE (edu313:EDU {Id: 313, Text_id: 31})
@@ -16175,11 +16175,11 @@ CREATE (edu146)-[r:joint]->(edu330)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 31})
 MERGE (edu2:EDU {Id: 2, Text_id: 31})
-CREATE (edu3)-[r:interpretationevaluation]->(edu2)
+CREATE (edu3)-[r:interpretation_evaluation]->(edu2)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 31})
 MERGE (edu150:EDU {Id: 150, Text_id: 31})
-CREATE (edu4)-[r:causeeffect]->(edu150)
+CREATE (edu4)-[r:cause_effect]->(edu150)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 31})
 MERGE (edu160:EDU {Id: 160, Text_id: 31})
@@ -16187,7 +16187,7 @@ CREATE (edu5)-[r:preparation]->(edu160)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 31})
 MERGE (edu153:EDU {Id: 153, Text_id: 31})
-CREATE (edu9)-[r:interpretationevaluation]->(edu153)
+CREATE (edu9)-[r:interpretation_evaluation]->(edu153)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 31})
 MERGE (edu12:EDU {Id: 12, Text_id: 31})
@@ -16211,7 +16211,7 @@ CREATE (edu24)-[r:elaboration]->(edu23)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 31})
 MERGE (edu174:EDU {Id: 174, Text_id: 31})
-CREATE (edu27)-[r:causeeffect]->(edu174)
+CREATE (edu27)-[r:cause_effect]->(edu174)
 
 MERGE (edu29:EDU {Id: 29, Text_id: 31})
 MERGE (edu28:EDU {Id: 28, Text_id: 31})
@@ -16231,7 +16231,7 @@ CREATE (edu38)-[r:preparation]->(edu196)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 31})
 MERGE (edu39:EDU {Id: 39, Text_id: 31})
-CREATE (edu40)-[r:causeeffect]->(edu39)
+CREATE (edu40)-[r:cause_effect]->(edu39)
 
 MERGE (edu42:EDU {Id: 42, Text_id: 31})
 MERGE (edu41:EDU {Id: 41, Text_id: 31})
@@ -16259,7 +16259,7 @@ CREATE (edu64)-[r:elaboration]->(edu63)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 31})
 MERGE (edu68:EDU {Id: 68, Text_id: 31})
-CREATE (edu67)-[r:causeeffect]->(edu68)
+CREATE (edu67)-[r:cause_effect]->(edu68)
 
 MERGE (edu70:EDU {Id: 70, Text_id: 31})
 MERGE (edu71:EDU {Id: 71, Text_id: 31})
@@ -16279,7 +16279,7 @@ CREATE (edu86)-[r:background]->(edu85)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 31})
 MERGE (edu88:EDU {Id: 88, Text_id: 31})
-CREATE (edu87)-[r:causeeffect]->(edu88)
+CREATE (edu87)-[r:cause_effect]->(edu88)
 
 MERGE (edu90:EDU {Id: 90, Text_id: 31})
 MERGE (edu91:EDU {Id: 91, Text_id: 31})
@@ -16311,7 +16311,7 @@ CREATE (edu102)-[r:attribution]->(edu103)
 
 MERGE (edu105:EDU {Id: 105, Text_id: 31})
 MERGE (edu273:EDU {Id: 273, Text_id: 31})
-CREATE (edu105)-[r:causeeffect]->(edu273)
+CREATE (edu105)-[r:cause_effect]->(edu273)
 
 MERGE (edu107:EDU {Id: 107, Text_id: 31})
 MERGE (edu106:EDU {Id: 106, Text_id: 31})
@@ -16327,7 +16327,7 @@ CREATE (edu124)-[r:purpose]->(edu123)
 
 MERGE (edu127:EDU {Id: 127, Text_id: 31})
 MERGE (edu126:EDU {Id: 126, Text_id: 31})
-CREATE (edu127)-[r:causeeffect]->(edu126)
+CREATE (edu127)-[r:cause_effect]->(edu126)
 
 MERGE (edu131:EDU {Id: 131, Text_id: 31})
 MERGE (edu130:EDU {Id: 130, Text_id: 31})
@@ -17061,7 +17061,7 @@ CREATE (edu1)-[r:preparation]->(edu64)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 32})
 MERGE (edu6:EDU {Id: 6, Text_id: 32})
-CREATE (edu5)-[r:causeeffect]->(edu6)
+CREATE (edu5)-[r:cause_effect]->(edu6)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 32})
 MERGE (edu43:EDU {Id: 43, Text_id: 32})
@@ -17069,15 +17069,15 @@ CREATE (edu7)-[r:attribution]->(edu43)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 32})
 MERGE (edu9:EDU {Id: 9, Text_id: 32})
-CREATE (edu8)-[r:causeeffect]->(edu9)
+CREATE (edu8)-[r:cause_effect]->(edu9)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 32})
 MERGE (edu10:EDU {Id: 10, Text_id: 32})
-CREATE (edu11)-[r:causeeffect]->(edu10)
+CREATE (edu11)-[r:cause_effect]->(edu10)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 32})
 MERGE (edu13:EDU {Id: 13, Text_id: 32})
-CREATE (edu14)-[r:causeeffect]->(edu13)
+CREATE (edu14)-[r:cause_effect]->(edu13)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 32})
 MERGE (edu16:EDU {Id: 16, Text_id: 32})
@@ -17399,7 +17399,7 @@ CREATE (edu23)-[r:span]->(edu75)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 33})
 MERGE (edu76:EDU {Id: 76, Text_id: 33})
-CREATE (edu25)-[r:sameunit]->(edu76)
+CREATE (edu25)-[r:same_unit]->(edu76)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 33})
 MERGE (edu80:EDU {Id: 80, Text_id: 33})
@@ -17431,7 +17431,7 @@ CREATE (edu36)-[r:span]->(edu84)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 33})
 MERGE (edu85:EDU {Id: 85, Text_id: 33})
-CREATE (edu38)-[r:sameunit]->(edu85)
+CREATE (edu38)-[r:same_unit]->(edu85)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 33})
 MERGE (edu88:EDU {Id: 88, Text_id: 33})
@@ -17543,7 +17543,7 @@ CREATE (edu52)-[r:elaboration]->(edu51)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 33})
 MERGE (edu95:EDU {Id: 95, Text_id: 33})
-CREATE (edu53)-[r:interpretationevaluation]->(edu95)
+CREATE (edu53)-[r:interpretation_evaluation]->(edu95)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 33})
 MERGE (edu97:EDU {Id: 97, Text_id: 33})
@@ -17551,7 +17551,7 @@ CREATE (edu54)-[r:elaboration]->(edu97)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 33})
 MERGE (edu100:EDU {Id: 100, Text_id: 33})
-CREATE (edu57)-[r:interpretationevaluation]->(edu100)
+CREATE (edu57)-[r:interpretation_evaluation]->(edu100)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 33})
 MERGE (edu2:EDU {Id: 2, Text_id: 33})
@@ -17995,7 +17995,7 @@ CREATE (edu68)-[r:span]->(edu161)
 
 MERGE (edu70:EDU {Id: 70, Text_id: 34})
 MERGE (edu158:EDU {Id: 158, Text_id: 34})
-CREATE (edu70)-[r:sameunit]->(edu158)
+CREATE (edu70)-[r:same_unit]->(edu158)
 
 MERGE (edu72:EDU {Id: 72, Text_id: 34})
 MERGE (edu156:EDU {Id: 156, Text_id: 34})
@@ -18043,7 +18043,7 @@ CREATE (edu9)-[r:attribution]->(edu10)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 34})
 MERGE (edu15:EDU {Id: 15, Text_id: 34})
-CREATE (edu14)-[r:causeeffect]->(edu15)
+CREATE (edu14)-[r:cause_effect]->(edu15)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 34})
 MERGE (edu95:EDU {Id: 95, Text_id: 34})
@@ -18079,7 +18079,7 @@ CREATE (edu32)-[r:purpose]->(edu31)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 34})
 MERGE (edu116:EDU {Id: 116, Text_id: 34})
-CREATE (edu33)-[r:causeeffect]->(edu116)
+CREATE (edu33)-[r:cause_effect]->(edu116)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 34})
 MERGE (edu34:EDU {Id: 34, Text_id: 34})
@@ -18143,7 +18143,7 @@ CREATE (edu66)-[r:background]->(edu161)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 34})
 MERGE (edu68:EDU {Id: 68, Text_id: 34})
-CREATE (edu67)-[r:causeeffect]->(edu68)
+CREATE (edu67)-[r:cause_effect]->(edu68)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 34})
 MERGE (edu159:EDU {Id: 159, Text_id: 34})
@@ -18151,7 +18151,7 @@ CREATE (edu69)-[r:attribution]->(edu159)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 34})
 MERGE (edu156:EDU {Id: 156, Text_id: 34})
-CREATE (edu71)-[r:causeeffect]->(edu156)
+CREATE (edu71)-[r:cause_effect]->(edu156)
 
 MERGE (edu80:EDU {Id: 80, Text_id: 34})
 MERGE (edu81:EDU {Id: 81, Text_id: 34})
@@ -18668,7 +18668,7 @@ CREATE (edu48)-[r:span]->(edu142)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 35})
 MERGE (edu143:EDU {Id: 143, Text_id: 35})
-CREATE (edu49)-[r:sameunit]->(edu143)
+CREATE (edu49)-[r:same_unit]->(edu143)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 35})
 MERGE (edu145:EDU {Id: 145, Text_id: 35})
@@ -18816,7 +18816,7 @@ CREATE (edu13)-[r:elaboration]->(edu116)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 35})
 MERGE (edu15:EDU {Id: 15, Text_id: 35})
-CREATE (edu14)-[r:causeeffect]->(edu15)
+CREATE (edu14)-[r:cause_effect]->(edu15)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 35})
 MERGE (edu110:EDU {Id: 110, Text_id: 35})
@@ -18884,11 +18884,11 @@ CREATE (edu47)-[r:elaboration]->(edu48)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 35})
 MERGE (edu146:EDU {Id: 146, Text_id: 35})
-CREATE (edu50)-[r:interpretationevaluation]->(edu146)
+CREATE (edu50)-[r:interpretation_evaluation]->(edu146)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 35})
 MERGE (edu54:EDU {Id: 54, Text_id: 35})
-CREATE (edu53)-[r:causeeffect]->(edu54)
+CREATE (edu53)-[r:cause_effect]->(edu54)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 35})
 MERGE (edu151:EDU {Id: 151, Text_id: 35})
@@ -18928,11 +18928,11 @@ CREATE (edu78)-[r:background]->(edu185)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 35})
 MERGE (edu88:EDU {Id: 88, Text_id: 35})
-CREATE (edu87)-[r:interpretationevaluation]->(edu88)
+CREATE (edu87)-[r:interpretation_evaluation]->(edu88)
 
 MERGE (edu89:EDU {Id: 89, Text_id: 35})
 MERGE (edu90:EDU {Id: 90, Text_id: 35})
-CREATE (edu89)-[r:interpretationevaluation]->(edu90)
+CREATE (edu89)-[r:interpretation_evaluation]->(edu90)
 
 MERGE (edu91:EDU {Id: 91, Text_id: 35})
 MERGE (edu194:EDU {Id: 194, Text_id: 35})
@@ -18940,7 +18940,7 @@ CREATE (edu91)-[r:elaboration]->(edu194)
 
 MERGE (edu92:EDU {Id: 92, Text_id: 35})
 MERGE (edu93:EDU {Id: 93, Text_id: 35})
-CREATE (edu92)-[r:causeeffect]->(edu93)
+CREATE (edu92)-[r:cause_effect]->(edu93)
 
 MERGE (edu94:EDU {Id: 94, Text_id: 35})
 MERGE (edu95:EDU {Id: 95, Text_id: 35})
@@ -19443,7 +19443,7 @@ CREATE (edu9)-[r:span]->(edu63)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 36})
 MERGE (edu62:EDU {Id: 62, Text_id: 36})
-CREATE (edu11)-[r:sameunit]->(edu62)
+CREATE (edu11)-[r:same_unit]->(edu62)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 36})
 MERGE (edu68:EDU {Id: 68, Text_id: 36})
@@ -19503,7 +19503,7 @@ CREATE (edu34)-[r:span]->(edu85)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 36})
 MERGE (edu86:EDU {Id: 86, Text_id: 36})
-CREATE (edu36)-[r:sameunit]->(edu86)
+CREATE (edu36)-[r:same_unit]->(edu86)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 36})
 MERGE (edu91:EDU {Id: 91, Text_id: 36})
@@ -19555,7 +19555,7 @@ CREATE (edu54)-[r:span]->(edu107)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 36})
 MERGE (edu106:EDU {Id: 106, Text_id: 36})
-CREATE (edu56)-[r:sameunit]->(edu106)
+CREATE (edu56)-[r:same_unit]->(edu106)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 36})
 MERGE (edu108:EDU {Id: 108, Text_id: 36})
@@ -19567,7 +19567,7 @@ CREATE (edu2)-[r:elaboration]->(edu1)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 36})
 MERGE (edu58:EDU {Id: 58, Text_id: 36})
-CREATE (edu3)-[r:interpretationevaluation]->(edu58)
+CREATE (edu3)-[r:interpretation_evaluation]->(edu58)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 36})
 MERGE (edu5:EDU {Id: 5, Text_id: 36})
@@ -19583,7 +19583,7 @@ CREATE (edu10)-[r:elaboration]->(edu9)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 36})
 MERGE (edu13:EDU {Id: 13, Text_id: 36})
-CREATE (edu12)-[r:causeeffect]->(edu13)
+CREATE (edu12)-[r:cause_effect]->(edu13)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 36})
 MERGE (edu14:EDU {Id: 14, Text_id: 36})
@@ -19595,7 +19595,7 @@ CREATE (edu17)-[r:evidence]->(edu16)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 36})
 MERGE (edu19:EDU {Id: 19, Text_id: 36})
-CREATE (edu18)-[r:causeeffect]->(edu19)
+CREATE (edu18)-[r:cause_effect]->(edu19)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 36})
 MERGE (edu19:EDU {Id: 19, Text_id: 36})
@@ -20019,7 +20019,7 @@ CREATE (edu14)-[r:span]->(edu83)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 37})
 MERGE (edu84:EDU {Id: 84, Text_id: 37})
-CREATE (edu16)-[r:sameunit]->(edu84)
+CREATE (edu16)-[r:same_unit]->(edu84)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 37})
 MERGE (edu85:EDU {Id: 85, Text_id: 37})
@@ -20035,7 +20035,7 @@ CREATE (edu19)-[r:span]->(edu86)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 37})
 MERGE (edu87:EDU {Id: 87, Text_id: 37})
-CREATE (edu21)-[r:sameunit]->(edu87)
+CREATE (edu21)-[r:same_unit]->(edu87)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 37})
 MERGE (edu91:EDU {Id: 91, Text_id: 37})
@@ -20223,7 +20223,7 @@ CREATE (edu22)-[r:purpose]->(edu23)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 37})
 MERGE (edu93:EDU {Id: 93, Text_id: 37})
-CREATE (edu31)-[r:interpretationevaluation]->(edu93)
+CREATE (edu31)-[r:interpretation_evaluation]->(edu93)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 37})
 MERGE (edu32:EDU {Id: 32, Text_id: 37})
@@ -20279,7 +20279,7 @@ CREATE (edu65)-[r:concession]->(edu125)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 37})
 MERGE (edu127:EDU {Id: 127, Text_id: 37})
-CREATE (edu66)-[r:interpretationevaluation]->(edu127)
+CREATE (edu66)-[r:interpretation_evaluation]->(edu127)
 
 MERGE (edu68:EDU {Id: 68, Text_id: 37})
 MERGE (edu67:EDU {Id: 67, Text_id: 37})
@@ -20761,7 +20761,7 @@ CREATE (edu55)-[r:span]->(edu168)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 38})
 MERGE (edu171:EDU {Id: 171, Text_id: 38})
-CREATE (edu57)-[r:sameunit]->(edu171)
+CREATE (edu57)-[r:same_unit]->(edu171)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 38})
 MERGE (edu172:EDU {Id: 172, Text_id: 38})
@@ -20797,7 +20797,7 @@ CREATE (edu70)-[r:span]->(edu121)
 
 MERGE (edu72:EDU {Id: 72, Text_id: 38})
 MERGE (edu123:EDU {Id: 123, Text_id: 38})
-CREATE (edu72)-[r:sameunit]->(edu123)
+CREATE (edu72)-[r:same_unit]->(edu123)
 
 MERGE (edu75:EDU {Id: 75, Text_id: 38})
 MERGE (edu137:EDU {Id: 137, Text_id: 38})
@@ -20825,7 +20825,7 @@ CREATE (edu12)-[r:elaboration]->(edu11)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 38})
 MERGE (edu93:EDU {Id: 93, Text_id: 38})
-CREATE (edu13)-[r:causeeffect]->(edu93)
+CREATE (edu13)-[r:cause_effect]->(edu93)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 38})
 MERGE (edu14:EDU {Id: 14, Text_id: 38})
@@ -20833,7 +20833,7 @@ CREATE (edu15)-[r:elaboration]->(edu14)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 38})
 MERGE (edu19:EDU {Id: 19, Text_id: 38})
-CREATE (edu20)-[r:interpretationevaluation]->(edu19)
+CREATE (edu20)-[r:interpretation_evaluation]->(edu19)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 38})
 MERGE (edu102:EDU {Id: 102, Text_id: 38})
@@ -20841,7 +20841,7 @@ CREATE (edu21)-[r:evidence]->(edu102)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 38})
 MERGE (edu23:EDU {Id: 23, Text_id: 38})
-CREATE (edu22)-[r:causeeffect]->(edu23)
+CREATE (edu22)-[r:cause_effect]->(edu23)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 38})
 MERGE (edu24:EDU {Id: 24, Text_id: 38})
@@ -20873,7 +20873,7 @@ CREATE (edu39)-[r:elaboration]->(edu38)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 38})
 MERGE (edu40:EDU {Id: 40, Text_id: 38})
-CREATE (edu41)-[r:causeeffect]->(edu40)
+CREATE (edu41)-[r:cause_effect]->(edu40)
 
 MERGE (edu44:EDU {Id: 44, Text_id: 38})
 MERGE (edu43:EDU {Id: 43, Text_id: 38})
@@ -20905,7 +20905,7 @@ CREATE (edu62)-[r:elaboration]->(edu61)
 
 MERGE (edu64:EDU {Id: 64, Text_id: 38})
 MERGE (edu63:EDU {Id: 63, Text_id: 38})
-CREATE (edu64)-[r:causeeffect]->(edu63)
+CREATE (edu64)-[r:cause_effect]->(edu63)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 38})
 MERGE (edu66:EDU {Id: 66, Text_id: 38})
@@ -21431,7 +21431,7 @@ CREATE (edu16)-[r:joint]->(edu112)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 39})
 MERGE (edu115:EDU {Id: 115, Text_id: 39})
-CREATE (edu17)-[r:sameunit]->(edu115)
+CREATE (edu17)-[r:same_unit]->(edu115)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 39})
 MERGE (edu118:EDU {Id: 118, Text_id: 39})
@@ -21639,7 +21639,7 @@ CREATE (edu8)-[r:purpose]->(edu103)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 39})
 MERGE (edu10:EDU {Id: 10, Text_id: 39})
-CREATE (edu9)-[r:interpretationevaluation]->(edu10)
+CREATE (edu9)-[r:interpretation_evaluation]->(edu10)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 39})
 MERGE (edu12:EDU {Id: 12, Text_id: 39})
@@ -21663,15 +21663,15 @@ CREATE (edu21)-[r:elaboration]->(edu119)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 39})
 MERGE (edu23:EDU {Id: 23, Text_id: 39})
-CREATE (edu22)-[r:interpretationevaluation]->(edu23)
+CREATE (edu22)-[r:interpretation_evaluation]->(edu23)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 39})
 MERGE (edu26:EDU {Id: 26, Text_id: 39})
-CREATE (edu25)-[r:causeeffect]->(edu26)
+CREATE (edu25)-[r:cause_effect]->(edu26)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 39})
 MERGE (edu126:EDU {Id: 126, Text_id: 39})
-CREATE (edu27)-[r:interpretationevaluation]->(edu126)
+CREATE (edu27)-[r:interpretation_evaluation]->(edu126)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 39})
 MERGE (edu29:EDU {Id: 29, Text_id: 39})
@@ -21679,7 +21679,7 @@ CREATE (edu28)-[r:elaboration]->(edu29)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 39})
 MERGE (edu37:EDU {Id: 37, Text_id: 39})
-CREATE (edu36)-[r:interpretationevaluation]->(edu37)
+CREATE (edu36)-[r:interpretation_evaluation]->(edu37)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 39})
 MERGE (edu39:EDU {Id: 39, Text_id: 39})
@@ -21687,19 +21687,19 @@ CREATE (edu38)-[r:purpose]->(edu39)
 
 MERGE (edu42:EDU {Id: 42, Text_id: 39})
 MERGE (edu41:EDU {Id: 41, Text_id: 39})
-CREATE (edu42)-[r:causeeffect]->(edu41)
+CREATE (edu42)-[r:cause_effect]->(edu41)
 
 MERGE (edu44:EDU {Id: 44, Text_id: 39})
 MERGE (edu144:EDU {Id: 144, Text_id: 39})
-CREATE (edu44)-[r:interpretationevaluation]->(edu144)
+CREATE (edu44)-[r:interpretation_evaluation]->(edu144)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 39})
 MERGE (edu46:EDU {Id: 46, Text_id: 39})
-CREATE (edu45)-[r:interpretationevaluation]->(edu46)
+CREATE (edu45)-[r:interpretation_evaluation]->(edu46)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 39})
 MERGE (edu48:EDU {Id: 48, Text_id: 39})
-CREATE (edu47)-[r:interpretationevaluation]->(edu48)
+CREATE (edu47)-[r:interpretation_evaluation]->(edu48)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 39})
 MERGE (edu150:EDU {Id: 150, Text_id: 39})
@@ -21707,7 +21707,7 @@ CREATE (edu49)-[r:elaboration]->(edu150)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 39})
 MERGE (edu149:EDU {Id: 149, Text_id: 39})
-CREATE (edu50)-[r:interpretationevaluation]->(edu149)
+CREATE (edu50)-[r:interpretation_evaluation]->(edu149)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 39})
 MERGE (edu157:EDU {Id: 157, Text_id: 39})
@@ -21723,7 +21723,7 @@ CREATE (edu58)-[r:background]->(edu57)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 39})
 MERGE (edu160:EDU {Id: 160, Text_id: 39})
-CREATE (edu59)-[r:interpretationevaluation]->(edu160)
+CREATE (edu59)-[r:interpretation_evaluation]->(edu160)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 39})
 MERGE (edu60:EDU {Id: 60, Text_id: 39})
@@ -21735,11 +21735,11 @@ CREATE (edu63)-[r:elaboration]->(edu64)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 39})
 MERGE (edu166:EDU {Id: 166, Text_id: 39})
-CREATE (edu65)-[r:interpretationevaluation]->(edu166)
+CREATE (edu65)-[r:interpretation_evaluation]->(edu166)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 39})
 MERGE (edu172:EDU {Id: 172, Text_id: 39})
-CREATE (edu69)-[r:interpretationevaluation]->(edu172)
+CREATE (edu69)-[r:interpretation_evaluation]->(edu172)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 39})
 MERGE (edu74:EDU {Id: 74, Text_id: 39})
@@ -21751,7 +21751,7 @@ CREATE (edu75)-[r:attribution]->(edu76)
 
 MERGE (edu77:EDU {Id: 77, Text_id: 39})
 MERGE (edu178:EDU {Id: 178, Text_id: 39})
-CREATE (edu77)-[r:interpretationevaluation]->(edu178)
+CREATE (edu77)-[r:interpretation_evaluation]->(edu178)
 
 MERGE (edu78:EDU {Id: 78, Text_id: 39})
 MERGE (edu79:EDU {Id: 79, Text_id: 39})
@@ -21759,7 +21759,7 @@ CREATE (edu78)-[r:purpose]->(edu79)
 
 MERGE (edu80:EDU {Id: 80, Text_id: 39})
 MERGE (edu81:EDU {Id: 81, Text_id: 39})
-CREATE (edu80)-[r:interpretationevaluation]->(edu81)
+CREATE (edu80)-[r:interpretation_evaluation]->(edu81)
 
 MERGE (edu82:EDU {Id: 82, Text_id: 39})
 MERGE (edu189:EDU {Id: 189, Text_id: 39})
@@ -21771,7 +21771,7 @@ CREATE (edu84)-[r:background]->(edu83)
 
 MERGE (edu85:EDU {Id: 85, Text_id: 39})
 MERGE (edu86:EDU {Id: 86, Text_id: 39})
-CREATE (edu85)-[r:interpretationevaluation]->(edu86)
+CREATE (edu85)-[r:interpretation_evaluation]->(edu86)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 39})
 MERGE (edu88:EDU {Id: 88, Text_id: 39})
@@ -21783,7 +21783,7 @@ CREATE (edu90)-[r:elaboration]->(edu91)
 
 MERGE (edu93:EDU {Id: 93, Text_id: 39})
 MERGE (edu199:EDU {Id: 199, Text_id: 39})
-CREATE (edu93)-[r:interpretationevaluation]->(edu199)
+CREATE (edu93)-[r:interpretation_evaluation]->(edu199)
 
 MERGE (edu95:EDU {Id: 95, Text_id: 39})
 MERGE (edu96:EDU {Id: 96, Text_id: 39})
@@ -22261,7 +22261,7 @@ CREATE (edu4)-[r:joint]->(edu86)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 4})
 MERGE (edu51:EDU {Id: 51, Text_id: 4})
-CREATE (edu5)-[r:sameunit]->(edu51)
+CREATE (edu5)-[r:same_unit]->(edu51)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 4})
 MERGE (edu49:EDU {Id: 49, Text_id: 4})
@@ -22273,7 +22273,7 @@ CREATE (edu8)-[r:span]->(edu52)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 4})
 MERGE (edu54:EDU {Id: 54, Text_id: 4})
-CREATE (edu10)-[r:sameunit]->(edu54)
+CREATE (edu10)-[r:same_unit]->(edu54)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 4})
 MERGE (edu53:EDU {Id: 53, Text_id: 4})
@@ -22301,7 +22301,7 @@ CREATE (edu17)-[r:span]->(edu57)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 4})
 MERGE (edu82:EDU {Id: 82, Text_id: 4})
-CREATE (edu19)-[r:sameunit]->(edu82)
+CREATE (edu19)-[r:same_unit]->(edu82)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 4})
 MERGE (edu80:EDU {Id: 80, Text_id: 4})
@@ -22345,7 +22345,7 @@ CREATE (edu32)-[r:joint]->(edu62)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 4})
 MERGE (edu66:EDU {Id: 66, Text_id: 4})
-CREATE (edu33)-[r:sameunit]->(edu66)
+CREATE (edu33)-[r:same_unit]->(edu66)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 4})
 MERGE (edu73:EDU {Id: 73, Text_id: 4})
@@ -22361,7 +22361,7 @@ CREATE (edu38)-[r:sequence]->(edu71)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 4})
 MERGE (edu75:EDU {Id: 75, Text_id: 4})
-CREATE (edu39)-[r:sameunit]->(edu75)
+CREATE (edu39)-[r:same_unit]->(edu75)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 4})
 MERGE (edu68:EDU {Id: 68, Text_id: 4})
@@ -22867,7 +22867,7 @@ CREATE (edu14)-[r:joint]->(edu98)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 40})
 MERGE (edu100:EDU {Id: 100, Text_id: 40})
-CREATE (edu15)-[r:sameunit]->(edu100)
+CREATE (edu15)-[r:same_unit]->(edu100)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 40})
 MERGE (edu101:EDU {Id: 101, Text_id: 40})
@@ -22891,7 +22891,7 @@ CREATE (edu22)-[r:span]->(edu107)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 40})
 MERGE (edu108:EDU {Id: 108, Text_id: 40})
-CREATE (edu24)-[r:sameunit]->(edu108)
+CREATE (edu24)-[r:same_unit]->(edu108)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 40})
 MERGE (edu111:EDU {Id: 111, Text_id: 40})
@@ -23043,7 +23043,7 @@ CREATE (edu80)-[r:span]->(edu170)
 
 MERGE (edu82:EDU {Id: 82, Text_id: 40})
 MERGE (edu171:EDU {Id: 171, Text_id: 40})
-CREATE (edu82)-[r:sameunit]->(edu171)
+CREATE (edu82)-[r:same_unit]->(edu171)
 
 MERGE (edu83:EDU {Id: 83, Text_id: 40})
 MERGE (edu173:EDU {Id: 173, Text_id: 40})
@@ -23119,11 +23119,11 @@ CREATE (edu49)-[r:condition]->(edu50)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 40})
 MERGE (edu50:EDU {Id: 50, Text_id: 40})
-CREATE (edu51)-[r:causeeffect]->(edu50)
+CREATE (edu51)-[r:cause_effect]->(edu50)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 40})
 MERGE (edu53:EDU {Id: 53, Text_id: 40})
-CREATE (edu54)-[r:interpretationevaluation]->(edu53)
+CREATE (edu54)-[r:interpretation_evaluation]->(edu53)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 40})
 MERGE (edu56:EDU {Id: 56, Text_id: 40})
@@ -23687,7 +23687,7 @@ CREATE (edu31)-[r:span]->(edu80)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 41})
 MERGE (edu81:EDU {Id: 81, Text_id: 41})
-CREATE (edu33)-[r:sameunit]->(edu81)
+CREATE (edu33)-[r:same_unit]->(edu81)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 41})
 MERGE (edu82:EDU {Id: 82, Text_id: 41})
@@ -23747,11 +23747,11 @@ CREATE (edu1)-[r:preparation]->(edu2)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 41})
 MERGE (edu4:EDU {Id: 4, Text_id: 41})
-CREATE (edu3)-[r:causeeffect]->(edu4)
+CREATE (edu3)-[r:cause_effect]->(edu4)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 41})
 MERGE (edu7:EDU {Id: 7, Text_id: 41})
-CREATE (edu6)-[r:causeeffect]->(edu7)
+CREATE (edu6)-[r:cause_effect]->(edu7)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 41})
 MERGE (edu62:EDU {Id: 62, Text_id: 41})
@@ -23759,7 +23759,7 @@ CREATE (edu8)-[r:attribution]->(edu62)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 41})
 MERGE (edu10:EDU {Id: 10, Text_id: 41})
-CREATE (edu9)-[r:causeeffect]->(edu10)
+CREATE (edu9)-[r:cause_effect]->(edu10)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 41})
 MERGE (edu11:EDU {Id: 11, Text_id: 41})
@@ -23783,7 +23783,7 @@ CREATE (edu28)-[r:attribution]->(edu77)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 41})
 MERGE (edu29:EDU {Id: 29, Text_id: 41})
-CREATE (edu30)-[r:causeeffect]->(edu29)
+CREATE (edu30)-[r:cause_effect]->(edu29)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 41})
 MERGE (edu31:EDU {Id: 31, Text_id: 41})
@@ -23827,7 +23827,7 @@ CREATE (edu54)-[r:elaboration]->(edu53)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 41})
 MERGE (edu55:EDU {Id: 55, Text_id: 41})
-CREATE (edu56)-[r:causeeffect]->(edu55)
+CREATE (edu56)-[r:cause_effect]->(edu55)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 41})
 MERGE (edu2:EDU {Id: 2, Text_id: 41})
@@ -24131,7 +24131,7 @@ CREATE (edu23)-[r:span]->(edu68)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 42})
 MERGE (edu70:EDU {Id: 70, Text_id: 42})
-CREATE (edu25)-[r:sameunit]->(edu70)
+CREATE (edu25)-[r:same_unit]->(edu70)
 
 MERGE (edu26:EDU {Id: 26, Text_id: 42})
 MERGE (edu75:EDU {Id: 75, Text_id: 42})
@@ -24171,7 +24171,7 @@ CREATE (edu37)-[r:span]->(edu77)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 42})
 MERGE (edu79:EDU {Id: 79, Text_id: 42})
-CREATE (edu39)-[r:sameunit]->(edu79)
+CREATE (edu39)-[r:same_unit]->(edu79)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 42})
 MERGE (edu81:EDU {Id: 81, Text_id: 42})
@@ -24183,7 +24183,7 @@ CREATE (edu43)-[r:span]->(edu82)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 42})
 MERGE (edu84:EDU {Id: 84, Text_id: 42})
-CREATE (edu45)-[r:sameunit]->(edu84)
+CREATE (edu45)-[r:same_unit]->(edu84)
 
 MERGE (edu46:EDU {Id: 46, Text_id: 42})
 MERGE (edu88:EDU {Id: 88, Text_id: 42})
@@ -24207,11 +24207,11 @@ CREATE (edu1)-[r:preparation]->(edu107)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 42})
 MERGE (edu3:EDU {Id: 3, Text_id: 42})
-CREATE (edu2)-[r:causeeffect]->(edu3)
+CREATE (edu2)-[r:cause_effect]->(edu3)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 42})
 MERGE (edu6:EDU {Id: 6, Text_id: 42})
-CREATE (edu7)-[r:causeeffect]->(edu6)
+CREATE (edu7)-[r:cause_effect]->(edu6)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 42})
 MERGE (edu9:EDU {Id: 9, Text_id: 42})
@@ -24223,7 +24223,7 @@ CREATE (edu12)-[r:purpose]->(edu11)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 42})
 MERGE (edu20:EDU {Id: 20, Text_id: 42})
-CREATE (edu19)-[r:causeeffect]->(edu20)
+CREATE (edu19)-[r:cause_effect]->(edu20)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 42})
 MERGE (edu71:EDU {Id: 71, Text_id: 42})
@@ -24239,7 +24239,7 @@ CREATE (edu27)-[r:condition]->(edu73)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 42})
 MERGE (edu29:EDU {Id: 29, Text_id: 42})
-CREATE (edu28)-[r:causeeffect]->(edu29)
+CREATE (edu28)-[r:cause_effect]->(edu29)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 42})
 MERGE (edu33:EDU {Id: 33, Text_id: 42})
@@ -24562,15 +24562,15 @@ CREATE (edu10)-[r:elaboration]->(edu47)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 43})
 MERGE (edu12:EDU {Id: 12, Text_id: 43})
-CREATE (edu11)-[r:interpretationevaluation]->(edu12)
+CREATE (edu11)-[r:interpretation_evaluation]->(edu12)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 43})
 MERGE (edu44:EDU {Id: 44, Text_id: 43})
-CREATE (edu13)-[r:interpretationevaluation]->(edu44)
+CREATE (edu13)-[r:interpretation_evaluation]->(edu44)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 43})
 MERGE (edu15:EDU {Id: 15, Text_id: 43})
-CREATE (edu14)-[r:interpretationevaluation]->(edu15)
+CREATE (edu14)-[r:interpretation_evaluation]->(edu15)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 43})
 MERGE (edu18:EDU {Id: 18, Text_id: 43})
@@ -24590,7 +24590,7 @@ CREATE (edu23)-[r:elaboration]->(edu55)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 43})
 MERGE (edu26:EDU {Id: 26, Text_id: 43})
-CREATE (edu25)-[r:interpretationevaluation]->(edu26)
+CREATE (edu25)-[r:interpretation_evaluation]->(edu26)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 43})
 MERGE (edu61:EDU {Id: 61, Text_id: 43})
@@ -25062,7 +25062,7 @@ CREATE (edu48)-[r:span]->(edu165)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 44})
 MERGE (edu169:EDU {Id: 169, Text_id: 44})
-CREATE (edu50)-[r:sameunit]->(edu169)
+CREATE (edu50)-[r:same_unit]->(edu169)
 
 MERGE (edu52:EDU {Id: 52, Text_id: 44})
 MERGE (edu166:EDU {Id: 166, Text_id: 44})
@@ -25122,11 +25122,11 @@ CREATE (edu70)-[r:joint]->(edu192)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 44})
 MERGE (edu198:EDU {Id: 198, Text_id: 44})
-CREATE (edu71)-[r:sameunit]->(edu198)
+CREATE (edu71)-[r:same_unit]->(edu198)
 
 MERGE (edu72:EDU {Id: 72, Text_id: 44})
 MERGE (edu198:EDU {Id: 198, Text_id: 44})
-CREATE (edu72)-[r:sameunit]->(edu198)
+CREATE (edu72)-[r:same_unit]->(edu198)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 44})
 MERGE (edu196:EDU {Id: 196, Text_id: 44})
@@ -25306,7 +25306,7 @@ CREATE (edu32)-[r:evidence]->(edu33)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 44})
 MERGE (edu34:EDU {Id: 34, Text_id: 44})
-CREATE (edu35)-[r:causeeffect]->(edu34)
+CREATE (edu35)-[r:cause_effect]->(edu34)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 44})
 MERGE (edu163:EDU {Id: 163, Text_id: 44})
@@ -25346,7 +25346,7 @@ CREATE (edu58)-[r:elaboration]->(edu183)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 44})
 MERGE (edu60:EDU {Id: 60, Text_id: 44})
-CREATE (edu59)-[r:causeeffect]->(edu60)
+CREATE (edu59)-[r:cause_effect]->(edu60)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 44})
 MERGE (edu203:EDU {Id: 203, Text_id: 44})
@@ -25358,7 +25358,7 @@ CREATE (edu81)-[r:elaboration]->(edu210)
 
 MERGE (edu84:EDU {Id: 84, Text_id: 44})
 MERGE (edu209:EDU {Id: 209, Text_id: 44})
-CREATE (edu84)-[r:causeeffect]->(edu209)
+CREATE (edu84)-[r:cause_effect]->(edu209)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 44})
 MERGE (edu222:EDU {Id: 222, Text_id: 44})
@@ -25390,11 +25390,11 @@ CREATE (edu108)-[r:purpose]->(edu109)
 
 MERGE (edu112:EDU {Id: 112, Text_id: 44})
 MERGE (edu113:EDU {Id: 113, Text_id: 44})
-CREATE (edu112)-[r:causeeffect]->(edu113)
+CREATE (edu112)-[r:cause_effect]->(edu113)
 
 MERGE (edu114:EDU {Id: 114, Text_id: 44})
 MERGE (edu249:EDU {Id: 249, Text_id: 44})
-CREATE (edu114)-[r:causeeffect]->(edu249)
+CREATE (edu114)-[r:cause_effect]->(edu249)
 
 MERGE (edu119:EDU {Id: 119, Text_id: 44})
 MERGE (edu120:EDU {Id: 120, Text_id: 44})
@@ -26232,7 +26232,7 @@ CREATE (edu3)-[r:span]->(edu172)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 45})
 MERGE (edu174:EDU {Id: 174, Text_id: 45})
-CREATE (edu5)-[r:sameunit]->(edu174)
+CREATE (edu5)-[r:same_unit]->(edu174)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 45})
 MERGE (edu214:EDU {Id: 214, Text_id: 45})
@@ -26320,7 +26320,7 @@ CREATE (edu44)-[r:contrast]->(edu231)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 45})
 MERGE (edu229:EDU {Id: 229, Text_id: 45})
-CREATE (edu45)-[r:sameunit]->(edu229)
+CREATE (edu45)-[r:same_unit]->(edu229)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 45})
 MERGE (edu227:EDU {Id: 227, Text_id: 45})
@@ -26368,7 +26368,7 @@ CREATE (edu61)-[r:span]->(edu237)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 45})
 MERGE (edu239:EDU {Id: 239, Text_id: 45})
-CREATE (edu63)-[r:sameunit]->(edu239)
+CREATE (edu63)-[r:same_unit]->(edu239)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 45})
 MERGE (edu245:EDU {Id: 245, Text_id: 45})
@@ -26452,7 +26452,7 @@ CREATE (edu91)-[r:span]->(edu263)
 
 MERGE (edu93:EDU {Id: 93, Text_id: 45})
 MERGE (edu265:EDU {Id: 265, Text_id: 45})
-CREATE (edu93)-[r:sameunit]->(edu265)
+CREATE (edu93)-[r:same_unit]->(edu265)
 
 MERGE (edu94:EDU {Id: 94, Text_id: 45})
 MERGE (edu262:EDU {Id: 262, Text_id: 45})
@@ -26476,7 +26476,7 @@ CREATE (edu100)-[r:span]->(edu290)
 
 MERGE (edu101:EDU {Id: 101, Text_id: 45})
 MERGE (edu288:EDU {Id: 288, Text_id: 45})
-CREATE (edu101)-[r:sameunit]->(edu288)
+CREATE (edu101)-[r:same_unit]->(edu288)
 
 MERGE (edu103:EDU {Id: 103, Text_id: 45})
 MERGE (edu283:EDU {Id: 283, Text_id: 45})
@@ -26596,7 +26596,7 @@ CREATE (edu146)-[r:span]->(edu318)
 
 MERGE (edu148:EDU {Id: 148, Text_id: 45})
 MERGE (edu319:EDU {Id: 319, Text_id: 45})
-CREATE (edu148)-[r:sameunit]->(edu319)
+CREATE (edu148)-[r:same_unit]->(edu319)
 
 MERGE (edu149:EDU {Id: 149, Text_id: 45})
 MERGE (edu325:EDU {Id: 325, Text_id: 45})
@@ -26624,7 +26624,7 @@ CREATE (edu154)-[r:span]->(edu313)
 
 MERGE (edu156:EDU {Id: 156, Text_id: 45})
 MERGE (edu315:EDU {Id: 315, Text_id: 45})
-CREATE (edu156)-[r:sameunit]->(edu315)
+CREATE (edu156)-[r:same_unit]->(edu315)
 
 MERGE (edu159:EDU {Id: 159, Text_id: 45})
 MERGE (edu304:EDU {Id: 304, Text_id: 45})
@@ -26660,7 +26660,7 @@ CREATE (edu1)-[r:preparation]->(edu176)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 45})
 MERGE (edu175:EDU {Id: 175, Text_id: 45})
-CREATE (edu2)-[r:causeeffect]->(edu175)
+CREATE (edu2)-[r:cause_effect]->(edu175)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 45})
 MERGE (edu3:EDU {Id: 3, Text_id: 45})
@@ -26692,7 +26692,7 @@ CREATE (edu15)-[r:attribution]->(edu184)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 45})
 MERGE (edu16:EDU {Id: 16, Text_id: 45})
-CREATE (edu17)-[r:causeeffect]->(edu16)
+CREATE (edu17)-[r:cause_effect]->(edu16)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 45})
 MERGE (edu204:EDU {Id: 204, Text_id: 45})
@@ -26708,7 +26708,7 @@ CREATE (edu25)-[r:elaboration]->(edu24)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 45})
 MERGE (edu26:EDU {Id: 26, Text_id: 45})
-CREATE (edu27)-[r:interpretationevaluation]->(edu26)
+CREATE (edu27)-[r:interpretation_evaluation]->(edu26)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 45})
 MERGE (edu29:EDU {Id: 29, Text_id: 45})
@@ -26716,7 +26716,7 @@ CREATE (edu28)-[r:purpose]->(edu29)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 45})
 MERGE (edu30:EDU {Id: 30, Text_id: 45})
-CREATE (edu31)-[r:interpretationevaluation]->(edu30)
+CREATE (edu31)-[r:interpretation_evaluation]->(edu30)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 45})
 MERGE (edu33:EDU {Id: 33, Text_id: 45})
@@ -26724,7 +26724,7 @@ CREATE (edu34)-[r:elaboration]->(edu33)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 45})
 MERGE (edu187:EDU {Id: 187, Text_id: 45})
-CREATE (edu35)-[r:interpretationevaluation]->(edu187)
+CREATE (edu35)-[r:interpretation_evaluation]->(edu187)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 45})
 MERGE (edu258:EDU {Id: 258, Text_id: 45})
@@ -26756,7 +26756,7 @@ CREATE (edu56)-[r:elaboration]->(edu55)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 45})
 MERGE (edu58:EDU {Id: 58, Text_id: 45})
-CREATE (edu59)-[r:causeeffect]->(edu58)
+CREATE (edu59)-[r:cause_effect]->(edu58)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 45})
 MERGE (edu61:EDU {Id: 61, Text_id: 45})
@@ -26772,7 +26772,7 @@ CREATE (edu66)-[r:attribution]->(edu245)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 45})
 MERGE (edu68:EDU {Id: 68, Text_id: 45})
-CREATE (edu67)-[r:causeeffect]->(edu68)
+CREATE (edu67)-[r:cause_effect]->(edu68)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 45})
 MERGE (edu70:EDU {Id: 70, Text_id: 45})
@@ -26820,7 +26820,7 @@ CREATE (edu106)-[r:condition]->(edu105)
 
 MERGE (edu107:EDU {Id: 107, Text_id: 45})
 MERGE (edu377:EDU {Id: 377, Text_id: 45})
-CREATE (edu107)-[r:interpretationevaluation]->(edu377)
+CREATE (edu107)-[r:interpretation_evaluation]->(edu377)
 
 MERGE (edu111:EDU {Id: 111, Text_id: 45})
 MERGE (edu370:EDU {Id: 370, Text_id: 45})
@@ -26848,11 +26848,11 @@ CREATE (edu121)-[r:preparation]->(edu122)
 
 MERGE (edu123:EDU {Id: 123, Text_id: 45})
 MERGE (edu124:EDU {Id: 124, Text_id: 45})
-CREATE (edu123)-[r:causeeffect]->(edu124)
+CREATE (edu123)-[r:cause_effect]->(edu124)
 
 MERGE (edu127:EDU {Id: 127, Text_id: 45})
 MERGE (edu126:EDU {Id: 126, Text_id: 45})
-CREATE (edu127)-[r:causeeffect]->(edu126)
+CREATE (edu127)-[r:cause_effect]->(edu126)
 
 MERGE (edu130:EDU {Id: 130, Text_id: 45})
 MERGE (edu129:EDU {Id: 129, Text_id: 45})
@@ -26860,7 +26860,7 @@ CREATE (edu130)-[r:elaboration]->(edu129)
 
 MERGE (edu136:EDU {Id: 136, Text_id: 45})
 MERGE (edu137:EDU {Id: 137, Text_id: 45})
-CREATE (edu136)-[r:causeeffect]->(edu137)
+CREATE (edu136)-[r:cause_effect]->(edu137)
 
 MERGE (edu138:EDU {Id: 138, Text_id: 45})
 MERGE (edu346:EDU {Id: 346, Text_id: 45})
@@ -26896,15 +26896,15 @@ CREATE (edu163)-[r:attribution]->(edu301)
 
 MERGE (edu165:EDU {Id: 165, Text_id: 45})
 MERGE (edu164:EDU {Id: 164, Text_id: 45})
-CREATE (edu165)-[r:causeeffect]->(edu164)
+CREATE (edu165)-[r:cause_effect]->(edu164)
 
 MERGE (edu168:EDU {Id: 168, Text_id: 45})
 MERGE (edu167:EDU {Id: 167, Text_id: 45})
-CREATE (edu168)-[r:causeeffect]->(edu167)
+CREATE (edu168)-[r:cause_effect]->(edu167)
 
 MERGE (edu169:EDU {Id: 169, Text_id: 45})
 MERGE (edu295:EDU {Id: 295, Text_id: 45})
-CREATE (edu169)-[r:causeeffect]->(edu295)
+CREATE (edu169)-[r:cause_effect]->(edu295)
 
 MERGE (edu170:EDU {Id: 170, Text_id: 45})
 MERGE (edu296:EDU {Id: 296, Text_id: 45})
@@ -27794,7 +27794,7 @@ CREATE (edu9)-[r:joint]->(edu52)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 46})
 MERGE (edu59:EDU {Id: 59, Text_id: 46})
-CREATE (edu12)-[r:sameunit]->(edu59)
+CREATE (edu12)-[r:same_unit]->(edu59)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 46})
 MERGE (edu60:EDU {Id: 60, Text_id: 46})
@@ -27850,7 +27850,7 @@ CREATE (edu31)-[r:joint]->(edu84)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 46})
 MERGE (edu81:EDU {Id: 81, Text_id: 46})
-CREATE (edu32)-[r:sameunit]->(edu81)
+CREATE (edu32)-[r:same_unit]->(edu81)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 46})
 MERGE (edu76:EDU {Id: 76, Text_id: 46})
@@ -27870,7 +27870,7 @@ CREATE (edu37)-[r:span]->(edu78)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 46})
 MERGE (edu79:EDU {Id: 79, Text_id: 46})
-CREATE (edu39)-[r:sameunit]->(edu79)
+CREATE (edu39)-[r:same_unit]->(edu79)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 46})
 MERGE (edu80:EDU {Id: 80, Text_id: 46})
@@ -27926,7 +27926,7 @@ CREATE (edu13)-[r:purpose]->(edu14)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 46})
 MERGE (edu17:EDU {Id: 17, Text_id: 46})
-CREATE (edu18)-[r:interpretationevaluation]->(edu17)
+CREATE (edu18)-[r:interpretation_evaluation]->(edu17)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 46})
 MERGE (edu67:EDU {Id: 67, Text_id: 46})
@@ -27946,11 +27946,11 @@ CREATE (edu24)-[r:attribution]->(edu74)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 46})
 MERGE (edu35:EDU {Id: 35, Text_id: 46})
-CREATE (edu34)-[r:interpretationevaluation]->(edu35)
+CREATE (edu34)-[r:interpretation_evaluation]->(edu35)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 46})
 MERGE (edu37:EDU {Id: 37, Text_id: 46})
-CREATE (edu38)-[r:interpretationevaluation]->(edu37)
+CREATE (edu38)-[r:interpretation_evaluation]->(edu37)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 46})
 MERGE (edu86:EDU {Id: 86, Text_id: 46})
@@ -28246,7 +28246,7 @@ CREATE (edu11)-[r:span]->(edu52)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 47})
 MERGE (edu53:EDU {Id: 53, Text_id: 47})
-CREATE (edu13)-[r:sameunit]->(edu53)
+CREATE (edu13)-[r:same_unit]->(edu53)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 47})
 MERGE (edu54:EDU {Id: 54, Text_id: 47})
@@ -28274,7 +28274,7 @@ CREATE (edu22)-[r:span]->(edu60)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 47})
 MERGE (edu61:EDU {Id: 61, Text_id: 47})
-CREATE (edu24)-[r:sameunit]->(edu61)
+CREATE (edu24)-[r:same_unit]->(edu61)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 47})
 MERGE (edu69:EDU {Id: 69, Text_id: 47})
@@ -28578,7 +28578,7 @@ CREATE (edu5)-[r:span]->(edu36)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 48})
 MERGE (edu38:EDU {Id: 38, Text_id: 48})
-CREATE (edu7)-[r:sameunit]->(edu38)
+CREATE (edu7)-[r:same_unit]->(edu38)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 48})
 MERGE (edu39:EDU {Id: 39, Text_id: 48})
@@ -28614,7 +28614,7 @@ CREATE (edu25)-[r:span]->(edu52)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 48})
 MERGE (edu54:EDU {Id: 54, Text_id: 48})
-CREATE (edu27)-[r:sameunit]->(edu54)
+CREATE (edu27)-[r:same_unit]->(edu54)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 48})
 MERGE (edu55:EDU {Id: 55, Text_id: 48})
@@ -28622,7 +28622,7 @@ CREATE (edu28)-[r:span]->(edu55)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 48})
 MERGE (edu57:EDU {Id: 57, Text_id: 48})
-CREATE (edu30)-[r:sameunit]->(edu57)
+CREATE (edu30)-[r:same_unit]->(edu57)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 48})
 MERGE (edu60:EDU {Id: 60, Text_id: 48})
@@ -28638,7 +28638,7 @@ CREATE (edu2)-[r:attribution]->(edu1)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 48})
 MERGE (edu35:EDU {Id: 35, Text_id: 48})
-CREATE (edu3)-[r:interpretationevaluation]->(edu35)
+CREATE (edu3)-[r:interpretation_evaluation]->(edu35)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 48})
 MERGE (edu40:EDU {Id: 40, Text_id: 48})
@@ -29028,7 +29028,7 @@ CREATE (edu16)-[r:background]->(edu56)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 49})
 MERGE (edu18:EDU {Id: 18, Text_id: 49})
-CREATE (edu17)-[r:causeeffect]->(edu18)
+CREATE (edu17)-[r:cause_effect]->(edu18)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 49})
 MERGE (edu76:EDU {Id: 76, Text_id: 49})
@@ -29358,7 +29358,7 @@ CREATE (edu5)-[r:span]->(edu68)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 5})
 MERGE (edu69:EDU {Id: 69, Text_id: 5})
-CREATE (edu7)-[r:sameunit]->(edu69)
+CREATE (edu7)-[r:same_unit]->(edu69)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 5})
 MERGE (edu74:EDU {Id: 74, Text_id: 5})
@@ -29446,11 +29446,11 @@ CREATE (edu43)-[r:sequence]->(edu104)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 5})
 MERGE (edu108:EDU {Id: 108, Text_id: 5})
-CREATE (edu45)-[r:sameunit]->(edu108)
+CREATE (edu45)-[r:same_unit]->(edu108)
 
 MERGE (edu46:EDU {Id: 46, Text_id: 5})
 MERGE (edu108:EDU {Id: 108, Text_id: 5})
-CREATE (edu46)-[r:sameunit]->(edu108)
+CREATE (edu46)-[r:same_unit]->(edu108)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 5})
 MERGE (edu110:EDU {Id: 110, Text_id: 5})
@@ -29466,11 +29466,11 @@ CREATE (edu53)-[r:joint]->(edu122)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 5})
 MERGE (edu118:EDU {Id: 118, Text_id: 5})
-CREATE (edu54)-[r:sameunit]->(edu118)
+CREATE (edu54)-[r:same_unit]->(edu118)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 5})
 MERGE (edu118:EDU {Id: 118, Text_id: 5})
-CREATE (edu55)-[r:sameunit]->(edu118)
+CREATE (edu55)-[r:same_unit]->(edu118)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 5})
 MERGE (edu120:EDU {Id: 120, Text_id: 5})
@@ -29550,7 +29550,7 @@ CREATE (edu29)-[r:conclusion]->(edu95)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 5})
 MERGE (edu31:EDU {Id: 31, Text_id: 5})
-CREATE (edu30)-[r:interpretationevaluation]->(edu31)
+CREATE (edu30)-[r:interpretation_evaluation]->(edu31)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 5})
 MERGE (edu33:EDU {Id: 33, Text_id: 5})
@@ -29978,7 +29978,7 @@ CREATE (edu30)-[r:span]->(edu66)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 50})
 MERGE (edu65:EDU {Id: 65, Text_id: 50})
-CREATE (edu32)-[r:sameunit]->(edu65)
+CREATE (edu32)-[r:same_unit]->(edu65)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 50})
 MERGE (edu67:EDU {Id: 67, Text_id: 50})
@@ -30026,7 +30026,7 @@ CREATE (edu8)-[r:elaboration]->(edu7)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 50})
 MERGE (edu12:EDU {Id: 12, Text_id: 50})
-CREATE (edu11)-[r:causeeffect]->(edu12)
+CREATE (edu11)-[r:cause_effect]->(edu12)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 50})
 MERGE (edu15:EDU {Id: 15, Text_id: 50})
@@ -30034,7 +30034,7 @@ CREATE (edu16)-[r:elaboration]->(edu15)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 50})
 MERGE (edu19:EDU {Id: 19, Text_id: 50})
-CREATE (edu18)-[r:interpretationevaluation]->(edu19)
+CREATE (edu18)-[r:interpretation_evaluation]->(edu19)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 50})
 MERGE (edu21:EDU {Id: 21, Text_id: 50})
@@ -30332,7 +30332,7 @@ CREATE (edu23)-[r:joint]->(edu80)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 52})
 MERGE (edu81:EDU {Id: 81, Text_id: 52})
-CREATE (edu24)-[r:sameunit]->(edu81)
+CREATE (edu24)-[r:same_unit]->(edu81)
 
 MERGE (edu26:EDU {Id: 26, Text_id: 52})
 MERGE (edu79:EDU {Id: 79, Text_id: 52})
@@ -30360,7 +30360,7 @@ CREATE (edu33)-[r:span]->(edu68)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 52})
 MERGE (edu61:EDU {Id: 61, Text_id: 52})
-CREATE (edu35)-[r:sameunit]->(edu61)
+CREATE (edu35)-[r:same_unit]->(edu61)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 52})
 MERGE (edu59:EDU {Id: 59, Text_id: 52})
@@ -30646,7 +30646,7 @@ CREATE (edu5)-[r:restatement]->(edu43)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 53})
 MERGE (edu46:EDU {Id: 46, Text_id: 53})
-CREATE (edu7)-[r:sameunit]->(edu46)
+CREATE (edu7)-[r:same_unit]->(edu46)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 53})
 MERGE (edu50:EDU {Id: 50, Text_id: 53})
@@ -30774,7 +30774,7 @@ CREATE (edu28)-[r:elaboration]->(edu27)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 53})
 MERGE (edu30:EDU {Id: 30, Text_id: 53})
-CREATE (edu31)-[r:causeeffect]->(edu30)
+CREATE (edu31)-[r:cause_effect]->(edu30)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 53})
 MERGE (edu32:EDU {Id: 32, Text_id: 53})
@@ -31016,7 +31016,7 @@ CREATE (edu1)-[r:span]->(edu41)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 54})
 MERGE (edu40:EDU {Id: 40, Text_id: 54})
-CREATE (edu3)-[r:sameunit]->(edu40)
+CREATE (edu3)-[r:same_unit]->(edu40)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 54})
 MERGE (edu50:EDU {Id: 50, Text_id: 54})
@@ -31028,7 +31028,7 @@ CREATE (edu6)-[r:span]->(edu43)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 54})
 MERGE (edu45:EDU {Id: 45, Text_id: 54})
-CREATE (edu9)-[r:sameunit]->(edu45)
+CREATE (edu9)-[r:same_unit]->(edu45)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 54})
 MERGE (edu44:EDU {Id: 44, Text_id: 54})
@@ -31068,7 +31068,7 @@ CREATE (edu21)-[r:span]->(edu59)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 54})
 MERGE (edu60:EDU {Id: 60, Text_id: 54})
-CREATE (edu23)-[r:sameunit]->(edu60)
+CREATE (edu23)-[r:same_unit]->(edu60)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 54})
 MERGE (edu57:EDU {Id: 57, Text_id: 54})
@@ -31464,11 +31464,11 @@ CREATE (edu8)-[r:attribution]->(edu7)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 55})
 MERGE (edu11:EDU {Id: 11, Text_id: 55})
-CREATE (edu12)-[r:causeeffect]->(edu11)
+CREATE (edu12)-[r:cause_effect]->(edu11)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 55})
 MERGE (edu14:EDU {Id: 14, Text_id: 55})
-CREATE (edu15)-[r:causeeffect]->(edu14)
+CREATE (edu15)-[r:cause_effect]->(edu14)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 55})
 MERGE (edu20:EDU {Id: 20, Text_id: 55})
@@ -31682,7 +31682,7 @@ CREATE (edu11)-[r:background]->(edu10)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 56})
 MERGE (edu12:EDU {Id: 12, Text_id: 56})
-CREATE (edu13)-[r:causeeffect]->(edu12)
+CREATE (edu13)-[r:cause_effect]->(edu12)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 56})
 MERGE (edu47:EDU {Id: 47, Text_id: 56})
@@ -32016,7 +32016,7 @@ CREATE (edu25)-[r:elaboration]->(edu76)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 57})
 MERGE (edu28:EDU {Id: 28, Text_id: 57})
-CREATE (edu27)-[r:interpretationevaluation]->(edu28)
+CREATE (edu27)-[r:interpretation_evaluation]->(edu28)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 57})
 MERGE (edu31:EDU {Id: 31, Text_id: 57})
@@ -32302,7 +32302,7 @@ CREATE (edu19)-[r:span]->(edu53)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 58})
 MERGE (edu54:EDU {Id: 54, Text_id: 58})
-CREATE (edu20)-[r:sameunit]->(edu54)
+CREATE (edu20)-[r:same_unit]->(edu54)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 58})
 MERGE (edu56:EDU {Id: 56, Text_id: 58})
@@ -32366,7 +32366,7 @@ CREATE (edu10)-[r:elaboration]->(edu9)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 58})
 MERGE (edu45:EDU {Id: 45, Text_id: 58})
-CREATE (edu11)-[r:causeeffect]->(edu45)
+CREATE (edu11)-[r:cause_effect]->(edu45)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 58})
 MERGE (edu44:EDU {Id: 44, Text_id: 58})
@@ -32594,7 +32594,7 @@ CREATE (edu1)-[r:span]->(edu33)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 59})
 MERGE (edu36:EDU {Id: 36, Text_id: 59})
-CREATE (edu5)-[r:sameunit]->(edu36)
+CREATE (edu5)-[r:same_unit]->(edu36)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 59})
 MERGE (edu34:EDU {Id: 34, Text_id: 59})
@@ -32614,11 +32614,11 @@ CREATE (edu11)-[r:span]->(edu39)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 59})
 MERGE (edu40:EDU {Id: 40, Text_id: 59})
-CREATE (edu13)-[r:sameunit]->(edu40)
+CREATE (edu13)-[r:same_unit]->(edu40)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 59})
 MERGE (edu45:EDU {Id: 45, Text_id: 59})
-CREATE (edu14)-[r:sameunit]->(edu45)
+CREATE (edu14)-[r:same_unit]->(edu45)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 59})
 MERGE (edu43:EDU {Id: 43, Text_id: 59})
@@ -32634,7 +32634,7 @@ CREATE (edu20)-[r:span]->(edu49)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 59})
 MERGE (edu56:EDU {Id: 56, Text_id: 59})
-CREATE (edu21)-[r:sameunit]->(edu56)
+CREATE (edu21)-[r:same_unit]->(edu56)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 59})
 MERGE (edu52:EDU {Id: 52, Text_id: 59})
@@ -33024,7 +33024,7 @@ CREATE (edu1)-[r:span]->(edu120)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 6})
 MERGE (edu121:EDU {Id: 121, Text_id: 6})
-CREATE (edu3)-[r:sameunit]->(edu121)
+CREATE (edu3)-[r:same_unit]->(edu121)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 6})
 MERGE (edu122:EDU {Id: 122, Text_id: 6})
@@ -33032,7 +33032,7 @@ CREATE (edu5)-[r:span]->(edu122)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 6})
 MERGE (edu125:EDU {Id: 125, Text_id: 6})
-CREATE (edu6)-[r:sameunit]->(edu125)
+CREATE (edu6)-[r:same_unit]->(edu125)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 6})
 MERGE (edu124:EDU {Id: 124, Text_id: 6})
@@ -33092,11 +33092,11 @@ CREATE (edu26)-[r:span]->(edu141)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 6})
 MERGE (edu142:EDU {Id: 142, Text_id: 6})
-CREATE (edu28)-[r:sameunit]->(edu142)
+CREATE (edu28)-[r:same_unit]->(edu142)
 
 MERGE (edu29:EDU {Id: 29, Text_id: 6})
 MERGE (edu144:EDU {Id: 144, Text_id: 6})
-CREATE (edu29)-[r:sameunit]->(edu144)
+CREATE (edu29)-[r:same_unit]->(edu144)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 6})
 MERGE (edu143:EDU {Id: 143, Text_id: 6})
@@ -33124,7 +33124,7 @@ CREATE (edu37)-[r:span]->(edu151)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 6})
 MERGE (edu152:EDU {Id: 152, Text_id: 6})
-CREATE (edu39)-[r:sameunit]->(edu152)
+CREATE (edu39)-[r:same_unit]->(edu152)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 6})
 MERGE (edu155:EDU {Id: 155, Text_id: 6})
@@ -33132,7 +33132,7 @@ CREATE (edu40)-[r:span]->(edu155)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 6})
 MERGE (edu154:EDU {Id: 154, Text_id: 6})
-CREATE (edu41)-[r:sameunit]->(edu154)
+CREATE (edu41)-[r:same_unit]->(edu154)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 6})
 MERGE (edu153:EDU {Id: 153, Text_id: 6})
@@ -33192,7 +33192,7 @@ CREATE (edu59)-[r:span]->(edu174)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 6})
 MERGE (edu176:EDU {Id: 176, Text_id: 6})
-CREATE (edu61)-[r:sameunit]->(edu176)
+CREATE (edu61)-[r:same_unit]->(edu176)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 6})
 MERGE (edu175:EDU {Id: 175, Text_id: 6})
@@ -33352,7 +33352,7 @@ CREATE (edu116)-[r:span]->(edu227)
 
 MERGE (edu118:EDU {Id: 118, Text_id: 6})
 MERGE (edu226:EDU {Id: 226, Text_id: 6})
-CREATE (edu118)-[r:sameunit]->(edu226)
+CREATE (edu118)-[r:same_unit]->(edu226)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 6})
 MERGE (edu1:EDU {Id: 1, Text_id: 6})
@@ -33360,11 +33360,11 @@ CREATE (edu2)-[r:elaboration]->(edu1)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 6})
 MERGE (edu5:EDU {Id: 5, Text_id: 6})
-CREATE (edu4)-[r:interpretationevaluation]->(edu5)
+CREATE (edu4)-[r:interpretation_evaluation]->(edu5)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 6})
 MERGE (edu8:EDU {Id: 8, Text_id: 6})
-CREATE (edu7)-[r:interpretationevaluation]->(edu8)
+CREATE (edu7)-[r:interpretation_evaluation]->(edu8)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 6})
 MERGE (edu11:EDU {Id: 11, Text_id: 6})
@@ -33408,7 +33408,7 @@ CREATE (edu42)-[r:attribution]->(edu43)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 6})
 MERGE (edu50:EDU {Id: 50, Text_id: 6})
-CREATE (edu49)-[r:causeeffect]->(edu50)
+CREATE (edu49)-[r:cause_effect]->(edu50)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 6})
 MERGE (edu55:EDU {Id: 55, Text_id: 6})
@@ -33424,7 +33424,7 @@ CREATE (edu60)-[r:elaboration]->(edu59)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 6})
 MERGE (edu63:EDU {Id: 63, Text_id: 6})
-CREATE (edu62)-[r:interpretationevaluation]->(edu63)
+CREATE (edu62)-[r:interpretation_evaluation]->(edu63)
 
 MERGE (edu64:EDU {Id: 64, Text_id: 6})
 MERGE (edu185:EDU {Id: 185, Text_id: 6})
@@ -33432,7 +33432,7 @@ CREATE (edu64)-[r:preparation]->(edu185)
 
 MERGE (edu68:EDU {Id: 68, Text_id: 6})
 MERGE (edu67:EDU {Id: 67, Text_id: 6})
-CREATE (edu68)-[r:interpretationevaluation]->(edu67)
+CREATE (edu68)-[r:interpretation_evaluation]->(edu67)
 
 MERGE (edu70:EDU {Id: 70, Text_id: 6})
 MERGE (edu69:EDU {Id: 69, Text_id: 6})
@@ -33440,7 +33440,7 @@ CREATE (edu70)-[r:elaboration]->(edu69)
 
 MERGE (edu71:EDU {Id: 71, Text_id: 6})
 MERGE (edu72:EDU {Id: 72, Text_id: 6})
-CREATE (edu71)-[r:causeeffect]->(edu72)
+CREATE (edu71)-[r:cause_effect]->(edu72)
 
 MERGE (edu77:EDU {Id: 77, Text_id: 6})
 MERGE (edu76:EDU {Id: 76, Text_id: 6})
@@ -33484,7 +33484,7 @@ CREATE (edu106)-[r:attribution]->(edu216)
 
 MERGE (edu115:EDU {Id: 115, Text_id: 6})
 MERGE (edu224:EDU {Id: 224, Text_id: 6})
-CREATE (edu115)-[r:interpretationevaluation]->(edu224)
+CREATE (edu115)-[r:interpretation_evaluation]->(edu224)
 
 MERGE (edu117:EDU {Id: 117, Text_id: 6})
 MERGE (edu116:EDU {Id: 116, Text_id: 6})
@@ -33492,7 +33492,7 @@ CREATE (edu117)-[r:elaboration]->(edu116)
 
 MERGE (edu119:EDU {Id: 119, Text_id: 6})
 MERGE (edu228:EDU {Id: 228, Text_id: 6})
-CREATE (edu119)-[r:interpretationevaluation]->(edu228)
+CREATE (edu119)-[r:interpretation_evaluation]->(edu228)
 
 MERGE (edu120:EDU {Id: 120, Text_id: 6})
 MERGE (edu121:EDU {Id: 121, Text_id: 6})
@@ -34010,11 +34010,11 @@ CREATE (edu6)-[r:attribution]->(edu25)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 60})
 MERGE (edu8:EDU {Id: 8, Text_id: 60})
-CREATE (edu7)-[r:causeeffect]->(edu8)
+CREATE (edu7)-[r:cause_effect]->(edu8)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 60})
 MERGE (edu10:EDU {Id: 10, Text_id: 60})
-CREATE (edu11)-[r:causeeffect]->(edu10)
+CREATE (edu11)-[r:cause_effect]->(edu10)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 60})
 MERGE (edu36:EDU {Id: 36, Text_id: 60})
@@ -34214,11 +34214,11 @@ CREATE (edu28)-[r:span]->(edu53)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 61})
 MERGE (edu54:EDU {Id: 54, Text_id: 61})
-CREATE (edu30)-[r:sameunit]->(edu54)
+CREATE (edu30)-[r:same_unit]->(edu54)
 
 MERGE (edu1:EDU {Id: 1, Text_id: 61})
 MERGE (edu2:EDU {Id: 2, Text_id: 61})
-CREATE (edu1)-[r:causeeffect]->(edu2)
+CREATE (edu1)-[r:cause_effect]->(edu2)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 61})
 MERGE (edu32:EDU {Id: 32, Text_id: 61})
@@ -34242,7 +34242,7 @@ CREATE (edu12)-[r:elaboration]->(edu11)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 61})
 MERGE (edu16:EDU {Id: 16, Text_id: 61})
-CREATE (edu15)-[r:interpretationevaluation]->(edu16)
+CREATE (edu15)-[r:interpretation_evaluation]->(edu16)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 61})
 MERGE (edu18:EDU {Id: 18, Text_id: 61})
@@ -34254,7 +34254,7 @@ CREATE (edu20)-[r:elaboration]->(edu19)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 61})
 MERGE (edu26:EDU {Id: 26, Text_id: 61})
-CREATE (edu25)-[r:interpretationevaluation]->(edu26)
+CREATE (edu25)-[r:interpretation_evaluation]->(edu26)
 
 MERGE (edu29:EDU {Id: 29, Text_id: 61})
 MERGE (edu28:EDU {Id: 28, Text_id: 61})
@@ -34444,7 +34444,7 @@ CREATE (edu16)-[r:span]->(edu42)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 62})
 MERGE (edu43:EDU {Id: 43, Text_id: 62})
-CREATE (edu18)-[r:sameunit]->(edu43)
+CREATE (edu18)-[r:same_unit]->(edu43)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 62})
 MERGE (edu44:EDU {Id: 44, Text_id: 62})
@@ -34488,7 +34488,7 @@ CREATE (edu6)-[r:attribution]->(edu7)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 62})
 MERGE (edu35:EDU {Id: 35, Text_id: 62})
-CREATE (edu8)-[r:interpretationevaluation]->(edu35)
+CREATE (edu8)-[r:interpretation_evaluation]->(edu35)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 62})
 MERGE (edu38:EDU {Id: 38, Text_id: 62})
@@ -34706,7 +34706,7 @@ CREATE (edu5)-[r:span]->(edu64)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 63})
 MERGE (edu36:EDU {Id: 36, Text_id: 63})
-CREATE (edu7)-[r:sameunit]->(edu36)
+CREATE (edu7)-[r:same_unit]->(edu36)
 
 MERGE (edu9:EDU {Id: 9, Text_id: 63})
 MERGE (edu34:EDU {Id: 34, Text_id: 63})
@@ -35510,7 +35510,7 @@ CREATE (edu11)-[r:elaboration]->(edu140)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 64})
 MERGE (edu15:EDU {Id: 15, Text_id: 64})
-CREATE (edu14)-[r:causeeffect]->(edu15)
+CREATE (edu14)-[r:cause_effect]->(edu15)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 64})
 MERGE (edu17:EDU {Id: 17, Text_id: 64})
@@ -35526,7 +35526,7 @@ CREATE (edu20)-[r:purpose]->(edu21)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 64})
 MERGE (edu22:EDU {Id: 22, Text_id: 64})
-CREATE (edu23)-[r:causeeffect]->(edu22)
+CREATE (edu23)-[r:cause_effect]->(edu22)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 64})
 MERGE (edu155:EDU {Id: 155, Text_id: 64})
@@ -35534,7 +35534,7 @@ CREATE (edu25)-[r:evidence]->(edu155)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 64})
 MERGE (edu42:EDU {Id: 42, Text_id: 64})
-CREATE (edu41)-[r:causeeffect]->(edu42)
+CREATE (edu41)-[r:cause_effect]->(edu42)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 64})
 MERGE (edu176:EDU {Id: 176, Text_id: 64})
@@ -35542,7 +35542,7 @@ CREATE (edu43)-[r:evidence]->(edu176)
 
 MERGE (edu50:EDU {Id: 50, Text_id: 64})
 MERGE (edu181:EDU {Id: 181, Text_id: 64})
-CREATE (edu50)-[r:causeeffect]->(edu181)
+CREATE (edu50)-[r:cause_effect]->(edu181)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 64})
 MERGE (edu185:EDU {Id: 185, Text_id: 64})
@@ -35590,11 +35590,11 @@ CREATE (edu77)-[r:condition]->(edu78)
 
 MERGE (edu91:EDU {Id: 91, Text_id: 64})
 MERGE (edu92:EDU {Id: 92, Text_id: 64})
-CREATE (edu91)-[r:causeeffect]->(edu92)
+CREATE (edu91)-[r:cause_effect]->(edu92)
 
 MERGE (edu93:EDU {Id: 93, Text_id: 64})
 MERGE (edu229:EDU {Id: 229, Text_id: 64})
-CREATE (edu93)-[r:interpretationevaluation]->(edu229)
+CREATE (edu93)-[r:interpretation_evaluation]->(edu229)
 
 MERGE (edu94:EDU {Id: 94, Text_id: 64})
 MERGE (edu232:EDU {Id: 232, Text_id: 64})
@@ -35618,7 +35618,7 @@ CREATE (edu108)-[r:background]->(edu246)
 
 MERGE (edu110:EDU {Id: 110, Text_id: 64})
 MERGE (edu109:EDU {Id: 109, Text_id: 64})
-CREATE (edu110)-[r:causeeffect]->(edu109)
+CREATE (edu110)-[r:cause_effect]->(edu109)
 
 MERGE (edu113:EDU {Id: 113, Text_id: 64})
 MERGE (edu114:EDU {Id: 114, Text_id: 64})
@@ -35626,7 +35626,7 @@ CREATE (edu113)-[r:elaboration]->(edu114)
 
 MERGE (edu116:EDU {Id: 116, Text_id: 64})
 MERGE (edu255:EDU {Id: 255, Text_id: 64})
-CREATE (edu116)-[r:interpretationevaluation]->(edu255)
+CREATE (edu116)-[r:interpretation_evaluation]->(edu255)
 
 MERGE (edu118:EDU {Id: 118, Text_id: 64})
 MERGE (edu119:EDU {Id: 119, Text_id: 64})
@@ -36651,7 +36651,7 @@ CREATE (edu83)-[r:span]->(edu194)
 
 MERGE (edu85:EDU {Id: 85, Text_id: 65})
 MERGE (edu195:EDU {Id: 195, Text_id: 65})
-CREATE (edu85)-[r:sameunit]->(edu195)
+CREATE (edu85)-[r:same_unit]->(edu195)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 65})
 MERGE (edu196:EDU {Id: 196, Text_id: 65})
@@ -36687,7 +36687,7 @@ CREATE (edu96)-[r:span]->(edu202)
 
 MERGE (edu98:EDU {Id: 98, Text_id: 65})
 MERGE (edu204:EDU {Id: 204, Text_id: 65})
-CREATE (edu98)-[r:sameunit]->(edu204)
+CREATE (edu98)-[r:same_unit]->(edu204)
 
 MERGE (edu100:EDU {Id: 100, Text_id: 65})
 MERGE (edu210:EDU {Id: 210, Text_id: 65})
@@ -36771,7 +36771,7 @@ CREATE (edu11)-[r:elaboration]->(edu12)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 65})
 MERGE (edu133:EDU {Id: 133, Text_id: 65})
-CREATE (edu12)-[r:causeeffect]->(edu133)
+CREATE (edu12)-[r:cause_effect]->(edu133)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 65})
 MERGE (edu16:EDU {Id: 16, Text_id: 65})
@@ -36783,7 +36783,7 @@ CREATE (edu20)-[r:elaboration]->(edu21)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 65})
 MERGE (edu144:EDU {Id: 144, Text_id: 65})
-CREATE (edu25)-[r:causeeffect]->(edu144)
+CREATE (edu25)-[r:cause_effect]->(edu144)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 65})
 MERGE (edu31:EDU {Id: 31, Text_id: 65})
@@ -36819,7 +36819,7 @@ CREATE (edu54)-[r:solutionhood]->(edu55)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 65})
 MERGE (edu176:EDU {Id: 176, Text_id: 65})
-CREATE (edu63)-[r:causeeffect]->(edu176)
+CREATE (edu63)-[r:cause_effect]->(edu176)
 
 MERGE (edu72:EDU {Id: 72, Text_id: 65})
 MERGE (edu186:EDU {Id: 186, Text_id: 65})
@@ -36847,11 +36847,11 @@ CREATE (edu97)-[r:elaboration]->(edu96)
 
 MERGE (edu99:EDU {Id: 99, Text_id: 65})
 MERGE (edu205:EDU {Id: 205, Text_id: 65})
-CREATE (edu99)-[r:interpretationevaluation]->(edu205)
+CREATE (edu99)-[r:interpretation_evaluation]->(edu205)
 
 MERGE (edu107:EDU {Id: 107, Text_id: 65})
 MERGE (edu108:EDU {Id: 108, Text_id: 65})
-CREATE (edu107)-[r:interpretationevaluation]->(edu108)
+CREATE (edu107)-[r:interpretation_evaluation]->(edu108)
 
 MERGE (edu112:EDU {Id: 112, Text_id: 65})
 MERGE (edu217:EDU {Id: 217, Text_id: 65})
@@ -37569,7 +37569,7 @@ CREATE (edu43)-[r:span]->(edu129)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 66})
 MERGE (edu131:EDU {Id: 131, Text_id: 66})
-CREATE (edu45)-[r:sameunit]->(edu131)
+CREATE (edu45)-[r:same_unit]->(edu131)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 66})
 MERGE (edu197:EDU {Id: 197, Text_id: 66})
@@ -37601,7 +37601,7 @@ CREATE (edu55)-[r:span]->(edu133)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 66})
 MERGE (edu135:EDU {Id: 135, Text_id: 66})
-CREATE (edu57)-[r:sameunit]->(edu135)
+CREATE (edu57)-[r:same_unit]->(edu135)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 66})
 MERGE (edu142:EDU {Id: 142, Text_id: 66})
@@ -37629,7 +37629,7 @@ CREATE (edu64)-[r:span]->(edu138)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 66})
 MERGE (edu140:EDU {Id: 140, Text_id: 66})
-CREATE (edu66)-[r:sameunit]->(edu140)
+CREATE (edu66)-[r:same_unit]->(edu140)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 66})
 MERGE (edu218:EDU {Id: 218, Text_id: 66})
@@ -37653,7 +37653,7 @@ CREATE (edu73)-[r:span]->(edu223)
 
 MERGE (edu75:EDU {Id: 75, Text_id: 66})
 MERGE (edu224:EDU {Id: 224, Text_id: 66})
-CREATE (edu75)-[r:sameunit]->(edu224)
+CREATE (edu75)-[r:same_unit]->(edu224)
 
 MERGE (edu76:EDU {Id: 76, Text_id: 66})
 MERGE (edu232:EDU {Id: 232, Text_id: 66})
@@ -37681,7 +37681,7 @@ CREATE (edu84)-[r:span]->(edu151)
 
 MERGE (edu86:EDU {Id: 86, Text_id: 66})
 MERGE (edu153:EDU {Id: 153, Text_id: 66})
-CREATE (edu86)-[r:sameunit]->(edu153)
+CREATE (edu86)-[r:same_unit]->(edu153)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 66})
 MERGE (edu143:EDU {Id: 143, Text_id: 66})
@@ -37701,7 +37701,7 @@ CREATE (edu91)-[r:joint]->(edu162)
 
 MERGE (edu92:EDU {Id: 92, Text_id: 66})
 MERGE (edu145:EDU {Id: 145, Text_id: 66})
-CREATE (edu92)-[r:sameunit]->(edu145)
+CREATE (edu92)-[r:same_unit]->(edu145)
 
 MERGE (edu94:EDU {Id: 94, Text_id: 66})
 MERGE (edu144:EDU {Id: 144, Text_id: 66})
@@ -37721,7 +37721,7 @@ CREATE (edu98)-[r:span]->(edu148)
 
 MERGE (edu100:EDU {Id: 100, Text_id: 66})
 MERGE (edu163:EDU {Id: 163, Text_id: 66})
-CREATE (edu100)-[r:sameunit]->(edu163)
+CREATE (edu100)-[r:same_unit]->(edu163)
 
 MERGE (edu102:EDU {Id: 102, Text_id: 66})
 MERGE (edu149:EDU {Id: 149, Text_id: 66})
@@ -37749,11 +37749,11 @@ CREATE (edu14)-[r:attribution]->(edu15)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 66})
 MERGE (edu16:EDU {Id: 16, Text_id: 66})
-CREATE (edu17)-[r:causeeffect]->(edu16)
+CREATE (edu17)-[r:cause_effect]->(edu16)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 66})
 MERGE (edu22:EDU {Id: 22, Text_id: 66})
-CREATE (edu21)-[r:causeeffect]->(edu22)
+CREATE (edu21)-[r:cause_effect]->(edu22)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 66})
 MERGE (edu24:EDU {Id: 24, Text_id: 66})
@@ -37781,7 +37781,7 @@ CREATE (edu33)-[r:attribution]->(edu34)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 66})
 MERGE (edu37:EDU {Id: 37, Text_id: 66})
-CREATE (edu36)-[r:interpretationevaluation]->(edu37)
+CREATE (edu36)-[r:interpretation_evaluation]->(edu37)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 66})
 MERGE (edu38:EDU {Id: 38, Text_id: 66})
@@ -37789,7 +37789,7 @@ CREATE (edu39)-[r:purpose]->(edu38)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 66})
 MERGE (edu187:EDU {Id: 187, Text_id: 66})
-CREATE (edu40)-[r:causeeffect]->(edu187)
+CREATE (edu40)-[r:cause_effect]->(edu187)
 
 MERGE (edu44:EDU {Id: 44, Text_id: 66})
 MERGE (edu43:EDU {Id: 43, Text_id: 66})
@@ -37797,7 +37797,7 @@ CREATE (edu44)-[r:elaboration]->(edu43)
 
 MERGE (edu46:EDU {Id: 46, Text_id: 66})
 MERGE (edu47:EDU {Id: 47, Text_id: 66})
-CREATE (edu46)-[r:causeeffect]->(edu47)
+CREATE (edu46)-[r:cause_effect]->(edu47)
 
 MERGE (edu51:EDU {Id: 51, Text_id: 66})
 MERGE (edu50:EDU {Id: 50, Text_id: 66})
@@ -37805,7 +37805,7 @@ CREATE (edu51)-[r:purpose]->(edu50)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 66})
 MERGE (edu53:EDU {Id: 53, Text_id: 66})
-CREATE (edu54)-[r:causeeffect]->(edu53)
+CREATE (edu54)-[r:cause_effect]->(edu53)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 66})
 MERGE (edu55:EDU {Id: 55, Text_id: 66})
@@ -37837,11 +37837,11 @@ CREATE (edu78)-[r:concession]->(edu77)
 
 MERGE (edu81:EDU {Id: 81, Text_id: 66})
 MERGE (edu82:EDU {Id: 82, Text_id: 66})
-CREATE (edu81)-[r:interpretationevaluation]->(edu82)
+CREATE (edu81)-[r:interpretation_evaluation]->(edu82)
 
 MERGE (edu83:EDU {Id: 83, Text_id: 66})
 MERGE (edu154:EDU {Id: 154, Text_id: 66})
-CREATE (edu83)-[r:causeeffect]->(edu154)
+CREATE (edu83)-[r:cause_effect]->(edu154)
 
 MERGE (edu85:EDU {Id: 85, Text_id: 66})
 MERGE (edu84:EDU {Id: 84, Text_id: 66})
@@ -38441,7 +38441,7 @@ CREATE (edu13)-[r:span]->(edu75)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 67})
 MERGE (edu77:EDU {Id: 77, Text_id: 67})
-CREATE (edu15)-[r:sameunit]->(edu77)
+CREATE (edu15)-[r:same_unit]->(edu77)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 67})
 MERGE (edu80:EDU {Id: 80, Text_id: 67})
@@ -38545,7 +38545,7 @@ CREATE (edu53)-[r:span]->(edu114)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 67})
 MERGE (edu115:EDU {Id: 115, Text_id: 67})
-CREATE (edu55)-[r:sameunit]->(edu115)
+CREATE (edu55)-[r:same_unit]->(edu115)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 67})
 MERGE (edu116:EDU {Id: 116, Text_id: 67})
@@ -38553,7 +38553,7 @@ CREATE (edu56)-[r:span]->(edu116)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 67})
 MERGE (edu117:EDU {Id: 117, Text_id: 67})
-CREATE (edu58)-[r:sameunit]->(edu117)
+CREATE (edu58)-[r:same_unit]->(edu117)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 67})
 MERGE (edu121:EDU {Id: 121, Text_id: 67})
@@ -39095,7 +39095,7 @@ CREATE (edu44)-[r:span]->(edu105)
 
 MERGE (edu46:EDU {Id: 46, Text_id: 68})
 MERGE (edu106:EDU {Id: 106, Text_id: 68})
-CREATE (edu46)-[r:sameunit]->(edu106)
+CREATE (edu46)-[r:same_unit]->(edu106)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 68})
 MERGE (edu107:EDU {Id: 107, Text_id: 68})
@@ -39135,7 +39135,7 @@ CREATE (edu60)-[r:span]->(edu121)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 68})
 MERGE (edu122:EDU {Id: 122, Text_id: 68})
-CREATE (edu62)-[r:sameunit]->(edu122)
+CREATE (edu62)-[r:same_unit]->(edu122)
 
 MERGE (edu64:EDU {Id: 64, Text_id: 68})
 MERGE (edu128:EDU {Id: 128, Text_id: 68})
@@ -39179,7 +39179,7 @@ CREATE (edu30)-[r:concession]->(edu94)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 68})
 MERGE (edu31:EDU {Id: 31, Text_id: 68})
-CREATE (edu32)-[r:causeeffect]->(edu31)
+CREATE (edu32)-[r:cause_effect]->(edu31)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 68})
 MERGE (edu101:EDU {Id: 101, Text_id: 68})
@@ -39547,7 +39547,7 @@ CREATE (edu2)-[r:span]->(edu72)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 69})
 MERGE (edu71:EDU {Id: 71, Text_id: 69})
-CREATE (edu3)-[r:sameunit]->(edu71)
+CREATE (edu3)-[r:same_unit]->(edu71)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 69})
 MERGE (edu68:EDU {Id: 68, Text_id: 69})
@@ -39723,7 +39723,7 @@ CREATE (edu4)-[r:concession]->(edu69)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 69})
 MERGE (edu9:EDU {Id: 9, Text_id: 69})
-CREATE (edu8)-[r:causeeffect]->(edu9)
+CREATE (edu8)-[r:cause_effect]->(edu9)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 69})
 MERGE (edu16:EDU {Id: 16, Text_id: 69})
@@ -39735,7 +39735,7 @@ CREATE (edu24)-[r:evidence]->(edu23)
 
 MERGE (edu25:EDU {Id: 25, Text_id: 69})
 MERGE (edu122:EDU {Id: 122, Text_id: 69})
-CREATE (edu25)-[r:causeeffect]->(edu122)
+CREATE (edu25)-[r:cause_effect]->(edu122)
 
 MERGE (edu26:EDU {Id: 26, Text_id: 69})
 MERGE (edu27:EDU {Id: 27, Text_id: 69})
@@ -39747,7 +39747,7 @@ CREATE (edu28)-[r:concession]->(edu121)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 69})
 MERGE (edu95:EDU {Id: 95, Text_id: 69})
-CREATE (edu34)-[r:causeeffect]->(edu95)
+CREATE (edu34)-[r:cause_effect]->(edu95)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 69})
 MERGE (edu35:EDU {Id: 35, Text_id: 69})
@@ -39767,7 +39767,7 @@ CREATE (edu40)-[r:elaboration]->(edu113)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 69})
 MERGE (edu42:EDU {Id: 42, Text_id: 69})
-CREATE (edu41)-[r:causeeffect]->(edu42)
+CREATE (edu41)-[r:cause_effect]->(edu42)
 
 MERGE (edu44:EDU {Id: 44, Text_id: 69})
 MERGE (edu43:EDU {Id: 43, Text_id: 69})
@@ -39795,7 +39795,7 @@ CREATE (edu62)-[r:concession]->(edu61)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 69})
 MERGE (edu108:EDU {Id: 108, Text_id: 69})
-CREATE (edu63)-[r:causeeffect]->(edu108)
+CREATE (edu63)-[r:cause_effect]->(edu108)
 
 MERGE (edu64:EDU {Id: 64, Text_id: 69})
 MERGE (edu65:EDU {Id: 65, Text_id: 69})
@@ -39803,7 +39803,7 @@ CREATE (edu64)-[r:evidence]->(edu65)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 69})
 MERGE (edu110:EDU {Id: 110, Text_id: 69})
-CREATE (edu66)-[r:interpretationevaluation]->(edu110)
+CREATE (edu66)-[r:interpretation_evaluation]->(edu110)
 
 MERGE (edu68:EDU {Id: 68, Text_id: 69})
 MERGE (edu69:EDU {Id: 69, Text_id: 69})
@@ -40567,7 +40567,7 @@ CREATE (edu53)-[r:contrast]->(edu268)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 7})
 MERGE (edu263:EDU {Id: 263, Text_id: 7})
-CREATE (edu54)-[r:sameunit]->(edu263)
+CREATE (edu54)-[r:same_unit]->(edu263)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 7})
 MERGE (edu262:EDU {Id: 262, Text_id: 7})
@@ -40935,7 +40935,7 @@ CREATE (edu174)-[r:span]->(edu329)
 
 MERGE (edu176:EDU {Id: 176, Text_id: 7})
 MERGE (edu331:EDU {Id: 331, Text_id: 7})
-CREATE (edu176)-[r:sameunit]->(edu331)
+CREATE (edu176)-[r:same_unit]->(edu331)
 
 MERGE (edu177:EDU {Id: 177, Text_id: 7})
 MERGE (edu333:EDU {Id: 333, Text_id: 7})
@@ -40951,11 +40951,11 @@ CREATE (edu4)-[r:attribution]->(edu5)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 7})
 MERGE (edu7:EDU {Id: 7, Text_id: 7})
-CREATE (edu6)-[r:interpretationevaluation]->(edu7)
+CREATE (edu6)-[r:interpretation_evaluation]->(edu7)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 7})
 MERGE (edu9:EDU {Id: 9, Text_id: 7})
-CREATE (edu8)-[r:causeeffect]->(edu9)
+CREATE (edu8)-[r:cause_effect]->(edu9)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 7})
 MERGE (edu17:EDU {Id: 17, Text_id: 7})
@@ -40967,7 +40967,7 @@ CREATE (edu23)-[r:elaboration]->(edu22)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 7})
 MERGE (edu27:EDU {Id: 27, Text_id: 7})
-CREATE (edu28)-[r:causeeffect]->(edu27)
+CREATE (edu28)-[r:cause_effect]->(edu27)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 7})
 MERGE (edu29:EDU {Id: 29, Text_id: 7})
@@ -40975,7 +40975,7 @@ CREATE (edu30)-[r:elaboration]->(edu29)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 7})
 MERGE (edu215:EDU {Id: 215, Text_id: 7})
-CREATE (edu32)-[r:causeeffect]->(edu215)
+CREATE (edu32)-[r:cause_effect]->(edu215)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 7})
 MERGE (edu33:EDU {Id: 33, Text_id: 7})
@@ -41003,11 +41003,11 @@ CREATE (edu45)-[r:elaboration]->(edu44)
 
 MERGE (edu47:EDU {Id: 47, Text_id: 7})
 MERGE (edu48:EDU {Id: 48, Text_id: 7})
-CREATE (edu47)-[r:causeeffect]->(edu48)
+CREATE (edu47)-[r:cause_effect]->(edu48)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 7})
 MERGE (edu50:EDU {Id: 50, Text_id: 7})
-CREATE (edu49)-[r:causeeffect]->(edu50)
+CREATE (edu49)-[r:cause_effect]->(edu50)
 
 MERGE (edu52:EDU {Id: 52, Text_id: 7})
 MERGE (edu269:EDU {Id: 269, Text_id: 7})
@@ -41015,7 +41015,7 @@ CREATE (edu52)-[r:preparation]->(edu269)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 7})
 MERGE (edu56:EDU {Id: 56, Text_id: 7})
-CREATE (edu55)-[r:causeeffect]->(edu56)
+CREATE (edu55)-[r:cause_effect]->(edu56)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 7})
 MERGE (edu264:EDU {Id: 264, Text_id: 7})
@@ -41023,11 +41023,11 @@ CREATE (edu57)-[r:elaboration]->(edu264)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 7})
 MERGE (edu59:EDU {Id: 59, Text_id: 7})
-CREATE (edu58)-[r:causeeffect]->(edu59)
+CREATE (edu58)-[r:cause_effect]->(edu59)
 
 MERGE (edu64:EDU {Id: 64, Text_id: 7})
 MERGE (edu65:EDU {Id: 65, Text_id: 7})
-CREATE (edu64)-[r:causeeffect]->(edu65)
+CREATE (edu64)-[r:cause_effect]->(edu65)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 7})
 MERGE (edu66:EDU {Id: 66, Text_id: 7})
@@ -41035,7 +41035,7 @@ CREATE (edu67)-[r:elaboration]->(edu66)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 7})
 MERGE (edu72:EDU {Id: 72, Text_id: 7})
-CREATE (edu73)-[r:causeeffect]->(edu72)
+CREATE (edu73)-[r:cause_effect]->(edu72)
 
 MERGE (edu77:EDU {Id: 77, Text_id: 7})
 MERGE (edu373:EDU {Id: 373, Text_id: 7})
@@ -41047,7 +41047,7 @@ CREATE (edu89)-[r:elaboration]->(edu88)
 
 MERGE (edu97:EDU {Id: 97, Text_id: 7})
 MERGE (edu96:EDU {Id: 96, Text_id: 7})
-CREATE (edu97)-[r:causeeffect]->(edu96)
+CREATE (edu97)-[r:cause_effect]->(edu96)
 
 MERGE (edu102:EDU {Id: 102, Text_id: 7})
 MERGE (edu101:EDU {Id: 101, Text_id: 7})
@@ -41067,7 +41067,7 @@ CREATE (edu122)-[r:preparation]->(edu123)
 
 MERGE (edu128:EDU {Id: 128, Text_id: 7})
 MERGE (edu129:EDU {Id: 129, Text_id: 7})
-CREATE (edu128)-[r:causeeffect]->(edu129)
+CREATE (edu128)-[r:cause_effect]->(edu129)
 
 MERGE (edu130:EDU {Id: 130, Text_id: 7})
 MERGE (edu354:EDU {Id: 354, Text_id: 7})
@@ -41091,11 +41091,11 @@ CREATE (edu139)-[r:condition]->(edu384)
 
 MERGE (edu141:EDU {Id: 141, Text_id: 7})
 MERGE (edu142:EDU {Id: 142, Text_id: 7})
-CREATE (edu141)-[r:causeeffect]->(edu142)
+CREATE (edu141)-[r:cause_effect]->(edu142)
 
 MERGE (edu144:EDU {Id: 144, Text_id: 7})
 MERGE (edu143:EDU {Id: 143, Text_id: 7})
-CREATE (edu144)-[r:causeeffect]->(edu143)
+CREATE (edu144)-[r:cause_effect]->(edu143)
 
 MERGE (edu146:EDU {Id: 146, Text_id: 7})
 MERGE (edu377:EDU {Id: 377, Text_id: 7})
@@ -41111,7 +41111,7 @@ CREATE (edu155)-[r:concession]->(edu156)
 
 MERGE (edu160:EDU {Id: 160, Text_id: 7})
 MERGE (edu161:EDU {Id: 161, Text_id: 7})
-CREATE (edu160)-[r:causeeffect]->(edu161)
+CREATE (edu160)-[r:cause_effect]->(edu161)
 
 MERGE (edu162:EDU {Id: 162, Text_id: 7})
 MERGE (edu342:EDU {Id: 342, Text_id: 7})
@@ -41119,7 +41119,7 @@ CREATE (edu162)-[r:elaboration]->(edu342)
 
 MERGE (edu164:EDU {Id: 164, Text_id: 7})
 MERGE (edu163:EDU {Id: 163, Text_id: 7})
-CREATE (edu164)-[r:causeeffect]->(edu163)
+CREATE (edu164)-[r:cause_effect]->(edu163)
 
 MERGE (edu166:EDU {Id: 166, Text_id: 7})
 MERGE (edu165:EDU {Id: 165, Text_id: 7})
@@ -41971,7 +41971,7 @@ CREATE (edu5)-[r:span]->(edu59)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 70})
 MERGE (edu61:EDU {Id: 61, Text_id: 70})
-CREATE (edu7)-[r:sameunit]->(edu61)
+CREATE (edu7)-[r:same_unit]->(edu61)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 70})
 MERGE (edu62:EDU {Id: 62, Text_id: 70})
@@ -41991,7 +41991,7 @@ CREATE (edu13)-[r:span]->(edu64)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 70})
 MERGE (edu65:EDU {Id: 65, Text_id: 70})
-CREATE (edu15)-[r:sameunit]->(edu65)
+CREATE (edu15)-[r:same_unit]->(edu65)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 70})
 MERGE (edu70:EDU {Id: 70, Text_id: 70})
@@ -42103,7 +42103,7 @@ CREATE (edu9)-[r:preparation]->(edu63)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 70})
 MERGE (edu11:EDU {Id: 11, Text_id: 70})
-CREATE (edu10)-[r:causeeffect]->(edu11)
+CREATE (edu10)-[r:cause_effect]->(edu11)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 70})
 MERGE (edu13:EDU {Id: 13, Text_id: 70})
@@ -42163,7 +42163,7 @@ CREATE (edu53)-[r:concession]->(edu54)
 
 MERGE (edu55:EDU {Id: 55, Text_id: 70})
 MERGE (edu104:EDU {Id: 104, Text_id: 70})
-CREATE (edu55)-[r:interpretationevaluation]->(edu104)
+CREATE (edu55)-[r:interpretation_evaluation]->(edu104)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 70})
 MERGE (edu58:EDU {Id: 58, Text_id: 70})
@@ -42454,7 +42454,7 @@ CREATE (edu8)-[r:span]->(edu67)
 
 MERGE (edu10:EDU {Id: 10, Text_id: 71})
 MERGE (edu69:EDU {Id: 69, Text_id: 71})
-CREATE (edu10)-[r:sameunit]->(edu69)
+CREATE (edu10)-[r:same_unit]->(edu69)
 
 MERGE (edu12:EDU {Id: 12, Text_id: 71})
 MERGE (edu71:EDU {Id: 71, Text_id: 71})
@@ -42466,7 +42466,7 @@ CREATE (edu13)-[r:contrast]->(edu75)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 71})
 MERGE (edu73:EDU {Id: 73, Text_id: 71})
-CREATE (edu14)-[r:sameunit]->(edu73)
+CREATE (edu14)-[r:same_unit]->(edu73)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 71})
 MERGE (edu72:EDU {Id: 72, Text_id: 71})
@@ -42482,7 +42482,7 @@ CREATE (edu19)-[r:span]->(edu76)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 71})
 MERGE (edu78:EDU {Id: 78, Text_id: 71})
-CREATE (edu21)-[r:sameunit]->(edu78)
+CREATE (edu21)-[r:same_unit]->(edu78)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 71})
 MERGE (edu120:EDU {Id: 120, Text_id: 71})
@@ -42514,7 +42514,7 @@ CREATE (edu32)-[r:joint]->(edu83)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 71})
 MERGE (edu87:EDU {Id: 87, Text_id: 71})
-CREATE (edu33)-[r:sameunit]->(edu87)
+CREATE (edu33)-[r:same_unit]->(edu87)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 71})
 MERGE (edu89:EDU {Id: 89, Text_id: 71})
@@ -42522,7 +42522,7 @@ CREATE (edu34)-[r:span]->(edu89)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 71})
 MERGE (edu90:EDU {Id: 90, Text_id: 71})
-CREATE (edu36)-[r:sameunit]->(edu90)
+CREATE (edu36)-[r:same_unit]->(edu90)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 71})
 MERGE (edu91:EDU {Id: 91, Text_id: 71})
@@ -42570,7 +42570,7 @@ CREATE (edu50)-[r:span]->(edu99)
 
 MERGE (edu52:EDU {Id: 52, Text_id: 71})
 MERGE (edu101:EDU {Id: 101, Text_id: 71})
-CREATE (edu52)-[r:sameunit]->(edu101)
+CREATE (edu52)-[r:same_unit]->(edu101)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 71})
 MERGE (edu102:EDU {Id: 102, Text_id: 71})
@@ -42594,11 +42594,11 @@ CREATE (edu61)-[r:joint]->(edu114)
 
 MERGE (edu2:EDU {Id: 2, Text_id: 71})
 MERGE (edu1:EDU {Id: 1, Text_id: 71})
-CREATE (edu2)-[r:causeeffect]->(edu1)
+CREATE (edu2)-[r:cause_effect]->(edu1)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 71})
 MERGE (edu4:EDU {Id: 4, Text_id: 71})
-CREATE (edu5)-[r:causeeffect]->(edu4)
+CREATE (edu5)-[r:cause_effect]->(edu4)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 71})
 MERGE (edu7:EDU {Id: 7, Text_id: 71})
@@ -42618,7 +42618,7 @@ CREATE (edu15)-[r:attribution]->(edu16)
 
 MERGE (edu18:EDU {Id: 18, Text_id: 71})
 MERGE (edu17:EDU {Id: 17, Text_id: 71})
-CREATE (edu18)-[r:causeeffect]->(edu17)
+CREATE (edu18)-[r:cause_effect]->(edu17)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 71})
 MERGE (edu19:EDU {Id: 19, Text_id: 71})
@@ -42670,7 +42670,7 @@ CREATE (edu55)-[r:condition]->(edu111)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 71})
 MERGE (edu58:EDU {Id: 58, Text_id: 71})
-CREATE (edu57)-[r:causeeffect]->(edu58)
+CREATE (edu57)-[r:cause_effect]->(edu58)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 71})
 MERGE (edu60:EDU {Id: 60, Text_id: 71})
@@ -43240,7 +43240,7 @@ CREATE (edu8)-[r:elaboration]->(edu7)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 72})
 MERGE (edu12:EDU {Id: 12, Text_id: 72})
-CREATE (edu13)-[r:interpretationevaluation]->(edu12)
+CREATE (edu13)-[r:interpretation_evaluation]->(edu12)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 72})
 MERGE (edu20:EDU {Id: 20, Text_id: 72})
@@ -43260,7 +43260,7 @@ CREATE (edu31)-[r:attribution]->(edu99)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 72})
 MERGE (edu36:EDU {Id: 36, Text_id: 72})
-CREATE (edu35)-[r:causeeffect]->(edu36)
+CREATE (edu35)-[r:cause_effect]->(edu36)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 72})
 MERGE (edu38:EDU {Id: 38, Text_id: 72})
@@ -43268,7 +43268,7 @@ CREATE (edu39)-[r:concession]->(edu38)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 72})
 MERGE (edu42:EDU {Id: 42, Text_id: 72})
-CREATE (edu43)-[r:interpretationevaluation]->(edu42)
+CREATE (edu43)-[r:interpretation_evaluation]->(edu42)
 
 MERGE (edu44:EDU {Id: 44, Text_id: 72})
 MERGE (edu108:EDU {Id: 108, Text_id: 72})
@@ -43288,7 +43288,7 @@ CREATE (edu51)-[r:attribution]->(edu52)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 72})
 MERGE (edu115:EDU {Id: 115, Text_id: 72})
-CREATE (edu53)-[r:interpretationevaluation]->(edu115)
+CREATE (edu53)-[r:interpretation_evaluation]->(edu115)
 
 MERGE (edu59:EDU {Id: 59, Text_id: 72})
 MERGE (edu58:EDU {Id: 58, Text_id: 72})
@@ -43296,11 +43296,11 @@ CREATE (edu59)-[r:elaboration]->(edu58)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 72})
 MERGE (edu122:EDU {Id: 122, Text_id: 72})
-CREATE (edu61)-[r:interpretationevaluation]->(edu122)
+CREATE (edu61)-[r:interpretation_evaluation]->(edu122)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 72})
 MERGE (edu126:EDU {Id: 126, Text_id: 72})
-CREATE (edu67)-[r:interpretationevaluation]->(edu126)
+CREATE (edu67)-[r:interpretation_evaluation]->(edu126)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 72})
 MERGE (edu70:EDU {Id: 70, Text_id: 72})
@@ -43633,7 +43633,7 @@ CREATE (edu12)-[r:span]->(edu82)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 73})
 MERGE (edu83:EDU {Id: 83, Text_id: 73})
-CREATE (edu14)-[r:sameunit]->(edu83)
+CREATE (edu14)-[r:same_unit]->(edu83)
 
 MERGE (edu16:EDU {Id: 16, Text_id: 73})
 MERGE (edu89:EDU {Id: 89, Text_id: 73})
@@ -43653,7 +43653,7 @@ CREATE (edu19)-[r:span]->(edu87)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 73})
 MERGE (edu88:EDU {Id: 88, Text_id: 73})
-CREATE (edu21)-[r:sameunit]->(edu88)
+CREATE (edu21)-[r:same_unit]->(edu88)
 
 MERGE (edu24:EDU {Id: 24, Text_id: 73})
 MERGE (edu94:EDU {Id: 94, Text_id: 73})
@@ -43685,7 +43685,7 @@ CREATE (edu31)-[r:span]->(edu99)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 73})
 MERGE (edu100:EDU {Id: 100, Text_id: 73})
-CREATE (edu33)-[r:sameunit]->(edu100)
+CREATE (edu33)-[r:same_unit]->(edu100)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 73})
 MERGE (edu109:EDU {Id: 109, Text_id: 73})
@@ -43821,7 +43821,7 @@ CREATE (edu13)-[r:elaboration]->(edu12)
 
 MERGE (edu15:EDU {Id: 15, Text_id: 73})
 MERGE (edu85:EDU {Id: 85, Text_id: 73})
-CREATE (edu15)-[r:interpretationevaluation]->(edu85)
+CREATE (edu15)-[r:interpretation_evaluation]->(edu85)
 
 MERGE (edu20:EDU {Id: 20, Text_id: 73})
 MERGE (edu19:EDU {Id: 19, Text_id: 73})
@@ -43829,7 +43829,7 @@ CREATE (edu20)-[r:elaboration]->(edu19)
 
 MERGE (edu22:EDU {Id: 22, Text_id: 73})
 MERGE (edu91:EDU {Id: 91, Text_id: 73})
-CREATE (edu22)-[r:interpretationevaluation]->(edu91)
+CREATE (edu22)-[r:interpretation_evaluation]->(edu91)
 
 MERGE (edu23:EDU {Id: 23, Text_id: 73})
 MERGE (edu98:EDU {Id: 98, Text_id: 73})
@@ -43845,7 +43845,7 @@ CREATE (edu32)-[r:elaboration]->(edu31)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 73})
 MERGE (edu101:EDU {Id: 101, Text_id: 73})
-CREATE (edu34)-[r:interpretationevaluation]->(edu101)
+CREATE (edu34)-[r:interpretation_evaluation]->(edu101)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 73})
 MERGE (edu35:EDU {Id: 35, Text_id: 73})
@@ -43869,7 +43869,7 @@ CREATE (edu55)-[r:elaboration]->(edu54)
 
 MERGE (edu57:EDU {Id: 57, Text_id: 73})
 MERGE (edu131:EDU {Id: 131, Text_id: 73})
-CREATE (edu57)-[r:causeeffect]->(edu131)
+CREATE (edu57)-[r:cause_effect]->(edu131)
 
 MERGE (edu58:EDU {Id: 58, Text_id: 73})
 MERGE (edu130:EDU {Id: 130, Text_id: 73})
@@ -43881,15 +43881,15 @@ CREATE (edu61)-[r:elaboration]->(edu60)
 
 MERGE (edu62:EDU {Id: 62, Text_id: 73})
 MERGE (edu134:EDU {Id: 134, Text_id: 73})
-CREATE (edu62)-[r:interpretationevaluation]->(edu134)
+CREATE (edu62)-[r:interpretation_evaluation]->(edu134)
 
 MERGE (edu70:EDU {Id: 70, Text_id: 73})
 MERGE (edu142:EDU {Id: 142, Text_id: 73})
-CREATE (edu70)-[r:interpretationevaluation]->(edu142)
+CREATE (edu70)-[r:interpretation_evaluation]->(edu142)
 
 MERGE (edu72:EDU {Id: 72, Text_id: 73})
 MERGE (edu71:EDU {Id: 71, Text_id: 73})
-CREATE (edu72)-[r:interpretationevaluation]->(edu71)
+CREATE (edu72)-[r:interpretation_evaluation]->(edu71)
 
 MERGE (edu73:EDU {Id: 73, Text_id: 73})
 MERGE (edu74:EDU {Id: 74, Text_id: 73})
@@ -44259,7 +44259,7 @@ CREATE (edu3)-[r:contrast]->(edu77)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 74})
 MERGE (edu75:EDU {Id: 75, Text_id: 74})
-CREATE (edu4)-[r:sameunit]->(edu75)
+CREATE (edu4)-[r:same_unit]->(edu75)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 74})
 MERGE (edu74:EDU {Id: 74, Text_id: 74})
@@ -44283,7 +44283,7 @@ CREATE (edu11)-[r:span]->(edu81)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 74})
 MERGE (edu83:EDU {Id: 83, Text_id: 74})
-CREATE (edu13)-[r:sameunit]->(edu83)
+CREATE (edu13)-[r:same_unit]->(edu83)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 74})
 MERGE (edu120:EDU {Id: 120, Text_id: 74})
@@ -44527,7 +44527,7 @@ CREATE (edu59)-[r:concession]->(edu60)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 74})
 MERGE (edu62:EDU {Id: 62, Text_id: 74})
-CREATE (edu61)-[r:causeeffect]->(edu62)
+CREATE (edu61)-[r:cause_effect]->(edu62)
 
 MERGE (edu65:EDU {Id: 65, Text_id: 74})
 MERGE (edu115:EDU {Id: 115, Text_id: 74})
@@ -44535,7 +44535,7 @@ CREATE (edu65)-[r:background]->(edu115)
 
 MERGE (edu66:EDU {Id: 66, Text_id: 74})
 MERGE (edu114:EDU {Id: 114, Text_id: 74})
-CREATE (edu66)-[r:causeeffect]->(edu114)
+CREATE (edu66)-[r:cause_effect]->(edu114)
 
 MERGE (edu74:EDU {Id: 74, Text_id: 74})
 MERGE (edu75:EDU {Id: 75, Text_id: 74})
@@ -45011,7 +45011,7 @@ CREATE (edu1)-[r:span]->(edu83)
 
 MERGE (edu3:EDU {Id: 3, Text_id: 75})
 MERGE (edu84:EDU {Id: 84, Text_id: 75})
-CREATE (edu3)-[r:sameunit]->(edu84)
+CREATE (edu3)-[r:same_unit]->(edu84)
 
 MERGE (edu4:EDU {Id: 4, Text_id: 75})
 MERGE (edu87:EDU {Id: 87, Text_id: 75})
@@ -45027,7 +45027,7 @@ CREATE (edu6)-[r:joint]->(edu85)
 
 MERGE (edu7:EDU {Id: 7, Text_id: 75})
 MERGE (edu88:EDU {Id: 88, Text_id: 75})
-CREATE (edu7)-[r:sameunit]->(edu88)
+CREATE (edu7)-[r:same_unit]->(edu88)
 
 MERGE (edu8:EDU {Id: 8, Text_id: 75})
 MERGE (edu92:EDU {Id: 92, Text_id: 75})
@@ -45087,7 +45087,7 @@ CREATE (edu28)-[r:span]->(edu114)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 75})
 MERGE (edu115:EDU {Id: 115, Text_id: 75})
-CREATE (edu30)-[r:sameunit]->(edu115)
+CREATE (edu30)-[r:same_unit]->(edu115)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 75})
 MERGE (edu121:EDU {Id: 121, Text_id: 75})
@@ -45247,7 +45247,7 @@ CREATE (edu12)-[r:concession]->(edu13)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 75})
 MERGE (edu98:EDU {Id: 98, Text_id: 75})
-CREATE (edu14)-[r:interpretationevaluation]->(edu98)
+CREATE (edu14)-[r:interpretation_evaluation]->(edu98)
 
 MERGE (edu17:EDU {Id: 17, Text_id: 75})
 MERGE (edu18:EDU {Id: 18, Text_id: 75})
@@ -45287,7 +45287,7 @@ CREATE (edu51)-[r:attribution]->(edu137)
 
 MERGE (edu53:EDU {Id: 53, Text_id: 75})
 MERGE (edu52:EDU {Id: 52, Text_id: 75})
-CREATE (edu53)-[r:causeeffect]->(edu52)
+CREATE (edu53)-[r:cause_effect]->(edu52)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 75})
 MERGE (edu138:EDU {Id: 138, Text_id: 75})
@@ -46105,7 +46105,7 @@ CREATE (edu4)-[r:joint]->(edu142)
 
 MERGE (edu5:EDU {Id: 5, Text_id: 77})
 MERGE (edu144:EDU {Id: 144, Text_id: 77})
-CREATE (edu5)-[r:sameunit]->(edu144)
+CREATE (edu5)-[r:same_unit]->(edu144)
 
 MERGE (edu6:EDU {Id: 6, Text_id: 77})
 MERGE (edu146:EDU {Id: 146, Text_id: 77})
@@ -46181,7 +46181,7 @@ CREATE (edu30)-[r:span]->(edu169)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 77})
 MERGE (edu168:EDU {Id: 168, Text_id: 77})
-CREATE (edu32)-[r:sameunit]->(edu168)
+CREATE (edu32)-[r:same_unit]->(edu168)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 77})
 MERGE (edu171:EDU {Id: 171, Text_id: 77})
@@ -46197,7 +46197,7 @@ CREATE (edu35)-[r:span]->(edu178)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 77})
 MERGE (edu179:EDU {Id: 179, Text_id: 77})
-CREATE (edu37)-[r:sameunit]->(edu179)
+CREATE (edu37)-[r:same_unit]->(edu179)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 77})
 MERGE (edu184:EDU {Id: 184, Text_id: 77})
@@ -46209,7 +46209,7 @@ CREATE (edu39)-[r:span]->(edu180)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 77})
 MERGE (edu181:EDU {Id: 181, Text_id: 77})
-CREATE (edu41)-[r:sameunit]->(edu181)
+CREATE (edu41)-[r:same_unit]->(edu181)
 
 MERGE (edu42:EDU {Id: 42, Text_id: 77})
 MERGE (edu187:EDU {Id: 187, Text_id: 77})
@@ -46257,7 +46257,7 @@ CREATE (edu53)-[r:joint]->(edu196)
 
 MERGE (edu54:EDU {Id: 54, Text_id: 77})
 MERGE (edu197:EDU {Id: 197, Text_id: 77})
-CREATE (edu54)-[r:sameunit]->(edu197)
+CREATE (edu54)-[r:same_unit]->(edu197)
 
 MERGE (edu56:EDU {Id: 56, Text_id: 77})
 MERGE (edu203:EDU {Id: 203, Text_id: 77})
@@ -46381,7 +46381,7 @@ CREATE (edu89)-[r:span]->(edu246)
 
 MERGE (edu91:EDU {Id: 91, Text_id: 77})
 MERGE (edu247:EDU {Id: 247, Text_id: 77})
-CREATE (edu91)-[r:sameunit]->(edu247)
+CREATE (edu91)-[r:same_unit]->(edu247)
 
 MERGE (edu92:EDU {Id: 92, Text_id: 77})
 MERGE (edu250:EDU {Id: 250, Text_id: 77})
@@ -46393,7 +46393,7 @@ CREATE (edu93)-[r:span]->(edu249)
 
 MERGE (edu95:EDU {Id: 95, Text_id: 77})
 MERGE (edu251:EDU {Id: 251, Text_id: 77})
-CREATE (edu95)-[r:sameunit]->(edu251)
+CREATE (edu95)-[r:same_unit]->(edu251)
 
 MERGE (edu96:EDU {Id: 96, Text_id: 77})
 MERGE (edu255:EDU {Id: 255, Text_id: 77})
@@ -46409,7 +46409,7 @@ CREATE (edu99)-[r:span]->(edu258)
 
 MERGE (edu101:EDU {Id: 101, Text_id: 77})
 MERGE (edu257:EDU {Id: 257, Text_id: 77})
-CREATE (edu101)-[r:sameunit]->(edu257)
+CREATE (edu101)-[r:same_unit]->(edu257)
 
 MERGE (edu102:EDU {Id: 102, Text_id: 77})
 MERGE (edu271:EDU {Id: 271, Text_id: 77})
@@ -46553,7 +46553,7 @@ CREATE (edu26)-[r:elaboration]->(edu25)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 77})
 MERGE (edu165:EDU {Id: 165, Text_id: 77})
-CREATE (edu27)-[r:causeeffect]->(edu165)
+CREATE (edu27)-[r:cause_effect]->(edu165)
 
 MERGE (edu31:EDU {Id: 31, Text_id: 77})
 MERGE (edu30:EDU {Id: 30, Text_id: 77})
@@ -46585,7 +46585,7 @@ CREATE (edu62)-[r:condition]->(edu63)
 
 MERGE (edu79:EDU {Id: 79, Text_id: 77})
 MERGE (edu231:EDU {Id: 231, Text_id: 77})
-CREATE (edu79)-[r:interpretationevaluation]->(edu231)
+CREATE (edu79)-[r:interpretation_evaluation]->(edu231)
 
 MERGE (edu83:EDU {Id: 83, Text_id: 77})
 MERGE (edu82:EDU {Id: 82, Text_id: 77})
@@ -46645,7 +46645,7 @@ CREATE (edu135)-[r:condition]->(edu134)
 
 MERGE (edu137:EDU {Id: 137, Text_id: 77})
 MERGE (edu138:EDU {Id: 138, Text_id: 77})
-CREATE (edu137)-[r:causeeffect]->(edu138)
+CREATE (edu137)-[r:cause_effect]->(edu138)
 
 MERGE (edu142:EDU {Id: 142, Text_id: 77})
 MERGE (edu1:EDU {Id: 1, Text_id: 77})
@@ -47610,7 +47610,7 @@ CREATE (edu33)-[r:span]->(edu182)
 
 MERGE (edu35:EDU {Id: 35, Text_id: 78})
 MERGE (edu184:EDU {Id: 184, Text_id: 78})
-CREATE (edu35)-[r:sameunit]->(edu184)
+CREATE (edu35)-[r:same_unit]->(edu184)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 78})
 MERGE (edu185:EDU {Id: 185, Text_id: 78})
@@ -47722,7 +47722,7 @@ CREATE (edu66)-[r:span]->(edu238)
 
 MERGE (edu68:EDU {Id: 68, Text_id: 78})
 MERGE (edu240:EDU {Id: 240, Text_id: 78})
-CREATE (edu68)-[r:sameunit]->(edu240)
+CREATE (edu68)-[r:same_unit]->(edu240)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 78})
 MERGE (edu243:EDU {Id: 243, Text_id: 78})
@@ -47754,7 +47754,7 @@ CREATE (edu77)-[r:span]->(edu256)
 
 MERGE (edu79:EDU {Id: 79, Text_id: 78})
 MERGE (edu257:EDU {Id: 257, Text_id: 78})
-CREATE (edu79)-[r:sameunit]->(edu257)
+CREATE (edu79)-[r:same_unit]->(edu257)
 
 MERGE (edu83:EDU {Id: 83, Text_id: 78})
 MERGE (edu270:EDU {Id: 270, Text_id: 78})
@@ -47914,7 +47914,7 @@ CREATE (edu137)-[r:span]->(edu339)
 
 MERGE (edu139:EDU {Id: 139, Text_id: 78})
 MERGE (edu330:EDU {Id: 330, Text_id: 78})
-CREATE (edu139)-[r:sameunit]->(edu330)
+CREATE (edu139)-[r:same_unit]->(edu330)
 
 MERGE (edu141:EDU {Id: 141, Text_id: 78})
 MERGE (edu329:EDU {Id: 329, Text_id: 78})
@@ -48054,7 +48054,7 @@ CREATE (edu94)-[r:attribution]->(edu95)
 
 MERGE (edu96:EDU {Id: 96, Text_id: 78})
 MERGE (edu97:EDU {Id: 97, Text_id: 78})
-CREATE (edu96)-[r:causeeffect]->(edu97)
+CREATE (edu96)-[r:cause_effect]->(edu97)
 
 MERGE (edu98:EDU {Id: 98, Text_id: 78})
 MERGE (edu305:EDU {Id: 305, Text_id: 78})
@@ -48106,7 +48106,7 @@ CREATE (edu136)-[r:concession]->(edu135)
 
 MERGE (edu138:EDU {Id: 138, Text_id: 78})
 MERGE (edu137:EDU {Id: 137, Text_id: 78})
-CREATE (edu138)-[r:causeeffect]->(edu137)
+CREATE (edu138)-[r:cause_effect]->(edu137)
 
 MERGE (edu140:EDU {Id: 140, Text_id: 78})
 MERGE (edu141:EDU {Id: 141, Text_id: 78})
@@ -48118,7 +48118,7 @@ CREATE (edu142)-[r:elaboration]->(edu331)
 
 MERGE (edu144:EDU {Id: 144, Text_id: 78})
 MERGE (edu332:EDU {Id: 332, Text_id: 78})
-CREATE (edu144)-[r:causeeffect]->(edu332)
+CREATE (edu144)-[r:cause_effect]->(edu332)
 
 MERGE (edu146:EDU {Id: 146, Text_id: 78})
 MERGE (edu145:EDU {Id: 145, Text_id: 78})
@@ -49370,11 +49370,11 @@ CREATE (edu114)-[r:contrast]->(edu280)
 
 MERGE (edu115:EDU {Id: 115, Text_id: 79})
 MERGE (edu282:EDU {Id: 282, Text_id: 79})
-CREATE (edu115)-[r:sameunit]->(edu282)
+CREATE (edu115)-[r:same_unit]->(edu282)
 
 MERGE (edu116:EDU {Id: 116, Text_id: 79})
 MERGE (edu282:EDU {Id: 282, Text_id: 79})
-CREATE (edu116)-[r:sameunit]->(edu282)
+CREATE (edu116)-[r:same_unit]->(edu282)
 
 MERGE (edu117:EDU {Id: 117, Text_id: 79})
 MERGE (edu285:EDU {Id: 285, Text_id: 79})
@@ -49514,7 +49514,7 @@ CREATE (edu27)-[r:elaboration]->(edu183)
 
 MERGE (edu30:EDU {Id: 30, Text_id: 79})
 MERGE (edu29:EDU {Id: 29, Text_id: 79})
-CREATE (edu30)-[r:causeeffect]->(edu29)
+CREATE (edu30)-[r:cause_effect]->(edu29)
 
 MERGE (edu36:EDU {Id: 36, Text_id: 79})
 MERGE (edu35:EDU {Id: 35, Text_id: 79})
@@ -49542,15 +49542,15 @@ CREATE (edu57)-[r:elaboration]->(edu231)
 
 MERGE (edu63:EDU {Id: 63, Text_id: 79})
 MERGE (edu220:EDU {Id: 220, Text_id: 79})
-CREATE (edu63)-[r:interpretationevaluation]->(edu220)
+CREATE (edu63)-[r:interpretation_evaluation]->(edu220)
 
 MERGE (edu67:EDU {Id: 67, Text_id: 79})
 MERGE (edu68:EDU {Id: 68, Text_id: 79})
-CREATE (edu67)-[r:causeeffect]->(edu68)
+CREATE (edu67)-[r:cause_effect]->(edu68)
 
 MERGE (edu69:EDU {Id: 69, Text_id: 79})
 MERGE (edu234:EDU {Id: 234, Text_id: 79})
-CREATE (edu69)-[r:causeeffect]->(edu234)
+CREATE (edu69)-[r:cause_effect]->(edu234)
 
 MERGE (edu78:EDU {Id: 78, Text_id: 79})
 MERGE (edu79:EDU {Id: 79, Text_id: 79})
@@ -49614,7 +49614,7 @@ CREATE (edu107)-[r:elaboration]->(edu273)
 
 MERGE (edu112:EDU {Id: 112, Text_id: 79})
 MERGE (edu111:EDU {Id: 111, Text_id: 79})
-CREATE (edu112)-[r:causeeffect]->(edu111)
+CREATE (edu112)-[r:cause_effect]->(edu111)
 
 MERGE (edu126:EDU {Id: 126, Text_id: 79})
 MERGE (edu125:EDU {Id: 125, Text_id: 79})
@@ -49622,7 +49622,7 @@ CREATE (edu126)-[r:elaboration]->(edu125)
 
 MERGE (edu131:EDU {Id: 131, Text_id: 79})
 MERGE (edu306:EDU {Id: 306, Text_id: 79})
-CREATE (edu131)-[r:causeeffect]->(edu306)
+CREATE (edu131)-[r:cause_effect]->(edu306)
 
 MERGE (edu138:EDU {Id: 138, Text_id: 79})
 MERGE (edu315:EDU {Id: 315, Text_id: 79})
@@ -49630,11 +49630,11 @@ CREATE (edu138)-[r:elaboration]->(edu315)
 
 MERGE (edu140:EDU {Id: 140, Text_id: 79})
 MERGE (edu141:EDU {Id: 141, Text_id: 79})
-CREATE (edu140)-[r:interpretationevaluation]->(edu141)
+CREATE (edu140)-[r:interpretation_evaluation]->(edu141)
 
 MERGE (edu143:EDU {Id: 143, Text_id: 79})
 MERGE (edu325:EDU {Id: 325, Text_id: 79})
-CREATE (edu143)-[r:interpretationevaluation]->(edu325)
+CREATE (edu143)-[r:interpretation_evaluation]->(edu325)
 
 MERGE (edu144:EDU {Id: 144, Text_id: 79})
 MERGE (edu324:EDU {Id: 324, Text_id: 79})
@@ -49646,11 +49646,11 @@ CREATE (edu147)-[r:elaboration]->(edu146)
 
 MERGE (edu148:EDU {Id: 148, Text_id: 79})
 MERGE (edu149:EDU {Id: 149, Text_id: 79})
-CREATE (edu148)-[r:interpretationevaluation]->(edu149)
+CREATE (edu148)-[r:interpretation_evaluation]->(edu149)
 
 MERGE (edu150:EDU {Id: 150, Text_id: 79})
 MERGE (edu151:EDU {Id: 151, Text_id: 79})
-CREATE (edu150)-[r:interpretationevaluation]->(edu151)
+CREATE (edu150)-[r:interpretation_evaluation]->(edu151)
 
 MERGE (edu154:EDU {Id: 154, Text_id: 79})
 MERGE (edu158:EDU {Id: 158, Text_id: 79})
@@ -50490,7 +50490,7 @@ CREATE (edu24)-[r:joint]->(edu107)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 8})
 MERGE (edu114:EDU {Id: 114, Text_id: 8})
-CREATE (edu27)-[r:sameunit]->(edu114)
+CREATE (edu27)-[r:same_unit]->(edu114)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 8})
 MERGE (edu112:EDU {Id: 112, Text_id: 8})
@@ -50510,11 +50510,11 @@ CREATE (edu31)-[r:joint]->(edu112)
 
 MERGE (edu32:EDU {Id: 32, Text_id: 8})
 MERGE (edu118:EDU {Id: 118, Text_id: 8})
-CREATE (edu32)-[r:sameunit]->(edu118)
+CREATE (edu32)-[r:same_unit]->(edu118)
 
 MERGE (edu33:EDU {Id: 33, Text_id: 8})
 MERGE (edu118:EDU {Id: 118, Text_id: 8})
-CREATE (edu33)-[r:sameunit]->(edu118)
+CREATE (edu33)-[r:same_unit]->(edu118)
 
 MERGE (edu34:EDU {Id: 34, Text_id: 8})
 MERGE (edu120:EDU {Id: 120, Text_id: 8})
@@ -50526,11 +50526,11 @@ CREATE (edu36)-[r:contrast]->(edu125)
 
 MERGE (edu37:EDU {Id: 37, Text_id: 8})
 MERGE (edu123:EDU {Id: 123, Text_id: 8})
-CREATE (edu37)-[r:sameunit]->(edu123)
+CREATE (edu37)-[r:same_unit]->(edu123)
 
 MERGE (edu38:EDU {Id: 38, Text_id: 8})
 MERGE (edu123:EDU {Id: 123, Text_id: 8})
-CREATE (edu38)-[r:sameunit]->(edu123)
+CREATE (edu38)-[r:same_unit]->(edu123)
 
 MERGE (edu40:EDU {Id: 40, Text_id: 8})
 MERGE (edu128:EDU {Id: 128, Text_id: 8})
@@ -50662,7 +50662,7 @@ CREATE (edu10)-[r:background]->(edu9)
 
 MERGE (edu11:EDU {Id: 11, Text_id: 8})
 MERGE (edu95:EDU {Id: 95, Text_id: 8})
-CREATE (edu11)-[r:causeeffect]->(edu95)
+CREATE (edu11)-[r:cause_effect]->(edu95)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 8})
 MERGE (edu15:EDU {Id: 15, Text_id: 8})
@@ -50678,7 +50678,7 @@ CREATE (edu18)-[r:condition]->(edu17)
 
 MERGE (edu19:EDU {Id: 19, Text_id: 8})
 MERGE (edu20:EDU {Id: 20, Text_id: 8})
-CREATE (edu19)-[r:interpretationevaluation]->(edu20)
+CREATE (edu19)-[r:interpretation_evaluation]->(edu20)
 
 MERGE (edu21:EDU {Id: 21, Text_id: 8})
 MERGE (edu109:EDU {Id: 109, Text_id: 8})
@@ -50702,7 +50702,7 @@ CREATE (edu35)-[r:elaboration]->(edu126)
 
 MERGE (edu39:EDU {Id: 39, Text_id: 8})
 MERGE (edu129:EDU {Id: 129, Text_id: 8})
-CREATE (edu39)-[r:causeeffect]->(edu129)
+CREATE (edu39)-[r:cause_effect]->(edu129)
 
 MERGE (edu42:EDU {Id: 42, Text_id: 8})
 MERGE (edu43:EDU {Id: 43, Text_id: 8})
@@ -50714,7 +50714,7 @@ CREATE (edu44)-[r:attribution]->(edu136)
 
 MERGE (edu45:EDU {Id: 45, Text_id: 8})
 MERGE (edu135:EDU {Id: 135, Text_id: 8})
-CREATE (edu45)-[r:causeeffect]->(edu135)
+CREATE (edu45)-[r:cause_effect]->(edu135)
 
 MERGE (edu49:EDU {Id: 49, Text_id: 8})
 MERGE (edu140:EDU {Id: 140, Text_id: 8})
@@ -50738,7 +50738,7 @@ CREATE (edu58)-[r:elaboration]->(edu59)
 
 MERGE (edu60:EDU {Id: 60, Text_id: 8})
 MERGE (edu156:EDU {Id: 156, Text_id: 8})
-CREATE (edu60)-[r:interpretationevaluation]->(edu156)
+CREATE (edu60)-[r:interpretation_evaluation]->(edu156)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 8})
 MERGE (edu151:EDU {Id: 151, Text_id: 8})
@@ -50778,7 +50778,7 @@ CREATE (edu82)-[r:attribution]->(edu83)
 
 MERGE (edu86:EDU {Id: 86, Text_id: 8})
 MERGE (edu85:EDU {Id: 85, Text_id: 8})
-CREATE (edu86)-[r:causeeffect]->(edu85)
+CREATE (edu86)-[r:cause_effect]->(edu85)
 
 MERGE (edu87:EDU {Id: 87, Text_id: 8})
 MERGE (edu90:EDU {Id: 90, Text_id: 8})
@@ -51310,7 +51310,7 @@ CREATE (edu11)-[r:span]->(edu94)
 
 MERGE (edu13:EDU {Id: 13, Text_id: 9})
 MERGE (edu95:EDU {Id: 95, Text_id: 9})
-CREATE (edu13)-[r:sameunit]->(edu95)
+CREATE (edu13)-[r:same_unit]->(edu95)
 
 MERGE (edu14:EDU {Id: 14, Text_id: 9})
 MERGE (edu96:EDU {Id: 96, Text_id: 9})
@@ -51354,7 +51354,7 @@ CREATE (edu25)-[r:span]->(edu102)
 
 MERGE (edu27:EDU {Id: 27, Text_id: 9})
 MERGE (edu103:EDU {Id: 103, Text_id: 9})
-CREATE (edu27)-[r:sameunit]->(edu103)
+CREATE (edu27)-[r:same_unit]->(edu103)
 
 MERGE (edu28:EDU {Id: 28, Text_id: 9})
 MERGE (edu104:EDU {Id: 104, Text_id: 9})
@@ -51406,7 +51406,7 @@ CREATE (edu40)-[r:joint]->(edu112)
 
 MERGE (edu41:EDU {Id: 41, Text_id: 9})
 MERGE (edu111:EDU {Id: 111, Text_id: 9})
-CREATE (edu41)-[r:sameunit]->(edu111)
+CREATE (edu41)-[r:same_unit]->(edu111)
 
 MERGE (edu43:EDU {Id: 43, Text_id: 9})
 MERGE (edu110:EDU {Id: 110, Text_id: 9})
@@ -51454,7 +51454,7 @@ CREATE (edu58)-[r:span]->(edu128)
 
 MERGE (edu60:EDU {Id: 60, Text_id: 9})
 MERGE (edu129:EDU {Id: 129, Text_id: 9})
-CREATE (edu60)-[r:sameunit]->(edu129)
+CREATE (edu60)-[r:same_unit]->(edu129)
 
 MERGE (edu61:EDU {Id: 61, Text_id: 9})
 MERGE (edu130:EDU {Id: 130, Text_id: 9})
@@ -51851,3 +51851,4 @@ CREATE (edu143)-[r:joint]->(edu145)
 MERGE (edu144:EDU {Id: 144, Text_id: 9})
 MERGE (edu145:EDU {Id: 145, Text_id: 9})
 CREATE (edu144)-[r:joint]->(edu145)
+

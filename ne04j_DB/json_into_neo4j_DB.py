@@ -66,14 +66,15 @@ def create_multi_or_span_rels(relations, text_id):
                                           + parent_id + ', Text_id: ' + text_id + '})\n' + 'CREATE (edu' \
                                           + child_id + ')-' + '[r:' + relation + ']->(edu' + parent_id + ')\n'
                 span_multi_rels_command = re.sub('same-unit',
-                                                 'sameunit',
+                                                 'same_unit',
                                                  span_multi_rels_command)
                 span_multi_rels_command = re.sub('cause-effect',
-                                                 'causeeffect',
+                                                 'cause_effect',
                                                  span_multi_rels_command)
                 span_multi_rels_command = re.sub('interpretation-evaluation',
-                                                 'interpretationevaluation',
+                                                 'interpretation_evaluation',
                                                  span_multi_rels_command)
+
 
                 output_with_commands.write(span_multi_rels_command + '\n')
                 # print(span_multi_rels_command)
@@ -98,9 +99,9 @@ def create_ordinary_rels(relations, text_id):
         neo4j_rels_command = 'MERGE (edu' + child_id + ':EDU {Id: ' + child_id + ', Text_id: ' + text_id + '})\n' +\
                              'MERGE (edu' + parent_id + ':EDU {Id: ' + parent_id + ', Text_id: ' + text_id + '})\n' +\
                              'CREATE (edu' + child_id + ')-' + '[r:' + relation + ']->(edu' + parent_id + ')\n'
-        neo4j_rels_command = re.sub('same-unit', 'sameunit', neo4j_rels_command)
-        neo4j_rels_command = re.sub('cause-effect', 'causeeffect', neo4j_rels_command)
-        neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretationevaluation', neo4j_rels_command)
+        neo4j_rels_command = re.sub('same-unit', 'same_unit', neo4j_rels_command)
+        neo4j_rels_command = re.sub('cause-effect', 'cause_effect', neo4j_rels_command)
+        neo4j_rels_command = re.sub('interpretation-evaluation', 'interpretation_evaluation', neo4j_rels_command)
 
         output_with_commands.write(neo4j_rels_command + '\n')
         graph.run(neo4j_rels_command)
