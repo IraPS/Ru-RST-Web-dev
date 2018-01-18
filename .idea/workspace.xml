@@ -2,11 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ebd8909-1594-4ec1-9583-87869020dfa6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ne04j_DB/rs3_to_txt.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ne04j_DB/corpus/51rs3" afterPath="$PROJECT_DIR$/ne04j_DB/corpus/51.rs3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py" afterPath="$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/1.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/10.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/10.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/11.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/11.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/12.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/12.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/13.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/13.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/14.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/14.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/15.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/15.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/16.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/16.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/17.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/17.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/18.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/18.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/19.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/19.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/2.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/20.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/20.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/21.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/21.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/22.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/22.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/23.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/23.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/24.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/24.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/25.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/25.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/26.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/26.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/27.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/27.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/28.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/28.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/29.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/29.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/3.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/30.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/30.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/31.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/31.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/32.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/32.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/33.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/33.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/34.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/34.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/35.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/35.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/36.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/36.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/37.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/37.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/38.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/38.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/39.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/39.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/4.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/40.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/40.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/41.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/41.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/42.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/42.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/43.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/43.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/44.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/44.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/45.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/45.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/46.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/46.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/47.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/47.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/48.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/48.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/49.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/49.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/5.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/50.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/50.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/52.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/52.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/53.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/53.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/54.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/54.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/55.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/55.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/56.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/56.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/57.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/57.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/58.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/58.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/59.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/59.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/6.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/60.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/60.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/61.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/61.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/62.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/62.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/63.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/63.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/64.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/64.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/65.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/65.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/66.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/66.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/67.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/67.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/68.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/68.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/69.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/69.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/7.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/70.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/70.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/71.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/71.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/72.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/72.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/73.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/73.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/74.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/74.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/75.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/75.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/76.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/76.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/77.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/77.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/78.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/78.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/79.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/79.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/8.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/9.json" afterPath="$PROJECT_DIR$/ne04j_DB/corpus_of_jsons/9.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ne04j_DB/neo4j_commands.txt" afterPath="$PROJECT_DIR$/ne04j_DB/neo4j_commands.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ru-RST-corpus-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,24 +104,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rs3_to_txt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ne04j_DB/rs3_to_txt.py">
+      <file leaf-file-name="json_into_neo4j_DB.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="51.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ne04j_DB/corpus_of_txts/51.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="177" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +205,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,27 +236,10 @@
               <option name="myItemId" value="Ru-RST-corpus-dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ne04j_DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corpus_of_txts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ru-RST-corpus-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ru-RST-corpus-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,7 +255,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.rs3_to_txt">
+  <component name="RunManager" selected="Python.json_into_neo4j_DB">
     <configuration default="false" name="json_into_neo4j_DB" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,25 +313,6 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ne04j_DB" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Ru-RST-corpus-dev" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ne04j_DB/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="rs3_to_txt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,6 +326,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Ru-RST-corpus-dev" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ne04j_DB/rs3_to_txt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="rs3_into_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ne04j_DB" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Ru-RST-corpus-dev" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ne04j_DB/rs3_into_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -431,16 +477,16 @@
       <item index="0" class="java.lang.String" itemvalue="Python.json_into_neo4j_DB" />
       <item index="1" class="java.lang.String" itemvalue="Python.fill_DB" />
       <item index="2" class="java.lang.String" itemvalue="Python.searching_DB" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.rs3_to_txt" />
+      <item index="3" class="java.lang.String" itemvalue="Python.rs3_to_txt" />
+      <item index="4" class="java.lang.String" itemvalue="Python.rs3_into_json" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.rs3_to_txt" />
-        <item index="1" class="java.lang.String" itemvalue="Python.json_into_neo4j_DB" />
-        <item index="2" class="java.lang.String" itemvalue="Python.searching_DB" />
-        <item index="3" class="java.lang.String" itemvalue="Python.fill_DB" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.json_into_neo4j_DB" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rs3_into_json" />
+        <item index="2" class="java.lang.String" itemvalue="Python.rs3_to_txt" />
+        <item index="3" class="java.lang.String" itemvalue="Python.searching_DB" />
+        <item index="4" class="java.lang.String" itemvalue="Python.fill_DB" />
       </list>
     </recent_temporary>
   </component>
@@ -479,7 +525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -489,17 +535,17 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37534246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37534246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -525,35 +571,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ne04j_DB/corpus_of_txts/31.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ne04j_DB/corpus_of_txts/32.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ne04j_DB/corpus_of_txts/33.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ne04j_DB/corpus_of_txts/34.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -585,7 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -593,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -609,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03504673" vertical-offset="0" max-vertical-offset="428">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,17 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ne04j_DB/rs3_to_txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,6 +898,42 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="177" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/neo4j_commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="777900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/rs3_to_txt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/rs3_into_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ne04j_DB/json_into_neo4j_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -30172,6 +30172,384 @@ MERGE (edu73:EDU {Id: 73, Text_id: 50})
 MERGE (edu74:EDU {Id: 74, Text_id: 50})
 CREATE (edu73)-[r:span]->(edu74)
 
+CREATE (edu1:EDU { Id: 1, text: '##### Археологи Института Востока Чикагского университета откопали в Египте ступенчатую пирамиду,', text_norm: " археологи института востока чикагского университета откопали в египте ступенчатую пирамиду", lemmas: "{'археолог': 'S', 'институт': 'S', 'восток': 'S', 'чикагский': 'A', 'университет': 'S', 'откопать': 'V', 'в': 'S', 'египет': 'S', 'ступенчатый': 'A', 'пирамида': 'S', }", Text_id: 51})
+
+CREATE (edu10:EDU { Id: 10, text: 'однако за тысячелетия частично разрушилась.', text_norm: "однако за тысячелетия частично разрушилась", lemmas: "{'однако': 'CONJ', 'за': 'PR', 'тысячелетие': 'S', 'частично': 'ADV', 'разрушаться': 'V', }", Text_id: 51})
+
+CREATE (edu11:EDU { Id: 11, text: 'Теперь ее высота не превышает пяти метров.', text_norm: "теперь ее высота не превышает пяти метров", lemmas: "{'теперь': 'ADV', 'она': 'SPRO', 'высота': 'S', 'не': 'PART', 'превышать': 'V', 'пять': 'NUM', 'метр': 'S', }", Text_id: 51})
+
+CREATE (edu12:EDU { Id: 12, text: 'Она является одной из семи известных «провинциальных» пирамид,', text_norm: "она является одной из семи известных провинциальных пирамид", lemmas: "{'она': 'SPRO', 'являться': 'V', 'один': 'APRO', 'из': 'PR', 'семь': 'NUM', 'известный': 'A', 'провинциальный': 'A', 'пирамида': 'S', }", Text_id: 51})
+
+CREATE (edu13:EDU { Id: 13, text: 'строившихся при фараоне Хуни', text_norm: "строившихся при фараоне хуни", lemmas: "{'строиться': 'V', 'при': 'PR', 'фараон': 'S', 'хунь': 'S', }", Text_id: 51})
+
+CREATE (edu14:EDU { Id: 14, text: '(правил в 2635-2610 годах до нашей эры)', text_norm: "правил в 2635-2610 годах до нашей эры", lemmas: "{'правило': 'S', 'в': 'S', '2635': 'NONE', '-': 'NONE', '2610': 'NONE', 'год': 'S', 'до': 'PR', 'наш': 'APRO', 'эра': 'S', }", Text_id: 51})
+
+CREATE (edu15:EDU { Id: 15, text: 'или при фараоне Снефру', text_norm: "или при фараоне снефру", lemmas: "{'или': 'CONJ', 'при': 'PR', 'фараон': 'S', 'снефра': 'S', }", Text_id: 51})
+
+CREATE (edu16:EDU { Id: 16, text: '(2610-2590 годы до нашей эры).', text_norm: "2610-2590 годы до нашей эры", lemmas: "{'2610': 'NONE', '-': 'NONE', '2590': 'NONE', 'год': 'S', 'до': 'PR', 'наш': 'APRO', 'эра': 'S', }", Text_id: 51})
+
+CREATE (edu17:EDU { Id: 17, text: 'О существовании пирамиды в Эдфу было известно давно,', text_norm: "о существовании пирамиды в эдфу было известно давно", lemmas: "{'о': 'INTJ', 'существование': 'S', 'пирамида': 'S', 'в': 'S', 'эдфу': 'S', 'быть': 'V', 'известно': 'ADV', 'давно': 'ADV', }", Text_id: 51})
+
+CREATE (edu18:EDU { Id: 18, text: 'однако работы по ее раскопке были начаты только в 2010 году.', text_norm: "однако работы по ее раскопке были начаты только в 2010 году", lemmas: "{'однако': 'CONJ', 'работа': 'S', 'по': 'PR', 'ее': 'SPRO', 'раскопка': 'S', 'быть': 'V', 'начинать': 'V', 'только': 'PART', 'в': 'S', '2010': 'NONE', 'год': 'S', }", Text_id: 51})
+
+CREATE (edu19:EDU { Id: 19, text: '##### Перед началом раскопок пирамида в Эдфу была покрыта толстым слоем песка, мусора и обломков ее же блоков,', text_norm: " перед началом раскопок пирамида в эдфу была покрыта толстым слоем песка мусора и обломков ее же блоков", lemmas: "{'перед': 'PR', 'начало': 'S', 'раскопка': 'S', 'пирамида': 'S', 'в': 'S', 'эдфу': 'S', 'быть': 'V', 'покрывать': 'V', 'толстый': 'A', 'слой': 'S', 'песок': 'S', 'мусор': 'S', 'и': 'CONJ', 'обломок': 'S', 'ее': 'SPRO', 'же': 'PART', 'блок': 'S', }", Text_id: 51})
+
+CREATE (edu2:EDU { Id: 2, text: 'возраст которой составляет около 4,6 тысячи лет,', text_norm: "возраст которой составляет около 46 тысячи лет", lemmas: "{'возраст': 'S', 'который': 'APRO', 'составлять': 'V', 'около': 'ADV', '46': 'NONE', 'тысяча': 'S', 'год': 'S', }", Text_id: 51})
+
+CREATE (edu20:EDU { Id: 20, text: 'указывающих на то, что строение подверглось разграблению.', text_norm: "указывающих на то что строение подверглось разграблению", lemmas: "{'указывать': 'V', 'на': 'PR', 'то': 'PART', 'что': 'SPRO', 'строение': 'S', 'подвергаться': 'V', 'разграбление': 'S', }", Text_id: 51})
+
+CREATE (edu21:EDU { Id: 21, text: 'Строение состоит из блоков песчаника, соединенных между собой глинистым раствором.', text_norm: "строение состоит из блоков песчаника соединенных между собой глинистым раствором", lemmas: "{'строение': 'S', 'состоять': 'V', 'из': 'PR', 'блок': 'S', 'песчаник': 'S', 'соединять': 'V', 'между': 'PR', 'себя': 'SPRO', 'глинистый': 'A', 'раствор': 'S', }", Text_id: 51})
+
+CREATE (edu22:EDU { Id: 22, text: 'Центральные блоки в строении установлены вертикально,', text_norm: "центральные блоки в строении установлены вертикально", lemmas: "{'центральный': 'A', 'блок': 'S', 'в': 'S', 'строение': 'S', 'устанавливать': 'V', 'вертикально': 'ADV', }", Text_id: 51})
+
+CREATE (edu23:EDU { Id: 23, text: 'в то время как внешние уложены по одной их стороне горизонтально друг на друга.', text_norm: "в то время как внешние уложены по одной их стороне горизонтально друг на друга", lemmas: "{'в': 'S', 'тот': 'APRO', 'время': 'S', 'как': 'ADVPRO', 'внешний': 'A', 'укладывать': 'V', 'по': 'PR', 'один': 'APRO', 'их': 'SPRO', 'сторона': 'S', 'горизонтально': 'ADV', 'друг': 'S', 'на': 'PR', 'друг': 'S', }", Text_id: 51})
+
+CREATE (edu24:EDU { Id: 24, text: 'Пирамида является трехступенчатой.', text_norm: "пирамида является трехступенчатой", lemmas: "{'пирамида': 'S', 'являться': 'V', 'трехступенчатый': 'A', }", Text_id: 51})
+
+CREATE (edu25:EDU { Id: 25, text: '##### По типу своей постройки пирамида в Эдфу аналогична такой же постройке фараона Джосера', text_norm: " по типу своей постройки пирамида в эдфу аналогична такой же постройке фараона джосера", lemmas: "{'по': 'PR', 'тип': 'S', 'свой': 'APRO', 'постройка': 'S', 'пирамида': 'S', 'в': 'S', 'эдфу': 'S', 'аналогичный': 'A', 'такой': 'APRO', 'же': 'PART', 'постройка': 'S', 'фараон': 'S', 'джосер': 'S', }", Text_id: 51})
+
+CREATE (edu26:EDU { Id: 26, text: '(правил в 2670-2640 годах до нашей эры).', text_norm: "правил в 2670-2640 годах до нашей эры", lemmas: "{'правило': 'S', 'в': 'S', '2670': 'NONE', '-': 'NONE', '2640': 'NONE', 'год': 'S', 'до': 'PR', 'наш': 'APRO', 'эра': 'S', }", Text_id: 51})
+
+CREATE (edu27:EDU { Id: 27, text: 'На внешних гранях пирамиды были обнаружены различные изображения, включая рисуночное письмо', text_norm: "на внешних гранях пирамиды были обнаружены различные изображения включая рисуночное письмо", lemmas: "{'на': 'PR', 'внешний': 'A', 'грань': 'S', 'пирамида': 'S', 'быть': 'V', 'обнаруживать': 'V', 'различный': 'A', 'изображение': 'S', 'включая': 'PR', 'рисуночный': 'A', 'письмо': 'S', }", Text_id: 51})
+
+CREATE (edu28:EDU { Id: 28, text: '(свиток, сидящий человек, четырехногое животное, камыш и птица)', text_norm: "свиток сидящий человек четырехногое животное камыш и птица", lemmas: "{'свиток': 'S', 'сидеть': 'V', 'человек': 'S', 'четырехногий': 'A', 'животное': 'S', 'камыш': 'S', 'и': 'CONJ', 'птица': 'S', }", Text_id: 51})
+
+CREATE (edu29:EDU { Id: 29, text: 'По мнению археологов,', text_norm: "по мнению археологов", lemmas: "{'по': 'PR', 'мнение': 'S', 'археолог': 'S', }", Text_id: 51})
+
+CREATE (edu3:EDU { Id: 3, text: 'сообщает LiveScience.', text_norm: "сообщает livescience", lemmas: "{'сообщать': 'V', 'LiveScience': 'NONE', }", Text_id: 51})
+
+CREATE (edu30:EDU { Id: 30, text: 'эти надписи касаются захоронений детей, которые расположены у подножия пирамиды.', text_norm: "эти надписи касаются захоронений детей которые расположены у подножия пирамиды", lemmas: "{'этот': 'APRO', 'надпись': 'S', 'касаться': 'V', 'захоронение': 'S', 'ребенок': 'S', 'который': 'APRO', 'располагать': 'V', 'у': 'PR', 'подножие': 'S', 'пирамида': 'S', }", Text_id: 51})
+
+CREATE (edu31:EDU { Id: 31, text: 'Одна из надписей может означать «хозяйка дома»', text_norm: "одна из надписей может означать хозяйка дома", lemmas: "{'один': 'APRO', 'из': 'PR', 'надпись': 'S', 'мочь': 'S', 'означать': 'V', 'хозяйка': 'S', 'дом': 'S', }", Text_id: 51})
+
+CREATE (edu32:EDU { Id: 32, text: 'и указывать на мать одного и захороненных детей.', text_norm: "и указывать на мать одного и захороненных детей", lemmas: "{'и': 'CONJ', 'указывать': 'V', 'на': 'PR', 'мать': 'S', 'один': 'APRO', 'и': 'CONJ', 'захоронить': 'V', 'ребенок': 'S', }", Text_id: 51})
+
+CREATE (edu33:EDU { Id: 33, text: '##### Предназначение «провинциальных» пирамид до конца пока не ясно.', text_norm: " предназначение провинциальных пирамид до конца пока не ясно", lemmas: "{'предназначение': 'S', 'провинциальный': 'A', 'пирамида': 'S', 'до': 'PR', 'конец': 'S', 'пока': 'ADV', 'не': 'PART', 'ясный': 'A', }", Text_id: 51})
+
+CREATE (edu34:EDU { Id: 34, text: 'Например, они могут быть памятниками, посвященными правящей династии.', text_norm: "например они могут быть памятниками посвященными правящей династии", lemmas: "{'например': 'ADV', 'они': 'SPRO', 'мочь': 'S', 'быть': 'V', 'памятник': 'S', 'посвящать': 'V', 'править': 'V', 'династия': 'S', }", Text_id: 51})
+
+CREATE (edu35:EDU { Id: 35, text: 'Шесть из семи известных таких пирамид имеют практически идентичные размеры:', text_norm: "шесть из семи известных таких пирамид имеют практически идентичные размеры", lemmas: "{'шесть': 'NUM', 'из': 'PR', 'семь': 'NUM', 'известный': 'A', 'такой': 'APRO', 'пирамида': 'S', 'иметь': 'V', 'практически': 'ADV', 'идентичный': 'A', 'размер': 'S', }", Text_id: 51})
+
+CREATE (edu36:EDU { Id: 36, text: '18,4 метра в ширину и 18,6 метра в длину.', text_norm: "184 метра в ширину и 186 метра в длину", lemmas: "{'184': 'NONE', 'метр': 'S', 'в': 'S', 'ширина': 'S', 'и': 'CONJ', '186': 'NONE', 'метр': 'S', 'в': 'S', 'длина': 'S', }", Text_id: 51})
+
+CREATE (edu37:EDU { Id: 37, text: 'Внутренних помещений они не имеют', text_norm: "внутренних помещений они не имеют", lemmas: "{'внутренний': 'A', 'помещение': 'S', 'они': 'SPRO', 'не': 'PART', 'иметь': 'V', }", Text_id: 51})
+
+CREATE (edu38:EDU { Id: 38, text: 'и, вероятно, не предназначались для захоронений.', text_norm: "и вероятно не предназначались для захоронений", lemmas: "{'и': 'CONJ', 'вероятно': 'ADV', 'не': 'PART', 'предназначаться': 'V', 'для': 'PR', 'захоронение': 'S', }", Text_id: 51})
+
+CREATE (edu39:EDU { Id: 39, text: 'Возле восточной стороны пирамиды в Эдфу археологи нашли остатки прилавка, с которого велась торговля едой.', text_norm: "возле восточной стороны пирамиды в эдфу археологи нашли остатки прилавка с которого велась торговля едой", lemmas: "{'возле': 'PR', 'восточный': 'A', 'сторона': 'S', 'пирамида': 'S', 'в': 'S', 'эдфу': 'S', 'археолог': 'S', 'находить': 'V', 'остаток': 'S', 'прилавок': 'S', 'с': 'S', 'который': 'APRO', 'вестись': 'V', 'торговля': 'S', 'еда': 'S', }", Text_id: 51})
+
+CREATE (edu4:EDU { Id: 4, text: 'Пирамида находится неподалеку от древнего поселения Эдфу', text_norm: "пирамида находится неподалеку от древнего поселения эдфу", lemmas: "{'пирамида': 'S', 'находиться': 'V', 'неподалеку': 'ADV', 'от': 'PR', 'древний': 'A', 'поселение': 'S', 'эдфу': 'S', }", Text_id: 51})
+
+CREATE (edu40:EDU { Id: 40, text: '##### Любопытно, что надписи на пирамиде и захоронения детей были сделаны уже спустя много лет после ее постройки.', text_norm: " любопытно что надписи на пирамиде и захоронения детей были сделаны уже спустя много лет после ее постройки", lemmas: "{'любопытно': 'ADV', 'что': 'SPRO', 'надпись': 'S', 'на': 'PR', 'пирамида': 'S', 'и': 'CONJ', 'захоронение': 'S', 'ребенок': 'S', 'быть': 'V', 'сделать': 'V', 'уже': 'ADV', 'спустя': 'PR', 'много': 'ADV', 'год': 'S', 'после': 'ADV', 'ее': 'SPRO', 'постройка': 'S', }", Text_id: 51})
+
+CREATE (edu41:EDU { Id: 41, text: 'Так что, очевидно, изначально она предназначалась для других целей.', text_norm: "так что очевидно изначально она предназначалась для других целей", lemmas: "{'так': 'ADVPRO', 'что': 'SPRO', 'очевидно': 'ADV', 'изначально': 'ADV', 'она': 'SPRO', 'предназначаться': 'V', 'для': 'PR', 'другой': 'APRO', 'цель': 'S', }", Text_id: 51})
+
+CREATE (edu5:EDU { Id: 5, text: '(около ста километров к югу от Луксора)', text_norm: "около ста километров к югу от луксора", lemmas: "{'около': 'ADV', 'сто': 'NUM', 'километр': 'S', 'к': 'S', 'юг': 'S', 'от': 'PR', 'луксор': 'S', }", Text_id: 51})
+
+CREATE (edu6:EDU { Id: 6, text: 'и относится к так называемому «провинциальному» типу.', text_norm: "и относится к так называемому провинциальному типу", lemmas: "{'и': 'CONJ', 'относиться': 'V', 'к': 'S', 'так': 'ADVPRO', 'называть': 'V', 'провинциальный': 'A', 'тип': 'S', }", Text_id: 51})
+
+CREATE (edu7:EDU { Id: 7, text: 'По предварительным оценкам,', text_norm: "по предварительным оценкам", lemmas: "{'по': 'PR', 'предварительный': 'A', 'оценка': 'S', }", Text_id: 51})
+
+CREATE (edu8:EDU { Id: 8, text: 'откопанная пирамида на несколько десятилетий старше Великой пирамиды Гизы.', text_norm: "откопанная пирамида на несколько десятилетий старше великой пирамиды гизы", lemmas: "{'откопать': 'V', 'пирамида': 'S', 'на': 'PR', 'несколько': 'ADV', 'десятилетие': 'S', 'старый': 'A', 'великий': 'A', 'пирамида': 'S', 'гиз': 'S', }", Text_id: 51})
+
+CREATE (edu9:EDU { Id: 9, text: '##### При постройке ступенчатая пирамида в Эдфу была высотой 13 метров,', text_norm: " при постройке ступенчатая пирамида в эдфу была высотой 13 метров", lemmas: "{'при': 'PR', 'постройка': 'S', 'ступенчатый': 'A', 'пирамида': 'S', 'в': 'S', 'эдфу': 'S', 'быть': 'V', 'высота': 'S', '13': 'NONE', 'метр': 'S', }", Text_id: 51})
+
+MERGE (edu1:EDU {Id: 1, Text_id: 51})
+MERGE (edu42:EDU {Id: 42, Text_id: 51})
+CREATE (edu1)-[r:span]->(edu42)
+
+MERGE (edu4:EDU {Id: 4, Text_id: 51})
+MERGE (edu43:EDU {Id: 43, Text_id: 51})
+CREATE (edu4)-[r:span]->(edu43)
+
+MERGE (edu6:EDU {Id: 6, Text_id: 51})
+MERGE (edu44:EDU {Id: 44, Text_id: 51})
+CREATE (edu6)-[r:joint]->(edu44)
+
+MERGE (edu8:EDU {Id: 8, Text_id: 51})
+MERGE (edu49:EDU {Id: 49, Text_id: 51})
+CREATE (edu8)-[r:span]->(edu49)
+
+MERGE (edu9:EDU {Id: 9, Text_id: 51})
+MERGE (edu50:EDU {Id: 50, Text_id: 51})
+CREATE (edu9)-[r:contrast]->(edu50)
+
+MERGE (edu10:EDU {Id: 10, Text_id: 51})
+MERGE (edu50:EDU {Id: 50, Text_id: 51})
+CREATE (edu10)-[r:contrast]->(edu50)
+
+MERGE (edu11:EDU {Id: 11, Text_id: 51})
+MERGE (edu52:EDU {Id: 52, Text_id: 51})
+CREATE (edu11)-[r:comparison]->(edu52)
+
+MERGE (edu12:EDU {Id: 12, Text_id: 51})
+MERGE (edu56:EDU {Id: 56, Text_id: 51})
+CREATE (edu12)-[r:span]->(edu56)
+
+MERGE (edu13:EDU {Id: 13, Text_id: 51})
+MERGE (edu53:EDU {Id: 53, Text_id: 51})
+CREATE (edu13)-[r:span]->(edu53)
+
+MERGE (edu15:EDU {Id: 15, Text_id: 51})
+MERGE (edu55:EDU {Id: 55, Text_id: 51})
+CREATE (edu15)-[r:span]->(edu55)
+
+MERGE (edu17:EDU {Id: 17, Text_id: 51})
+MERGE (edu59:EDU {Id: 59, Text_id: 51})
+CREATE (edu17)-[r:contrast]->(edu59)
+
+MERGE (edu18:EDU {Id: 18, Text_id: 51})
+MERGE (edu59:EDU {Id: 59, Text_id: 51})
+CREATE (edu18)-[r:contrast]->(edu59)
+
+MERGE (edu19:EDU {Id: 19, Text_id: 51})
+MERGE (edu61:EDU {Id: 61, Text_id: 51})
+CREATE (edu19)-[r:span]->(edu61)
+
+MERGE (edu21:EDU {Id: 21, Text_id: 51})
+MERGE (edu65:EDU {Id: 65, Text_id: 51})
+CREATE (edu21)-[r:span]->(edu65)
+
+MERGE (edu22:EDU {Id: 22, Text_id: 51})
+MERGE (edu63:EDU {Id: 63, Text_id: 51})
+CREATE (edu22)-[r:comparison]->(edu63)
+
+MERGE (edu23:EDU {Id: 23, Text_id: 51})
+MERGE (edu63:EDU {Id: 63, Text_id: 51})
+CREATE (edu23)-[r:comparison]->(edu63)
+
+MERGE (edu24:EDU {Id: 24, Text_id: 51})
+MERGE (edu66:EDU {Id: 66, Text_id: 51})
+CREATE (edu24)-[r:joint]->(edu66)
+
+MERGE (edu25:EDU {Id: 25, Text_id: 51})
+MERGE (edu67:EDU {Id: 67, Text_id: 51})
+CREATE (edu25)-[r:span]->(edu67)
+
+MERGE (edu27:EDU {Id: 27, Text_id: 51})
+MERGE (edu68:EDU {Id: 68, Text_id: 51})
+CREATE (edu27)-[r:span]->(edu68)
+
+MERGE (edu30:EDU {Id: 30, Text_id: 51})
+MERGE (edu70:EDU {Id: 70, Text_id: 51})
+CREATE (edu30)-[r:span]->(edu70)
+
+MERGE (edu31:EDU {Id: 31, Text_id: 51})
+MERGE (edu69:EDU {Id: 69, Text_id: 51})
+CREATE (edu31)-[r:joint]->(edu69)
+
+MERGE (edu32:EDU {Id: 32, Text_id: 51})
+MERGE (edu69:EDU {Id: 69, Text_id: 51})
+CREATE (edu32)-[r:joint]->(edu69)
+
+MERGE (edu34:EDU {Id: 34, Text_id: 51})
+MERGE (edu79:EDU {Id: 79, Text_id: 51})
+CREATE (edu34)-[r:span]->(edu79)
+
+MERGE (edu35:EDU {Id: 35, Text_id: 51})
+MERGE (edu73:EDU {Id: 73, Text_id: 51})
+CREATE (edu35)-[r:span]->(edu73)
+
+MERGE (edu37:EDU {Id: 37, Text_id: 51})
+MERGE (edu72:EDU {Id: 72, Text_id: 51})
+CREATE (edu37)-[r:joint]->(edu72)
+
+MERGE (edu38:EDU {Id: 38, Text_id: 51})
+MERGE (edu72:EDU {Id: 72, Text_id: 51})
+CREATE (edu38)-[r:joint]->(edu72)
+
+MERGE (edu39:EDU {Id: 39, Text_id: 51})
+MERGE (edu83:EDU {Id: 83, Text_id: 51})
+CREATE (edu39)-[r:span]->(edu83)
+
+MERGE (edu40:EDU {Id: 40, Text_id: 51})
+MERGE (edu82:EDU {Id: 82, Text_id: 51})
+CREATE (edu40)-[r:span]->(edu82)
+
+MERGE (edu2:EDU {Id: 2, Text_id: 51})
+MERGE (edu1:EDU {Id: 1, Text_id: 51})
+CREATE (edu2)-[r:elaboration]->(edu1)
+
+MERGE (edu3:EDU {Id: 3, Text_id: 51})
+MERGE (edu42:EDU {Id: 42, Text_id: 51})
+CREATE (edu3)-[r:attribution]->(edu42)
+
+MERGE (edu5:EDU {Id: 5, Text_id: 51})
+MERGE (edu4:EDU {Id: 4, Text_id: 51})
+CREATE (edu5)-[r:elaboration]->(edu4)
+
+MERGE (edu7:EDU {Id: 7, Text_id: 51})
+MERGE (edu8:EDU {Id: 8, Text_id: 51})
+CREATE (edu7)-[r:attribution]->(edu8)
+
+MERGE (edu14:EDU {Id: 14, Text_id: 51})
+MERGE (edu13:EDU {Id: 13, Text_id: 51})
+CREATE (edu14)-[r:elaboration]->(edu13)
+
+MERGE (edu16:EDU {Id: 16, Text_id: 51})
+MERGE (edu15:EDU {Id: 15, Text_id: 51})
+CREATE (edu16)-[r:elaboration]->(edu15)
+
+MERGE (edu20:EDU {Id: 20, Text_id: 51})
+MERGE (edu19:EDU {Id: 19, Text_id: 51})
+CREATE (edu20)-[r:elaboration]->(edu19)
+
+MERGE (edu26:EDU {Id: 26, Text_id: 51})
+MERGE (edu25:EDU {Id: 25, Text_id: 51})
+CREATE (edu26)-[r:elaboration]->(edu25)
+
+MERGE (edu28:EDU {Id: 28, Text_id: 51})
+MERGE (edu27:EDU {Id: 27, Text_id: 51})
+CREATE (edu28)-[r:elaboration]->(edu27)
+
+MERGE (edu29:EDU {Id: 29, Text_id: 51})
+MERGE (edu30:EDU {Id: 30, Text_id: 51})
+CREATE (edu29)-[r:attribution]->(edu30)
+
+MERGE (edu33:EDU {Id: 33, Text_id: 51})
+MERGE (edu34:EDU {Id: 34, Text_id: 51})
+CREATE (edu33)-[r:preparation]->(edu34)
+
+MERGE (edu36:EDU {Id: 36, Text_id: 51})
+MERGE (edu35:EDU {Id: 35, Text_id: 51})
+CREATE (edu36)-[r:elaboration]->(edu35)
+
+MERGE (edu41:EDU {Id: 41, Text_id: 51})
+MERGE (edu40:EDU {Id: 40, Text_id: 51})
+CREATE (edu41)-[r:interpretation_evaluation]->(edu40)
+
+MERGE (edu42:EDU {Id: 42, Text_id: 51})
+MERGE (edu45:EDU {Id: 45, Text_id: 51})
+CREATE (edu42)-[r:span]->(edu45)
+
+MERGE (edu43:EDU {Id: 43, Text_id: 51})
+MERGE (edu44:EDU {Id: 44, Text_id: 51})
+CREATE (edu43)-[r:joint]->(edu44)
+
+MERGE (edu44:EDU {Id: 44, Text_id: 51})
+MERGE (edu46:EDU {Id: 46, Text_id: 51})
+CREATE (edu44)-[r:span]->(edu46)
+
+MERGE (edu45:EDU {Id: 45, Text_id: 51})
+MERGE (edu46:EDU {Id: 46, Text_id: 51})
+CREATE (edu45)-[r:preparation]->(edu46)
+
+MERGE (edu46:EDU {Id: 46, Text_id: 51})
+MERGE (edu47:EDU {Id: 47, Text_id: 51})
+CREATE (edu46)-[r:span]->(edu47)
+
+MERGE (edu47:EDU {Id: 47, Text_id: 51})
+MERGE (edu48:EDU {Id: 48, Text_id: 51})
+CREATE (edu47)-[r:joint]->(edu48)
+
+MERGE (edu49:EDU {Id: 49, Text_id: 51})
+MERGE (edu48:EDU {Id: 48, Text_id: 51})
+CREATE (edu49)-[r:joint]->(edu48)
+
+MERGE (edu50:EDU {Id: 50, Text_id: 51})
+MERGE (edu51:EDU {Id: 51, Text_id: 51})
+CREATE (edu50)-[r:span]->(edu51)
+
+MERGE (edu51:EDU {Id: 51, Text_id: 51})
+MERGE (edu52:EDU {Id: 52, Text_id: 51})
+CREATE (edu51)-[r:comparison]->(edu52)
+
+MERGE (edu52:EDU {Id: 52, Text_id: 51})
+MERGE (edu58:EDU {Id: 58, Text_id: 51})
+CREATE (edu52)-[r:joint]->(edu58)
+
+MERGE (edu53:EDU {Id: 53, Text_id: 51})
+MERGE (edu54:EDU {Id: 54, Text_id: 51})
+CREATE (edu53)-[r:joint]->(edu54)
+
+MERGE (edu54:EDU {Id: 54, Text_id: 51})
+MERGE (edu12:EDU {Id: 12, Text_id: 51})
+CREATE (edu54)-[r:elaboration]->(edu12)
+
+MERGE (edu55:EDU {Id: 55, Text_id: 51})
+MERGE (edu54:EDU {Id: 54, Text_id: 51})
+CREATE (edu55)-[r:joint]->(edu54)
+
+MERGE (edu56:EDU {Id: 56, Text_id: 51})
+MERGE (edu58:EDU {Id: 58, Text_id: 51})
+CREATE (edu56)-[r:joint]->(edu58)
+
+MERGE (edu59:EDU {Id: 59, Text_id: 51})
+MERGE (edu60:EDU {Id: 60, Text_id: 51})
+CREATE (edu59)-[r:span]->(edu60)
+
+MERGE (edu60:EDU {Id: 60, Text_id: 51})
+MERGE (edu12:EDU {Id: 12, Text_id: 51})
+CREATE (edu60)-[r:elaboration]->(edu12)
+
+MERGE (edu61:EDU {Id: 61, Text_id: 51})
+MERGE (edu62:EDU {Id: 62, Text_id: 51})
+CREATE (edu61)-[r:comparison]->(edu62)
+
+MERGE (edu62:EDU {Id: 62, Text_id: 51})
+MERGE (edu66:EDU {Id: 66, Text_id: 51})
+CREATE (edu62)-[r:joint]->(edu66)
+
+MERGE (edu63:EDU {Id: 63, Text_id: 51})
+MERGE (edu64:EDU {Id: 64, Text_id: 51})
+CREATE (edu63)-[r:span]->(edu64)
+
+MERGE (edu64:EDU {Id: 64, Text_id: 51})
+MERGE (edu21:EDU {Id: 21, Text_id: 51})
+CREATE (edu64)-[r:antithesis]->(edu21)
+
+MERGE (edu65:EDU {Id: 65, Text_id: 51})
+MERGE (edu62:EDU {Id: 62, Text_id: 51})
+CREATE (edu65)-[r:comparison]->(edu62)
+
+MERGE (edu68:EDU {Id: 68, Text_id: 51})
+MERGE (edu67:EDU {Id: 67, Text_id: 51})
+CREATE (edu68)-[r:elaboration]->(edu67)
+
+MERGE (edu69:EDU {Id: 69, Text_id: 51})
+MERGE (edu71:EDU {Id: 71, Text_id: 51})
+CREATE (edu69)-[r:span]->(edu71)
+
+MERGE (edu71:EDU {Id: 71, Text_id: 51})
+MERGE (edu70:EDU {Id: 70, Text_id: 51})
+CREATE (edu71)-[r:elaboration]->(edu70)
+
+MERGE (edu72:EDU {Id: 72, Text_id: 51})
+MERGE (edu74:EDU {Id: 74, Text_id: 51})
+CREATE (edu72)-[r:joint]->(edu74)
+
+MERGE (edu73:EDU {Id: 73, Text_id: 51})
+MERGE (edu74:EDU {Id: 74, Text_id: 51})
+CREATE (edu73)-[r:joint]->(edu74)
+
+MERGE (edu74:EDU {Id: 74, Text_id: 51})
+MERGE (edu76:EDU {Id: 76, Text_id: 51})
+CREATE (edu74)-[r:span]->(edu76)
+
+MERGE (edu76:EDU {Id: 76, Text_id: 51})
+MERGE (edu80:EDU {Id: 80, Text_id: 51})
+CREATE (edu76)-[r:joint]->(edu80)
+
+MERGE (edu79:EDU {Id: 79, Text_id: 51})
+MERGE (edu80:EDU {Id: 80, Text_id: 51})
+CREATE (edu79)-[r:joint]->(edu80)
+
+MERGE (edu80:EDU {Id: 80, Text_id: 51})
+MERGE (edu81:EDU {Id: 81, Text_id: 51})
+CREATE (edu80)-[r:span]->(edu81)
+
+MERGE (edu81:EDU {Id: 81, Text_id: 51})
+MERGE (edu85:EDU {Id: 85, Text_id: 51})
+CREATE (edu81)-[r:joint]->(edu85)
+
+MERGE (edu82:EDU {Id: 82, Text_id: 51})
+MERGE (edu39:EDU {Id: 39, Text_id: 51})
+CREATE (edu82)-[r:elaboration]->(edu39)
+
+MERGE (edu83:EDU {Id: 83, Text_id: 51})
+MERGE (edu85:EDU {Id: 85, Text_id: 51})
+CREATE (edu83)-[r:joint]->(edu85)
+
 CREATE (edu1:EDU { Id: 1, text: '##### Совет ЕС выразил озабоченность последними событиями на Украине.', text_norm: " совет ес выразил озабоченность последними событиями на украине", lemmas: "{'совет': 'S', 'ес': 'S', 'выражать': 'V', 'озабоченность': 'S', 'последний': 'A', 'событие': 'S', 'на': 'PR', 'украина': 'S', }", Text_id: 52})
 
 CREATE (edu10:EDU { Id: 10, text: 'а также ограничивают деятельность организаций гражданского общества.', text_norm: "а также ограничивают деятельность организаций гражданского общества", lemmas: "{'а': 'PART', 'также': 'ADV', 'ограничивать': 'V', 'деятельность': 'S', 'организация': 'S', 'гражданский': 'A', 'общество': 'S', }", Text_id: 52})
